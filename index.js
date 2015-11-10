@@ -7,5 +7,6 @@ module.exports = _.extend({},
   require('./lib/pagination'),
   require('./lib/xml-converter'),
   require('./lib/json-parser'),
-  require('./lib/errors')
+  require('./lib/errors'),
+  {Models: require('./models/models')}
 );

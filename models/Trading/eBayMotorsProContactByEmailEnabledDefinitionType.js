@@ -2,9 +2,7 @@ function eBayMotorsProContactByEmailEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of email to contact the seller for Classified Ad format listings.Added for EbayMotors Pro users.
-            
+	   Indicates whether the category supports the use of email to contact the seller for Classified Ad format listings.Added for EbayMotors Pro users.
 	 */
 
 	/**

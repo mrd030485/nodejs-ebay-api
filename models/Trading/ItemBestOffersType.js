@@ -1,36 +1,18 @@
-var TradingRoleCodeType = require('./TradingRoleCodeType'),
-	BestOfferArrayType = require('./BestOfferArrayType'),
+var BestOfferArrayType = require('./BestOfferArrayType'),
 	ItemType = require('./ItemType');
 
 function ItemBestOffersType(Role, BestOfferArray, Item) {
 
 	/**
 	  Documentation
-	   
-                All Best Offers for the item according to the filter or Best Offer ID (or both) used in the input. For the notification client usage, this response includes a single Best Offer.
-            
+	   All Best Offers for the item according to the filter or Best Offer ID (or both) used in the input. For the notification client usage, this response includes a single Best Offer.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _Role;
 	var _BestOfferArray;
 	var _Item;
-	Object.defineProperty(this, 'Role', {
-		 get: function(){
-			 return _Role;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof TradingRoleCodeType){ 
-					_Role = value; 
-				}else{
-					console.log('Role expects type TradingRoleCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'BestOfferArray', {
 		 get: function(){
 			 return _BestOfferArray;
@@ -65,7 +47,7 @@ function ItemBestOffersType(Role, BestOfferArray, Item) {
 }
 ItemBestOffersType.prototype.toJSON = function(with_null) {
 	var json = { 
-		Role: (this.Role === undefined)? null : this.Role.toJSON(),
+		Role: (this.Role === undefined)? null : this.Role,
 		BestOfferArray: (this.BestOfferArray === undefined)? null : this.BestOfferArray.toJSON(),
 		Item: (this.Item === undefined)? null : this.Item.toJSON()
 	};

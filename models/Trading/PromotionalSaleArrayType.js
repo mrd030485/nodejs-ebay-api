@@ -2,9 +2,7 @@ function PromotionalSaleArrayType(PromotionalSale) {
 
 	/**
 	  Documentation
-	   
-                An array of promotional sales.
-            
+	   An array of promotional sales.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ProductRecommendationsType(Product) {
 
 	/**
 	  Documentation
-	   
-                A list of products returned from the Suggested Attributes engine.
-            
+	   A list of products returned from the Suggested Attributes engine.
 	 */
 
 	/**

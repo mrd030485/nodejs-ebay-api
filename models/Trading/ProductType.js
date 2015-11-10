@@ -5,10 +5,7 @@ function ProductType(CharacteristicsSet, DetailsURL, NumItems, MinPrice, MaxPric
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as <b>GetProduct*</b> calls were deprecated.
-                
-            
+	   This type is deprecated as <b>GetProduct*</b> calls were deprecated. 
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function BasicUpgradePackEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated, as the Basic Upgrade Pack feature on the eBay Australia site is deprecated.
-            
+	   This type is deprecated, as the Basic Upgrade Pack feature on the eBay Australia site is deprecated.
 	 */
 
 	/**

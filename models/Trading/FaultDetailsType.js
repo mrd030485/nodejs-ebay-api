@@ -2,9 +2,7 @@ function FaultDetailsType(ErrorCode, Severity, DetailedMessage) {
 
 	/**
 	  Documentation
-	   
-                SOAP faults are used to indicate that an infrastructure error has occurred, such as a problem on eBay's side with database or server going down, or a problem with the client or server-side SOAP framework.
-            
+	   SOAP faults are used to indicate that an infrastructure error has occurred, such as a problem on eBay's side with database or server going down, or a problem with the client or server-side SOAP framework.
 	 */
 
 	/**

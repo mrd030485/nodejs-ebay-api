@@ -2,9 +2,7 @@ function NotificationMessageType(MessageBody, EIAS) {
 
 	/**
 	  Documentation
-	   
-                A template for an SMS notification message.
-            
+	   A template for an SMS notification message.
 	 */
 
 base: undefined

@@ -2,9 +2,7 @@ function eBayMotorsProPaymentMethodCheckOutEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of payment method checkOut for Classified Ad format listings.Added for EbayMotors Pro users.
-            
+	   Indicates whether the category supports the use of payment method checkOut for Classified Ad format listings.Added for EbayMotors Pro users.
 	 */
 
 	/**

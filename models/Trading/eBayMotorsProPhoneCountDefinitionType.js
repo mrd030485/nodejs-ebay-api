@@ -2,9 +2,7 @@ function eBayMotorsProPhoneCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which phone option the category supports for contacting the seller about Classified Ad format listings. Added for EbayMotors Pro users.
-            
+	   Indicates which phone option the category supports for contacting the seller about Classified Ad format listings. Added for EbayMotors Pro users.
 	 */
 
 	/**

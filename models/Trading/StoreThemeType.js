@@ -4,9 +4,7 @@ function StoreThemeType(ThemeID, Name, ColorScheme) {
 
 	/**
 	  Documentation
-	   
-                Store theme.
-            
+	   Store theme.
 	 */
 
 	/**

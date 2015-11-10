@@ -4,9 +4,7 @@ function BuyingGuideType(Name, URL, CategoryID, ProductFinderID, Title, Text, Cr
 
 	/**
 	  Documentation
-	   
-                This type is not used by any Trading API calls.
-            
+	   This type is not used by any Trading API calls.
 	 */
 
 	/**

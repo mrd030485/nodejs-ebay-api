@@ -2,9 +2,7 @@ function ClassifiedAdPhoneCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which phone option the category supports for contacting the seller for Classified Ad format listings. Added for the For Sale By Owner format.
-            
+	   Indicates which phone option the category supports for contacting the seller for Classified Ad format listings. Added for the For Sale By Owner format.
 	 */
 
 	/**

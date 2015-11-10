@@ -6,9 +6,7 @@ function InventoryStatusType(SKU, ItemID, StartPrice, Quantity) {
 
 	/**
 	  Documentation
-	   
-                Lightweight type for updating basic inventory status details. Primarily intended for bulk use cases.
-            
+	   Lightweight type for updating basic inventory status details. Primarily intended for bulk use cases.
 	 */
 
 	/**

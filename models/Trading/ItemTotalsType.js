@@ -4,9 +4,7 @@ function ItemTotalsType(TotalQuantity, TotalValue) {
 
 	/**
 	  Documentation
-	   
-                Details about items involved in the summary for the specified time period.
-            
+	   Details about items involved in the summary for the specified time period.
 	 */
 
 	/**

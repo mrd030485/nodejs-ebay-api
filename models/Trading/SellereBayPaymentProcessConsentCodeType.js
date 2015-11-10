@@ -4,9 +4,7 @@ function SellereBayPaymentProcessConsentCodeType(PayoutMethodSet, PayoutMethod, 
 
 	/**
 	  Documentation
-	   
-                This type is no longer used.
-            
+	   This type is no longer used.
 	 */
 
 	/**

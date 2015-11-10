@@ -2,9 +2,7 @@ function QuantityRestrictionPerBuyerInfoType(MaximumQuantity) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>QuantityRestrictionPerBuyer</b> container, which is used by the seller to restrict the quantity of items that may be purchased by one buyer during the duration of a fixed-price listing (single or multi-variation).
-            
+	   This type defines the <b>QuantityRestrictionPerBuyer</b> container, which is used by the seller to restrict the quantity of items that may be purchased by one buyer during the duration of a fixed-price listing (single or multi-variation).
 	 */
 
 	/**

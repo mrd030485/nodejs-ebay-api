@@ -2,10 +2,8 @@ function PickupOptionsType(PickupMethod, PickupPriority) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <strong>PickupOptions</strong> container, which consists of a pickup method and the priority of the pickup method. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At this time, the
-                In-Store Pickup and Click and Collect features are generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. </span>
-            
+	   Type defining the <strong>PickupOptions</strong> container, which consists of a pickup method and the priority of the pickup method. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At
+                    this time, the In-Store Pickup and Click and Collect features are generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. </span>
 	 */
 
 	/**

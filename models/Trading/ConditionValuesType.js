@@ -2,9 +2,7 @@ function ConditionValuesType(Condition, ConditionHelpURL) {
 
 	/**
 	  Documentation
-	   
-                Fields in this type provide condition values and display names.
-            
+	   Fields in this type provide condition values and display names.
 	 */
 
 	/**

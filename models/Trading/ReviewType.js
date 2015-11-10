@@ -4,9 +4,7 @@ function ReviewType(URL, Title, Rating, Text, UserID, CreationTime) {
 
 	/**
 	  Documentation
-	   
-                A product review written by an eBay member.
-            
+	   A product review written by an eBay member.
 	 */
 
 	/**

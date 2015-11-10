@@ -5,9 +5,7 @@ function BusinessSellerDetailsType(Address, Fax, Email, AdditionalContactInforma
 
 	/**
 	  Documentation
-	   
-                Type used by the <b>BusinessSellerDetails</b> container, which is returned in an <b>Item</b> node if the item's seller is registered on eBay as a Business Seller.
-            
+	   Type used by the <b>BusinessSellerDetails</b> container, which is returned in an <b>Item</b> node if the item's seller is registered on eBay as a Business Seller.
 	 */
 
 	/**

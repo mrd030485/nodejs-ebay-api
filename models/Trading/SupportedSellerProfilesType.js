@@ -2,9 +2,7 @@ function SupportedSellerProfilesType(SupportedSellerProfile) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SupportedSellerProfiles</b> container for all payment, return, and shipping policy profiles that a seller has defined for a site.
-            
+	   Type defining the <b>SupportedSellerProfiles</b> container for all payment, return, and shipping policy profiles that a seller has defined for a site.
 	 */
 
 	/**

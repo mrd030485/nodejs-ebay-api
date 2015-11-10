@@ -2,9 +2,7 @@ function TaxJurisdictionType(JurisdictionID, SalesTaxPercent, ShippingIncludedIn
 
 	/**
 	  Documentation
-	   
-                Tax-related details for a region or jurisdiction.
-            
+	   Tax-related details for a region or jurisdiction.
 	 */
 
 	/**

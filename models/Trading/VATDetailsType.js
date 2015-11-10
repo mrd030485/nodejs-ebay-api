@@ -2,10 +2,8 @@ function VATDetailsType(BusinessSeller, RestrictedToBusiness, VATPercent, VATSit
 
 	/**
 	  Documentation
-	   
-                Container for eBay's Business User features. A business seller can choose to offer an item exclusively to bidders and buyers that also represent businesses. Only applicable when the item is listed in a B2B-enabled category. Currently, the eBay Germany
-                (DE), Austria (AT), and Switzerland (CH) sites support B2B business features.
-            
+	   Container for eBay's Business User features. A business seller can choose to offer an item exclusively to bidders and buyers that also represent businesses. Only applicable when the item is listed in a B2B-enabled category. Currently,
+                    the eBay Germany (DE), Austria (AT), and Switzerland (CH) sites support B2B business features.
 	 */
 
 	/**

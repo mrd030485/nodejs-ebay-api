@@ -4,15 +4,11 @@ function VeROReportItemType(ItemID, VeROReasonCodeID, MessageToSeller, CopyEmail
 
 	/**
 	  Documentation
-	   
-                Contains the item information to report.
-            
+	   Contains the item information to report.
 	 */
 
 	/**
 	 * Arrays
-	 *	Region: ShippingRegionCodeType
-	 *	Country: CountryCodeType
 	 */
 	var _ItemID;
 	Object.defineProperty(this, 'ItemID', {

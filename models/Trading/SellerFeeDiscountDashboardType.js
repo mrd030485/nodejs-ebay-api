@@ -2,9 +2,7 @@ function SellerFeeDiscountDashboardType(Percent) {
 
 	/**
 	  Documentation
-	   
-                PowerSeller discount information (e.g., to show in a Seller Dashboard). As a PowerSeller, you can earn discounts on your monthly invoice Final Value Fees based on how well you're doing as a seller.
-            
+	   PowerSeller discount information (e.g., to show in a Seller Dashboard). As a PowerSeller, you can earn discounts on your monthly invoice Final Value Fees based on how well you're doing as a seller.
 	 */
 
 	/**

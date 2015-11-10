@@ -2,9 +2,7 @@ function ReminderCustomizationType(DurationInDays, Include) {
 
 	/**
 	  Documentation
-	   
-                Specifies how to return certain reminder types from the user's My eBay account.
-            
+	   Specifies how to return certain reminder types from the user's My eBay account.
 	 */
 
 	/**

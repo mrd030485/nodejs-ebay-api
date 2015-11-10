@@ -4,11 +4,9 @@ function BuyingSummaryType(BiddingCount, WinningCount, TotalWinningCost, WonCoun
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BuyingSummary</b> container returned in <b>GetMyeBayBuying</b>. The <b>BuyingSummary</b> container consists of data that summarizes the buyer's recent buying activity, including the number of items
-                the user has bid on, the number of items the user is winning, and the number of items the user has won. The <b>BuyingSummary</b> container is only returned if the <b>BuyingSummary.Include</b> field is included in
-                the <b>GetMyeBayBuying</b> request and set to <code>true</code>.
-            
+	   Type defining the <b>BuyingSummary</b> container returned in <b>GetMyeBayBuying</b>. The <b>BuyingSummary</b> container consists of data that summarizes the buyer's recent buying activity, including
+                    the number of items the user has bid on, the number of items the user is winning, and the number of items the user has won. The <b>BuyingSummary</b> container is only returned if the <b>BuyingSummary.Include</b>
+                    field is included in the <b>GetMyeBayBuying</b> request and set to <code>true</code>.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function QuantityInfoType(MinimumRemnantSet) {
 
 	/**
 	  Documentation
-	   
-                Currently applies to tickets. May apply to other categories in the future.
-            
+	   Currently applies to tickets. May apply to other categories in the future.
 	 */
 
 	/**

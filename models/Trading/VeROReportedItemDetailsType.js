@@ -2,9 +2,7 @@ function VeROReportedItemDetailsType(ReportedItem) {
 
 	/**
 	  Documentation
-	   
-                Container for a list of reported items. Can contain zero, one, or multiple VeROReportedItemType objects, each of which conveys the data for one item listing.
-            
+	   Container for a list of reported items. Can contain zero, one, or multiple VeROReportedItemType objects, each of which conveys the data for one item listing.
 	 */
 
 	/**

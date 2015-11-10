@@ -2,9 +2,7 @@ function SuggestedCategoryArrayType(SuggestedCategory) {
 
 	/**
 	  Documentation
-	   
-                Contains an array of categories that contain listings with specified keywords in their titles or descriptions. The array can contain up to 10 categories.
-            
+	   Contains an array of categories that contain listings with specified keywords in their titles or descriptions. The array can contain up to 10 categories.
 	 */
 
 	/**

@@ -2,11 +2,9 @@ function PickupDetailsType(PickupOptions) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <strong>PickupDetails</strong> container, which contains an array of <strong>PickupOptions</strong> containers. Each <strong>PickupOptions</strong> container consists of the pickup method and its
-                priority. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At this time, the In-Store Pickup and Click and Collect features are generally only available to large retail merchants, and can only be
-                applied to multi-quantity, fixed-price listings. </span>
-            
+	   This type defines the <strong>PickupDetails</strong> container, which contains an array of <strong>PickupOptions</strong> containers. Each <strong>PickupOptions</strong> container consists of the pickup
+                    method and its priority. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At this time, the In-Store Pickup and Click and Collect features are generally only available to large retail merchants,
+                    and can only be applied to multi-quantity, fixed-price listings. </span>
 	 */
 
 	/**

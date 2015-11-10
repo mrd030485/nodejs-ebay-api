@@ -1,7 +1,5 @@
 var ItemIDType = require('./ItemIDType'),
 	AmountType = require('./AmountType'),
-	ListingTypeCodeType = require('./ListingTypeCodeType'),
-	TransactionPlatformCodeType = require('./TransactionPlatformCodeType'),
 	ShipmentType = require('./ShipmentType'),
 	VariationType = require('./VariationType');
 
@@ -9,22 +7,17 @@ function SellingManagerSoldTransactionType(InvoiceNumber, TransactionID, SaleRec
 
 	/**
 	  Documentation
-	   
-                Contains information about a single line item (transaction) in an order created through Selling Manager.
-            
+	   Contains information about a single line item (transaction) in an order created through Selling Manager.
 	 */
 
 	/**
 	 * Arrays
-	 *	ListedOn: TransactionPlatformCodeType
 	 */
 	var _ItemID;
 	var _ItemPrice;
 	var _SubtotalAmount;
-	var _ListingType;
 	var _StartPrice;
 	var _ReservePrice;
-	var _SoldOn;
 	var _Shipment;
 	var _Variation;
 	Object.defineProperty(this, 'ItemID', {
@@ -69,20 +62,6 @@ function SellingManagerSoldTransactionType(InvoiceNumber, TransactionID, SaleRec
 			}
 		}
 	});
-	Object.defineProperty(this, 'ListingType', {
-		 get: function(){
-			 return _ListingType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingTypeCodeType){ 
-					_ListingType = value; 
-				}else{
-					console.log('ListingType expects type ListingTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'StartPrice', {
 		 get: function(){
 			 return _StartPrice;
@@ -107,20 +86,6 @@ function SellingManagerSoldTransactionType(InvoiceNumber, TransactionID, SaleRec
 					_ReservePrice = value; 
 				}else{
 					console.log('ReservePrice expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SoldOn', {
-		 get: function(){
-			 return _SoldOn;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof TransactionPlatformCodeType){ 
-					_SoldOn = value; 
-				}else{
-					console.log('SoldOn expects type TransactionPlatformCodeType');
 				}
 			}
 		}
@@ -185,14 +150,14 @@ SellingManagerSoldTransactionType.prototype.toJSON = function(with_null) {
 		ItemPrice: (this.ItemPrice === undefined)? null : this.ItemPrice.toJSON(),
 		SubtotalAmount: (this.SubtotalAmount === undefined)? null : this.SubtotalAmount.toJSON(),
 		ItemTitle: (this.ItemTitle === undefined)? null : this.ItemTitle,
-		ListingType: (this.ListingType === undefined)? null : this.ListingType.toJSON(),
+		ListingType: (this.ListingType === undefined)? null : this.ListingType,
 		Relisted: (this.Relisted === undefined)? null : this.Relisted,
 		WatchCount: (this.WatchCount === undefined)? null : this.WatchCount,
 		StartPrice: (this.StartPrice === undefined)? null : this.StartPrice.toJSON(),
 		ReservePrice: (this.ReservePrice === undefined)? null : this.ReservePrice.toJSON(),
 		SecondChanceOfferSent: (this.SecondChanceOfferSent === undefined)? null : this.SecondChanceOfferSent,
 		CustomLabel: (this.CustomLabel === undefined)? null : this.CustomLabel,
-		SoldOn: (this.SoldOn === undefined)? null : this.SoldOn.toJSON(),
+		SoldOn: (this.SoldOn === undefined)? null : this.SoldOn,
 		ListedOn: (this.ListedOn === undefined)? null : this.ListedOn,
 		Shipment: (this.Shipment === undefined)? null : this.Shipment.toJSON(),
 		CharityListing: (this.CharityListing === undefined)? null : this.CharityListing,

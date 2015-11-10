@@ -3,26 +3,19 @@ var AttributeSetArrayType = require('./AttributeSetArrayType'),
 	LookupAttributeArrayType = require('./LookupAttributeArrayType'),
 	PaymentDetailsType = require('./PaymentDetailsType'),
 	BiddingDetailsType = require('./BiddingDetailsType'),
-	BuyerProtectionCodeType = require('./BuyerProtectionCodeType'),
 	AmountType = require('./AmountType'),
 	CharityType = require('./CharityType'),
-	CountryCodeType = require('./CountryCodeType'),
 	CrossPromotionsType = require('./CrossPromotionsType'),
-	CurrencyCodeType = require('./CurrencyCodeType'),
-	DescriptionReviseModeCodeType = require('./DescriptionReviseModeCodeType'),
 	DistanceType = require('./DistanceType'),
-	HitCounterCodeType = require('./HitCounterCodeType'),
 	ItemIDType = require('./ItemIDType'),
 	ListingDetailsType = require('./ListingDetailsType'),
 	ListingDesignerType = require('./ListingDesignerType'),
-	ListingTypeCodeType = require('./ListingTypeCodeType'),
 	CategoryType = require('./CategoryType'),
 	ProductListingDetailsType = require('./ProductListingDetailsType'),
 	ReviseStatusType = require('./ReviseStatusType'),
 	UserType = require('./UserType'),
 	SellingStatusType = require('./SellingStatusType'),
 	ShippingDetailsType = require('./ShippingDetailsType'),
-	SiteCodeType = require('./SiteCodeType'),
 	StorefrontType = require('./StorefrontType'),
 	UUIDType = require('./UUIDType'),
 	VATDetailsType = require('./VATDetailsType'),
@@ -36,15 +29,12 @@ var AttributeSetArrayType = require('./AttributeSetArrayType'),
 	ExtendedContactDetailsType = require('./ExtendedContactDetailsType'),
 	NameValueListArrayType = require('./NameValueListArrayType'),
 	BuyerProtectionDetailsType = require('./BuyerProtectionDetailsType'),
-	ListingSubtypeCodeType = require('./ListingSubtypeCodeType'),
 	ItemPolicyViolationType = require('./ItemPolicyViolationType'),
 	BusinessSellerDetailsType = require('./BusinessSellerDetailsType'),
 	BuyerRequirementDetailsType = require('./BuyerRequirementDetailsType'),
 	ReturnPolicyType = require('./ReturnPolicyType'),
-	InventoryTrackingMethodCodeType = require('./InventoryTrackingMethodCodeType'),
 	VariationsType = require('./VariationsType'),
 	ItemCompatibilityListType = require('./ItemCompatibilityListType'),
-	QuantityAvailableHintCodeType = require('./QuantityAvailableHintCodeType'),
 	DiscountPriceInfoType = require('./DiscountPriceInfoType'),
 	QuantityInfoType = require('./QuantityInfoType'),
 	SellerProfilesType = require('./SellerProfilesType'),
@@ -52,7 +42,6 @@ var AttributeSetArrayType = require('./AttributeSetArrayType'),
 	ShipPackageDetailsType = require('./ShipPackageDetailsType'),
 	QuantityRestrictionPerBuyerInfoType = require('./QuantityRestrictionPerBuyerInfoType'),
 	UnitInfoType = require('./UnitInfoType'),
-	ReasonHideFromSearchCodeType = require('./ReasonHideFromSearchCodeType'),
 	PickupInStoreDetailsType = require('./PickupInStoreDetailsType'),
 	DigitalGoodInfoType = require('./DigitalGoodInfoType');
 
@@ -60,38 +49,26 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 
 	/**
 	  Documentation
-	   
-                Contains the data defining one item. A seller populates an object of this type at listing time with the definition of a new item. A seller also uses an object of this type to relist or revise an item. Calls that retrieve item data (such as the GetSellerList
-                call) return an object of this type, filled with the item's data. Some fields are applicable both to eBay listings and Half.com listings. Some fields are only applicable to eBay listings, and others are only applicable to Half.com listings.
-            
+	   Contains the data defining one item. A seller populates an object of this type at listing time with the definition of a new item. A seller also uses an object of this type to relist or revise an item. Calls that retrieve item data (such
+                    as the GetSellerList call) return an object of this type, filled with the item's data. Some fields are applicable both to eBay listings and Half.com listings. Some fields are only applicable to eBay listings, and others are only applicable
+                    to Half.com listings.
 	 */
 
 	/**
 	 * Arrays
-	 *	GiftServices: GiftServicesCodeType
-	 *	ListingEnhancement: ListingEnhancementsCodeType
-	 *	PaymentMethods: BuyerPaymentMethodCodeType
-	 *	SkypeContactOption: SkypeContactOptionCodeType
-	 *	PaymentAllowedSite: SiteCodeType
 	 */
 	var _AttributeSetArray;
 	var _AttributeArray;
 	var _LookupAttributeArray;
 	var _PaymentDetails;
 	var _BiddingDetails;
-	var _BuyerProtection;
 	var _BuyItNowPrice;
 	var _Charity;
-	var _Country;
 	var _CrossPromotion;
-	var _Currency;
-	var _DescriptionReviseMode;
 	var _Distance;
-	var _HitCounter;
 	var _ItemID;
 	var _ListingDetails;
 	var _ListingDesigner;
-	var _ListingType;
 	var _PrimaryCategory;
 	var _ProductListingDetails;
 	var _ReservePrice;
@@ -101,7 +78,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 	var _Seller;
 	var _SellingStatus;
 	var _ShippingDetails;
-	var _Site;
 	var _StartPrice;
 	var _Storefront;
 	var _UUID;
@@ -117,16 +93,13 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 	var _ItemSpecifics;
 	var _ClassifiedAdPayPerLeadFee;
 	var _ApplyBuyerProtection;
-	var _ListingSubtype2;
 	var _ItemPolicyViolation;
 	var _BusinessSellerDetails;
 	var _BuyerGuaranteePrice;
 	var _BuyerRequirementDetails;
 	var _ReturnPolicy;
-	var _InventoryTrackingMethod;
 	var _Variations;
 	var _ItemCompatibilityList;
-	var _QuantityAvailableHint;
 	var _DiscountPriceInfo;
 	var _QuantityInfo;
 	var _SellerProfiles;
@@ -136,7 +109,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 	var _FloorPrice;
 	var _CeilingPrice;
 	var _UnitInfo;
-	var _ReasonHideFromSearch;
 	var _PickupInStoreDetails;
 	var _DigitalGoodInfo;
 	Object.defineProperty(this, 'AttributeSetArray', {
@@ -209,20 +181,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'BuyerProtection', {
-		 get: function(){
-			 return _BuyerProtection;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof BuyerProtectionCodeType){ 
-					_BuyerProtection = value; 
-				}else{
-					console.log('BuyerProtection expects type BuyerProtectionCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'BuyItNowPrice', {
 		 get: function(){
 			 return _BuyItNowPrice;
@@ -251,20 +209,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'Country', {
-		 get: function(){
-			 return _Country;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CountryCodeType){ 
-					_Country = value; 
-				}else{
-					console.log('Country expects type CountryCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'CrossPromotion', {
 		 get: function(){
 			 return _CrossPromotion;
@@ -279,34 +223,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'Currency', {
-		 get: function(){
-			 return _Currency;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CurrencyCodeType){ 
-					_Currency = value; 
-				}else{
-					console.log('Currency expects type CurrencyCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'DescriptionReviseMode', {
-		 get: function(){
-			 return _DescriptionReviseMode;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof DescriptionReviseModeCodeType){ 
-					_DescriptionReviseMode = value; 
-				}else{
-					console.log('DescriptionReviseMode expects type DescriptionReviseModeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Distance', {
 		 get: function(){
 			 return _Distance;
@@ -317,20 +233,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_Distance = value; 
 				}else{
 					console.log('Distance expects type DistanceType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'HitCounter', {
-		 get: function(){
-			 return _HitCounter;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof HitCounterCodeType){ 
-					_HitCounter = value; 
-				}else{
-					console.log('HitCounter expects type HitCounterCodeType');
 				}
 			}
 		}
@@ -373,20 +275,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_ListingDesigner = value; 
 				}else{
 					console.log('ListingDesigner expects type ListingDesignerType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ListingType', {
-		 get: function(){
-			 return _ListingType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingTypeCodeType){ 
-					_ListingType = value; 
-				}else{
-					console.log('ListingType expects type ListingTypeCodeType');
 				}
 			}
 		}
@@ -513,20 +401,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_ShippingDetails = value; 
 				}else{
 					console.log('ShippingDetails expects type ShippingDetailsType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Site', {
-		 get: function(){
-			 return _Site;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SiteCodeType){ 
-					_Site = value; 
-				}else{
-					console.log('Site expects type SiteCodeType');
 				}
 			}
 		}
@@ -741,20 +615,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'ListingSubtype2', {
-		 get: function(){
-			 return _ListingSubtype2;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingSubtypeCodeType){ 
-					_ListingSubtype2 = value; 
-				}else{
-					console.log('ListingSubtype2 expects type ListingSubtypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ItemPolicyViolation', {
 		 get: function(){
 			 return _ItemPolicyViolation;
@@ -825,20 +685,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'InventoryTrackingMethod', {
-		 get: function(){
-			 return _InventoryTrackingMethod;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof InventoryTrackingMethodCodeType){ 
-					_InventoryTrackingMethod = value; 
-				}else{
-					console.log('InventoryTrackingMethod expects type InventoryTrackingMethodCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Variations', {
 		 get: function(){
 			 return _Variations;
@@ -863,20 +709,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_ItemCompatibilityList = value; 
 				}else{
 					console.log('ItemCompatibilityList expects type ItemCompatibilityListType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'QuantityAvailableHint', {
-		 get: function(){
-			 return _QuantityAvailableHint;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof QuantityAvailableHintCodeType){ 
-					_QuantityAvailableHint = value; 
-				}else{
-					console.log('QuantityAvailableHint expects type QuantityAvailableHintCodeType');
 				}
 			}
 		}
@@ -1003,20 +835,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_UnitInfo = value; 
 				}else{
 					console.log('UnitInfo expects type UnitInfoType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ReasonHideFromSearch', {
-		 get: function(){
-			 return _ReasonHideFromSearch;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ReasonHideFromSearchCodeType){ 
-					_ReasonHideFromSearch = value; 
-				}else{
-					console.log('ReasonHideFromSearch expects type ReasonHideFromSearchCodeType');
 				}
 			}
 		}
@@ -1215,25 +1033,25 @@ ItemType.prototype.toJSON = function(with_null) {
 		PaymentDetails: (this.PaymentDetails === undefined)? null : this.PaymentDetails.toJSON(),
 		BiddingDetails: (this.BiddingDetails === undefined)? null : this.BiddingDetails.toJSON(),
 		MotorsGermanySearchable: (this.MotorsGermanySearchable === undefined)? null : this.MotorsGermanySearchable,
-		BuyerProtection: (this.BuyerProtection === undefined)? null : this.BuyerProtection.toJSON(),
+		BuyerProtection: (this.BuyerProtection === undefined)? null : this.BuyerProtection,
 		BuyItNowPrice: (this.BuyItNowPrice === undefined)? null : this.BuyItNowPrice.toJSON(),
 		CategoryMappingAllowed: (this.CategoryMappingAllowed === undefined)? null : this.CategoryMappingAllowed,
 		Charity: (this.Charity === undefined)? null : this.Charity.toJSON(),
-		Country: (this.Country === undefined)? null : this.Country.toJSON(),
+		Country: (this.Country === undefined)? null : this.Country,
 		CrossPromotion: (this.CrossPromotion === undefined)? null : this.CrossPromotion.toJSON(),
-		Currency: (this.Currency === undefined)? null : this.Currency.toJSON(),
+		Currency: (this.Currency === undefined)? null : this.Currency,
 		Description: (this.Description === undefined)? null : this.Description,
-		DescriptionReviseMode: (this.DescriptionReviseMode === undefined)? null : this.DescriptionReviseMode.toJSON(),
+		DescriptionReviseMode: (this.DescriptionReviseMode === undefined)? null : this.DescriptionReviseMode,
 		Distance: (this.Distance === undefined)? null : this.Distance.toJSON(),
 		GiftIcon: (this.GiftIcon === undefined)? null : this.GiftIcon,
 		GiftServices: (this.GiftServices === undefined)? null : this.GiftServices,
-		HitCounter: (this.HitCounter === undefined)? null : this.HitCounter.toJSON(),
+		HitCounter: (this.HitCounter === undefined)? null : this.HitCounter,
 		ItemID: (this.ItemID === undefined)? null : this.ItemID.toJSON(),
 		ListingDetails: (this.ListingDetails === undefined)? null : this.ListingDetails.toJSON(),
 		ListingDesigner: (this.ListingDesigner === undefined)? null : this.ListingDesigner.toJSON(),
 		ListingDuration: (this.ListingDuration === undefined)? null : this.ListingDuration,
 		ListingEnhancement: (this.ListingEnhancement === undefined)? null : this.ListingEnhancement,
-		ListingType: (this.ListingType === undefined)? null : this.ListingType.toJSON(),
+		ListingType: (this.ListingType === undefined)? null : this.ListingType,
 		Location: (this.Location === undefined)? null : this.Location,
 		LotSize: (this.LotSize === undefined)? null : this.LotSize,
 		PartnerCode: (this.PartnerCode === undefined)? null : this.PartnerCode,
@@ -1256,7 +1074,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		SellingStatus: (this.SellingStatus === undefined)? null : this.SellingStatus.toJSON(),
 		ShippingDetails: (this.ShippingDetails === undefined)? null : this.ShippingDetails.toJSON(),
 		ShipToLocations: (this.ShipToLocations === undefined)? null : this.ShipToLocations,
-		Site: (this.Site === undefined)? null : this.Site.toJSON(),
+		Site: (this.Site === undefined)? null : this.Site,
 		StartPrice: (this.StartPrice === undefined)? null : this.StartPrice.toJSON(),
 		Storefront: (this.Storefront === undefined)? null : this.Storefront.toJSON(),
 		SubTitle: (this.SubTitle === undefined)? null : this.SubTitle,
@@ -1306,7 +1124,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		ClassifiedAdPayPerLeadFee: (this.ClassifiedAdPayPerLeadFee === undefined)? null : this.ClassifiedAdPayPerLeadFee.toJSON(),
 		BidGroupItem: (this.BidGroupItem === undefined)? null : this.BidGroupItem,
 		ApplyBuyerProtection: (this.ApplyBuyerProtection === undefined)? null : this.ApplyBuyerProtection.toJSON(),
-		ListingSubtype2: (this.ListingSubtype2 === undefined)? null : this.ListingSubtype2.toJSON(),
+		ListingSubtype2: (this.ListingSubtype2 === undefined)? null : this.ListingSubtype2,
 		MechanicalCheckAccepted: (this.MechanicalCheckAccepted === undefined)? null : this.MechanicalCheckAccepted,
 		UpdateSellerInfo: (this.UpdateSellerInfo === undefined)? null : this.UpdateSellerInfo,
 		UpdateReturnPolicy: (this.UpdateReturnPolicy === undefined)? null : this.UpdateReturnPolicy,
@@ -1317,7 +1135,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		BuyerRequirementDetails: (this.BuyerRequirementDetails === undefined)? null : this.BuyerRequirementDetails.toJSON(),
 		ReturnPolicy: (this.ReturnPolicy === undefined)? null : this.ReturnPolicy.toJSON(),
 		PaymentAllowedSite: (this.PaymentAllowedSite === undefined)? null : this.PaymentAllowedSite,
-		InventoryTrackingMethod: (this.InventoryTrackingMethod === undefined)? null : this.InventoryTrackingMethod.toJSON(),
+		InventoryTrackingMethod: (this.InventoryTrackingMethod === undefined)? null : this.InventoryTrackingMethod,
 		IntegratedMerchantCreditCardEnabled: (this.IntegratedMerchantCreditCardEnabled === undefined)? null : this.IntegratedMerchantCreditCardEnabled,
 		Variations: (this.Variations === undefined)? null : this.Variations.toJSON(),
 		ItemCompatibilityList: (this.ItemCompatibilityList === undefined)? null : this.ItemCompatibilityList.toJSON(),
@@ -1326,7 +1144,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		ConditionDescription: (this.ConditionDescription === undefined)? null : this.ConditionDescription,
 		ConditionDisplayName: (this.ConditionDisplayName === undefined)? null : this.ConditionDisplayName,
 		TaxCategory: (this.TaxCategory === undefined)? null : this.TaxCategory,
-		QuantityAvailableHint: (this.QuantityAvailableHint === undefined)? null : this.QuantityAvailableHint.toJSON(),
+		QuantityAvailableHint: (this.QuantityAvailableHint === undefined)? null : this.QuantityAvailableHint,
 		QuantityThreshold: (this.QuantityThreshold === undefined)? null : this.QuantityThreshold,
 		PostCheckoutExperienceEnabled: (this.PostCheckoutExperienceEnabled === undefined)? null : this.PostCheckoutExperienceEnabled,
 		DiscountPriceInfo: (this.DiscountPriceInfo === undefined)? null : this.DiscountPriceInfo.toJSON(),
@@ -1349,7 +1167,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		RelistParentID: (this.RelistParentID === undefined)? null : this.RelistParentID,
 		ConditionDefinition: (this.ConditionDefinition === undefined)? null : this.ConditionDefinition,
 		HideFromSearch: (this.HideFromSearch === undefined)? null : this.HideFromSearch,
-		ReasonHideFromSearch: (this.ReasonHideFromSearch === undefined)? null : this.ReasonHideFromSearch.toJSON(),
+		ReasonHideFromSearch: (this.ReasonHideFromSearch === undefined)? null : this.ReasonHideFromSearch,
 		IncludeRecommendations: (this.IncludeRecommendations === undefined)? null : this.IncludeRecommendations,
 		PickupInStoreDetails: (this.PickupInStoreDetails === undefined)? null : this.PickupInStoreDetails.toJSON(),
 		eBayNowEligible: (this.eBayNowEligible === undefined)? null : this.eBayNowEligible,

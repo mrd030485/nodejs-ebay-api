@@ -2,9 +2,9 @@ function LocalListingDistancesNonSubscriptionDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines the LocalListingDistancesNonSubscription feature. This feature displays all the supported local listing distances for items listed by sellers who have not subscribed to either Local Market for Vehicles or Local Market for Specialty Vehicles.
-            
+	   Defines the LocalListingDistancesNonSubscription feature. This feature displays all the supported local listing distances for items listed by sellers who have not subscribed to either Local Market for Vehicles or Local Market for Specialty
+                    Vehicles.
+                
 	 */
 
 	/**

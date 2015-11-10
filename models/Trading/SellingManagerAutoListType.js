@@ -5,9 +5,7 @@ function SellingManagerAutoListType(SourceSaleTemplateID, KeepMinActive, ListAcc
 
 	/**
 	  Documentation
-	   
-                Provides information about an automated listing rule. Automated listing rules cannot be combined with automated relisting rules. A template can have one set of information per automated listing rule specified.
-            
+	   Provides information about an automated listing rule. Automated listing rules cannot be combined with automated relisting rules. A template can have one set of information per automated listing rule specified.
 	 */
 
 	/**

@@ -1,5 +1,4 @@
-var AmountType = require('./AmountType'),
-	ProductStateCodeType = require('./ProductStateCodeType');
+var AmountType = require('./AmountType');
 
 function ProductInfoType(AverageStartPrice, AverageSoldPrice, Title, ProductState) {
 	/**
@@ -7,7 +6,6 @@ function ProductInfoType(AverageStartPrice, AverageSoldPrice, Title, ProductStat
 	 */
 	var _AverageStartPrice;
 	var _AverageSoldPrice;
-	var _ProductState;
 	Object.defineProperty(this, 'AverageStartPrice', {
 		 get: function(){
 			 return _AverageStartPrice;
@@ -36,20 +34,6 @@ function ProductInfoType(AverageStartPrice, AverageSoldPrice, Title, ProductStat
 			}
 		}
 	});
-	Object.defineProperty(this, 'ProductState', {
-		 get: function(){
-			 return _ProductState;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductStateCodeType){ 
-					_ProductState = value; 
-				}else{
-					console.log('ProductState expects type ProductStateCodeType');
-				}
-			}
-		}
-	});
 	this.AverageStartPrice = AverageStartPrice;
 	this.AverageSoldPrice = AverageSoldPrice;
 	this.Title = Title;
@@ -60,7 +44,7 @@ ProductInfoType.prototype.toJSON = function(with_null) {
 		AverageStartPrice: (this.AverageStartPrice === undefined)? null : this.AverageStartPrice.toJSON(),
 		AverageSoldPrice: (this.AverageSoldPrice === undefined)? null : this.AverageSoldPrice.toJSON(),
 		Title: (this.Title === undefined)? null : this.Title,
-		ProductState: (this.ProductState === undefined)? null : this.ProductState.toJSON()
+		ProductState: (this.ProductState === undefined)? null : this.ProductState
 	};
 	if(!with_null) {
 		for(var k in json) {

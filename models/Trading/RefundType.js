@@ -1,6 +1,5 @@
 var AmountType = require('./AmountType'),
 	RefundTransactionArrayType = require('./RefundTransactionArrayType'),
-	RefundStatusCodeType = require('./RefundStatusCodeType'),
 	RefundFailureReasonType = require('./RefundFailureReasonType'),
 	RefundFundingSourceArrayType = require('./RefundFundingSourceArrayType');
 
@@ -8,9 +7,7 @@ function RefundType(RefundFromSeller, TotalRefundToBuyer, RefundTime, RefundID, 
 
 	/**
 	  Documentation
-	   
-                Contains information about a single Half.com refund.
-            
+	   Contains information about a single Half.com refund.
 	 */
 
 	/**
@@ -20,7 +17,6 @@ function RefundType(RefundFromSeller, TotalRefundToBuyer, RefundTime, RefundID, 
 	var _TotalRefundToBuyer;
 	var _RefundTransactionArray;
 	var _RefundAmount;
-	var _RefundStatus;
 	var _RefundFailureReason;
 	var _RefundFundingSourceArray;
 	Object.defineProperty(this, 'RefundFromSeller', {
@@ -79,20 +75,6 @@ function RefundType(RefundFromSeller, TotalRefundToBuyer, RefundTime, RefundID, 
 			}
 		}
 	});
-	Object.defineProperty(this, 'RefundStatus', {
-		 get: function(){
-			 return _RefundStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof RefundStatusCodeType){ 
-					_RefundStatus = value; 
-				}else{
-					console.log('RefundStatus expects type RefundStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'RefundFailureReason', {
 		 get: function(){
 			 return _RefundFailureReason;
@@ -144,7 +126,7 @@ RefundType.prototype.toJSON = function(with_null) {
 		RefundID: (this.RefundID === undefined)? null : this.RefundID,
 		RefundTransactionArray: (this.RefundTransactionArray === undefined)? null : this.RefundTransactionArray.toJSON(),
 		RefundAmount: (this.RefundAmount === undefined)? null : this.RefundAmount.toJSON(),
-		RefundStatus: (this.RefundStatus === undefined)? null : this.RefundStatus.toJSON(),
+		RefundStatus: (this.RefundStatus === undefined)? null : this.RefundStatus,
 		RefundFailureReason: (this.RefundFailureReason === undefined)? null : this.RefundFailureReason.toJSON(),
 		RefundFundingSourceArray: (this.RefundFundingSourceArray === undefined)? null : this.RefundFundingSourceArray.toJSON(),
 		ExternalReferenceID: (this.ExternalReferenceID === undefined)? null : this.ExternalReferenceID,

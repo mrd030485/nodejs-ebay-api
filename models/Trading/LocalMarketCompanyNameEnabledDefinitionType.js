@@ -2,9 +2,7 @@ function LocalMarketCompanyNameEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of the company name to contact the seller for Classified Ad format listings. Added for Local Market users.
-            
+	   Indicates whether the category supports the use of the company name to contact the seller for Classified Ad format listings. Added for Local Market users.
 	 */
 
 	/**

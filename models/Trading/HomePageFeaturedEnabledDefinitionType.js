@@ -2,9 +2,7 @@ function HomePageFeaturedEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines whether Home Page Featured is available on the site.
-            
+	   Defines whether Home Page Featured is available on the site.
 	 */
 
 	/**

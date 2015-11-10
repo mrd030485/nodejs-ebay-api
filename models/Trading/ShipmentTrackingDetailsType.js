@@ -4,9 +4,7 @@ function ShipmentTrackingDetailsType(ShippingCarrierUsed, ShipmentTrackingNumber
 
 	/**
 	  Documentation
-	   
-                This type details the shipping carrier and shipment tracking number associated with a package shipment. It also contains information about the line items shipped through the Global Shipping program.
-            
+	   This type details the shipping carrier and shipment tracking number associated with a package shipment. It also contains information about the line items shipped through the Global Shipping program.
 	 */
 
 	/**

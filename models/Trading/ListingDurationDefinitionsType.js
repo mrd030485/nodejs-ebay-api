@@ -2,9 +2,7 @@ function ListingDurationDefinitionsType(ListingDuration) {
 
 	/**
 	  Documentation
-	   
-                A container node for sets of durations, each set describing the durations allowed for one listing type.
-            
+	   A container node for sets of durations, each set describing the durations allowed for one listing type.
 	 */
 
 	/**

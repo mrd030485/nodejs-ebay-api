@@ -2,9 +2,7 @@ function BuyingGuideDetailsType(BuyingGuide, BuyingGuideHub) {
 
 	/**
 	  Documentation
-	   
-                This type is not used by any Trading API calls.
-            
+	   This type is not used by any Trading API calls.
 	 */
 
 	/**

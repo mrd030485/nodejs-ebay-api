@@ -2,9 +2,7 @@ function ProductSuggestionsType(ProductSuggestion) {
 
 	/**
 	  Documentation
-	   
-                Provides a list of products recommended by eBay, which match the item information provided by the seller.
-            
+	   Provides a list of products recommended by eBay, which match the item information provided by the seller.
 	 */
 
 	/**

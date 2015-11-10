@@ -2,9 +2,7 @@ function VerifiedUserRequirementsType(VerifiedUser, MinimumFeedbackScore) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>VerifiedUserRequirements</b> container, which is used by the seller to block prospective buyers who do not pass a verified user check.
-            
+	   Type defining the <b>VerifiedUserRequirements</b> container, which is used by the seller to block prospective buyers who do not pass a verified user check.
 	 */
 
 	/**

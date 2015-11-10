@@ -2,10 +2,7 @@ function PromotionRuleArrayType(PromotionRule) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Cross Promotions are no longer supported in the APIs.
-                
-            
+	   This type is deprecated as Cross Promotions are no longer supported in the APIs. 
 	 */
 
 	/**

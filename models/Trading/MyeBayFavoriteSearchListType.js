@@ -2,9 +2,7 @@ function MyeBayFavoriteSearchListType(TotalAvailable, FavoriteSearch) {
 
 	/**
 	  Documentation
-	   
-                A list of favorite searches a user has saved on the My eBay page.
-            
+	   A list of favorite searches a user has saved on the My eBay page.
 	 */
 
 	/**

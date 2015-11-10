@@ -2,9 +2,7 @@ function LocalMarketStreetCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which address option the category supports for Classified Ad format listings. Added for Local Market users.
-            
+	   Indicates which address option the category supports for Classified Ad format listings. Added for Local Market users.
 	 */
 
 	/**

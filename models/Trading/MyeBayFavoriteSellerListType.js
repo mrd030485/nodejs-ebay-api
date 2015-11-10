@@ -2,9 +2,7 @@ function MyeBayFavoriteSellerListType(TotalAvailable, FavoriteSeller) {
 
 	/**
 	  Documentation
-	   
-                A list of favorite sellers the user has saved on the My eBay page.
-            
+	   A list of favorite sellers the user has saved on the My eBay page.
 	 */
 
 	/**

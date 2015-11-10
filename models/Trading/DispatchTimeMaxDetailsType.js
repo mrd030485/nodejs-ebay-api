@@ -2,9 +2,7 @@ function DispatchTimeMaxDetailsType(DispatchTimeMax, Description, DetailVersion,
 
 	/**
 	  Documentation
-	   
-                Details about the maximum number of business days required to ship an item to domestic buyers after receiving a cleared payment.
-            
+	   Details about the maximum number of business days required to ship an item to domestic buyers after receiving a cleared payment.
 	 */
 
 	/**

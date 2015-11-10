@@ -2,9 +2,7 @@ function SKUArrayType(SKU) {
 
 	/**
 	  Documentation
-	   
-                A list of stock-keeping unit (SKU) identifiers that a seller uses in listings.
-            
+	   A list of stock-keeping unit (SKU) identifiers that a seller uses in listings.
 	 */
 
 	/**

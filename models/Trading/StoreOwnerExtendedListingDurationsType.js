@@ -2,9 +2,8 @@ function StoreOwnerExtendedListingDurationsType(Duration) {
 
 	/**
 	  Documentation
-	   
-                Defines the extended listing durations available to store owners. If the field is present, the corresponding feature applies to the category. The field is returned as an empty element (e.g., a boolean value is not returned). Applies to Fixed Price Listings.
-            
+	   Defines the extended listing durations available to store owners. If the field is present, the corresponding feature applies to the category. The field is returned as an empty element (e.g., a boolean value is not returned). Applies to
+                    Fixed Price Listings.
 	 */
 
 	/**

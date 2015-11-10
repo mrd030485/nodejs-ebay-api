@@ -2,9 +2,7 @@ function LocalMarketAutoAcceptEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether automatic accept of best offers is allowed for this category. Returned only if this category overrides the site default. Added for Local market users.
-            
+	   Indicates whether automatic accept of best offers is allowed for this category. Returned only if this category overrides the site default. Added for Local market users.
 	 */
 
 	/**

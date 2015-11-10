@@ -2,9 +2,7 @@ function AttributeArrayType(Attribute) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>AttributeArray</b> container, which is used by the seller to specify one or more attribute values for a Half.com item. This type is only used by Half.com listings.
-            
+	   This type defines the <b>AttributeArray</b> container, which is used by the seller to specify one or more attribute values for a Half.com item. This type is only used by Half.com listings.
 	 */
 
 	/**

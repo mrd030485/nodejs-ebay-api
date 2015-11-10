@@ -1,35 +1,16 @@
-var ListingFlowCodeType = require('./ListingFlowCodeType'),
-	ItemType = require('./ItemType');
+var ItemType = require('./ItemType');
 
 function GetRecommendationsRequestContainerType(ListingFlow, Item, RecommendationEngine, Query, CorrelationID, DeletedField, ExcludeRelationships, IncludeConfidence) {
 
 	/**
 	  Documentation
-	   
-                Specifies the data for a single item and configures the recommendation engines to use when processing the item with GetItemRecommendations.
-            
+	   Specifies the data for a single item and configures the recommendation engines to use when processing the item with GetItemRecommendations.
 	 */
 
 	/**
 	 * Arrays
-	 *	RecommendationEngine: RecommendationEngineCodeType
 	 */
-	var _ListingFlow;
 	var _Item;
-	Object.defineProperty(this, 'ListingFlow', {
-		 get: function(){
-			 return _ListingFlow;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingFlowCodeType){ 
-					_ListingFlow = value; 
-				}else{
-					console.log('ListingFlow expects type ListingFlowCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Item', {
 		 get: function(){
 			 return _Item;
@@ -55,7 +36,7 @@ function GetRecommendationsRequestContainerType(ListingFlow, Item, Recommendatio
 }
 GetRecommendationsRequestContainerType.prototype.toJSON = function(with_null) {
 	var json = { 
-		ListingFlow: (this.ListingFlow === undefined)? null : this.ListingFlow.toJSON(),
+		ListingFlow: (this.ListingFlow === undefined)? null : this.ListingFlow,
 		Item: (this.Item === undefined)? null : this.Item.toJSON(),
 		RecommendationEngine: (this.RecommendationEngine === undefined)? null : this.RecommendationEngine,
 		Query: (this.Query === undefined)? null : this.Query,

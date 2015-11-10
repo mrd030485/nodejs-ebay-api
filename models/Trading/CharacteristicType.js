@@ -1,14 +1,10 @@
-var LabelType = require('./LabelType'),
-	SortOrderCodeType = require('./SortOrderCodeType');
+var LabelType = require('./LabelType');
 
 function CharacteristicType(AttributeID, DateFormat, DisplaySequence, DisplayUOM, Label, SortOrder, ValueList) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
-                
-            
+	   This type is deprecated as the <b>GetProduct*</b> calls are no longer available. 
 	 */
 
 	/**
@@ -16,7 +12,6 @@ function CharacteristicType(AttributeID, DateFormat, DisplaySequence, DisplayUOM
 	 *	ValueList: ValType
 	 */
 	var _Label;
-	var _SortOrder;
 	Object.defineProperty(this, 'Label', {
 		 get: function(){
 			 return _Label;
@@ -27,20 +22,6 @@ function CharacteristicType(AttributeID, DateFormat, DisplaySequence, DisplayUOM
 					_Label = value; 
 				}else{
 					console.log('Label expects type LabelType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SortOrder', {
-		 get: function(){
-			 return _SortOrder;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SortOrderCodeType){ 
-					_SortOrder = value; 
-				}else{
-					console.log('SortOrder expects type SortOrderCodeType');
 				}
 			}
 		}
@@ -60,7 +41,7 @@ CharacteristicType.prototype.toJSON = function(with_null) {
 		DisplaySequence: (this.DisplaySequence === undefined)? null : this.DisplaySequence,
 		DisplayUOM: (this.DisplayUOM === undefined)? null : this.DisplayUOM,
 		Label: (this.Label === undefined)? null : this.Label.toJSON(),
-		SortOrder: (this.SortOrder === undefined)? null : this.SortOrder.toJSON(),
+		SortOrder: (this.SortOrder === undefined)? null : this.SortOrder,
 		ValueList: (this.ValueList === undefined)? null : this.ValueList
 	};
 	if(!with_null) {

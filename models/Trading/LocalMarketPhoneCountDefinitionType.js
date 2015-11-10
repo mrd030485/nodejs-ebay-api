@@ -2,9 +2,7 @@ function LocalMarketPhoneCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which phone option the category supports when contacting the seller about listings in Classified Ad format. Added for Local Market users.
-            
+	   Indicates which phone option the category supports when contacting the seller about listings in Classified Ad format. Added for Local Market users.
 	 */
 
 	/**

@@ -1,21 +1,16 @@
-var AmountType = require('./AmountType'),
-	PromotionItemPriceTypeCodeType = require('./PromotionItemPriceTypeCodeType');
+var AmountType = require('./AmountType');
 
 function PromotionDetailsType(PromotionPrice, PromotionPriceType, BidCount, ConvertedPromotionPrice) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Cross Promotions are no longer supported in the APIs.
-                
-            
+	   This type is deprecated as Cross Promotions are no longer supported in the APIs. 
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _PromotionPrice;
-	var _PromotionPriceType;
 	var _ConvertedPromotionPrice;
 	Object.defineProperty(this, 'PromotionPrice', {
 		 get: function(){
@@ -27,20 +22,6 @@ function PromotionDetailsType(PromotionPrice, PromotionPriceType, BidCount, Conv
 					_PromotionPrice = value; 
 				}else{
 					console.log('PromotionPrice expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PromotionPriceType', {
-		 get: function(){
-			 return _PromotionPriceType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionItemPriceTypeCodeType){ 
-					_PromotionPriceType = value; 
-				}else{
-					console.log('PromotionPriceType expects type PromotionItemPriceTypeCodeType');
 				}
 			}
 		}
@@ -67,7 +48,7 @@ function PromotionDetailsType(PromotionPrice, PromotionPriceType, BidCount, Conv
 PromotionDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
 		PromotionPrice: (this.PromotionPrice === undefined)? null : this.PromotionPrice.toJSON(),
-		PromotionPriceType: (this.PromotionPriceType === undefined)? null : this.PromotionPriceType.toJSON(),
+		PromotionPriceType: (this.PromotionPriceType === undefined)? null : this.PromotionPriceType,
 		BidCount: (this.BidCount === undefined)? null : this.BidCount,
 		ConvertedPromotionPrice: (this.ConvertedPromotionPrice === undefined)? null : this.ConvertedPromotionPrice.toJSON()
 	};

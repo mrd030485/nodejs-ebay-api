@@ -1,35 +1,16 @@
-var PictureManagerSubscriptionLevelCodeType = require('./PictureManagerSubscriptionLevelCodeType'),
-	AmountType = require('./AmountType');
+var AmountType = require('./AmountType');
 
 function PictureManagerSubscriptionType(SubscriptionLevel, Fee, StorageSize) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Pictures Manager was retired.
-                
-            
+	   This type is deprecated as Pictures Manager was retired. 
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _SubscriptionLevel;
 	var _Fee;
-	Object.defineProperty(this, 'SubscriptionLevel', {
-		 get: function(){
-			 return _SubscriptionLevel;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PictureManagerSubscriptionLevelCodeType){ 
-					_SubscriptionLevel = value; 
-				}else{
-					console.log('SubscriptionLevel expects type PictureManagerSubscriptionLevelCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Fee', {
 		 get: function(){
 			 return _Fee;
@@ -50,7 +31,7 @@ function PictureManagerSubscriptionType(SubscriptionLevel, Fee, StorageSize) {
 }
 PictureManagerSubscriptionType.prototype.toJSON = function(with_null) {
 	var json = { 
-		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel.toJSON(),
+		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel,
 		Fee: (this.Fee === undefined)? null : this.Fee.toJSON(),
 		StorageSize: (this.StorageSize === undefined)? null : this.StorageSize
 	};

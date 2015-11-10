@@ -2,9 +2,7 @@ function RecommendationType(FieldGroup, FieldName, RecommendationCode, Recommend
 
 	/**
 	  Documentation
-	   
-                This type is reserved for future or internal use.
-            
+	   This type is reserved for future or internal use.
 	 */
 
 	/**

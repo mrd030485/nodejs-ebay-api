@@ -2,9 +2,7 @@ function eBayMotorsProContactByAddressEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of an address when contacting the seller about Classified Ad format listings. Added for EbayMotors Pro users.
-            
+	   Indicates whether the category supports the use of an address when contacting the seller about Classified Ad format listings. Added for EbayMotors Pro users.
 	 */
 
 	/**

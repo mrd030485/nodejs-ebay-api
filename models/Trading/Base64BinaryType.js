@@ -2,9 +2,7 @@ function Base64BinaryType(contentType) {
 
 	/**
 	  Documentation
-	   
-                This type is a binary-to-text encoding scheme that represents binary data in an ASCII string format by translating it into a radix-64 representation. The term "Base64" originates from a specific MIME content transfer encoding.
-            
+	   This type is a binary-to-text encoding scheme that represents binary data in an ASCII string format by translating it into a radix-64 representation. The term "Base64" originates from a specific MIME content transfer encoding.
 	 */
 
 	/**

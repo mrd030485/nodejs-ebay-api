@@ -2,9 +2,7 @@ function Group1MaxFlatShippingCostDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                About shipping service group 1.
-            
+	   About shipping service group 1.
 	 */
 
 	/**

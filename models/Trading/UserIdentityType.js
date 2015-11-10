@@ -2,9 +2,7 @@ function UserIdentityType(type) {
 
 	/**
 	  Documentation
-	   
-                Based on the context of the field, this type defines the user is sending or receiving a payment.
-            
+	   Based on the context of the field, this type defines the user is sending or receiving a payment.
 	 */
 
 	/**

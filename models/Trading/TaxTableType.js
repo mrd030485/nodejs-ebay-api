@@ -2,9 +2,7 @@ function TaxTableType(TaxJurisdiction) {
 
 	/**
 	  Documentation
-	   
-                Sales tax details for zero or more jurisdictions (states, provinces, etc).
-            
+	   Sales tax details for zero or more jurisdictions (states, provinces, etc).
 	 */
 
 	/**

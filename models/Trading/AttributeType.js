@@ -2,9 +2,7 @@ function AttributeType(Value) {
 
 	/**
 	  Documentation
-	   
-                A salient aspect or feature of a Half.com item that is specified by the seller so that a buyers can find the item more easily.
-            
+	   A salient aspect or feature of a Half.com item that is specified by the seller so that a buyers can find the item more easily.
 	 */
 
 	/**

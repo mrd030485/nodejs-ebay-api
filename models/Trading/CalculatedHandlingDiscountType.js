@@ -1,37 +1,19 @@
-var HandlingNameCodeType = require('./HandlingNameCodeType'),
-	AmountType = require('./AmountType');
+var AmountType = require('./AmountType');
 
 function CalculatedHandlingDiscountType(DiscountName, OrderHandlingAmount, EachAdditionalAmount, EachAdditionalOffAmount, EachAdditionalPercentOff) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>CalculatedHandlingDiscount</b> container that is used in the <b>SetShippingDiscountProfiles</b> call to specify the rules used to determine package handling costs for an order in which calculated shipping is
-                used.
-            
+	   Type defining the <b>CalculatedHandlingDiscount</b> container that is used in the <b>SetShippingDiscountProfiles</b> call to specify the rules used to determine package handling costs for an order in which calculated
+                    shipping is used.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _DiscountName;
 	var _OrderHandlingAmount;
 	var _EachAdditionalAmount;
 	var _EachAdditionalOffAmount;
-	Object.defineProperty(this, 'DiscountName', {
-		 get: function(){
-			 return _DiscountName;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof HandlingNameCodeType){ 
-					_DiscountName = value; 
-				}else{
-					console.log('DiscountName expects type HandlingNameCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'OrderHandlingAmount', {
 		 get: function(){
 			 return _OrderHandlingAmount;
@@ -82,7 +64,7 @@ function CalculatedHandlingDiscountType(DiscountName, OrderHandlingAmount, EachA
 }
 CalculatedHandlingDiscountType.prototype.toJSON = function(with_null) {
 	var json = { 
-		DiscountName: (this.DiscountName === undefined)? null : this.DiscountName.toJSON(),
+		DiscountName: (this.DiscountName === undefined)? null : this.DiscountName,
 		OrderHandlingAmount: (this.OrderHandlingAmount === undefined)? null : this.OrderHandlingAmount.toJSON(),
 		EachAdditionalAmount: (this.EachAdditionalAmount === undefined)? null : this.EachAdditionalAmount.toJSON(),
 		EachAdditionalOffAmount: (this.EachAdditionalOffAmount === undefined)? null : this.EachAdditionalOffAmount.toJSON(),

@@ -5,11 +5,9 @@ function DigitalDeliverySelectedType(DeliveryMethod, DeliveryStatus, DeliveryDet
 
 	/**
 	  Documentation
-	   
-                <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DigitalDeliverySelected</b> container will not be returned. </span> <br>
-                This type is used by the <b>DigitalDeliverySelected</b> container that is returned by <b>GetOrders</b> and other order management calls. The <b>DigitalDeliverySelected</b> container is only applicable
-                and returned if the buyer purchased a digital gift card for themselves, or is giving the digital gift card to someone else as a gift.
-            
+	   <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DigitalDeliverySelected</b> container will not be returned. </span>
+                    <br> This type is used by the <b>DigitalDeliverySelected</b> container that is returned by <b>GetOrders</b> and other order management calls. The <b>DigitalDeliverySelected</b> container is
+                    only applicable and returned if the buyer purchased a digital gift card for themselves, or is giving the digital gift card to someone else as a gift.
 	 */
 
 	/**

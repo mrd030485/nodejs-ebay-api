@@ -1,32 +1,13 @@
-var ShippingCarrierCodeType = require('./ShippingCarrierCodeType');
-
 function ShippingCarrierDetailsType(ShippingCarrierID, Description, ShippingCarrier, DetailVersion, UpdateTime) {
 
 	/**
 	  Documentation
-	   
-                Details about type of Carrier used to ship an item.
-            
+	   Details about type of Carrier used to ship an item.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _ShippingCarrier;
-	Object.defineProperty(this, 'ShippingCarrier', {
-		 get: function(){
-			 return _ShippingCarrier;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingCarrierCodeType){ 
-					_ShippingCarrier = value; 
-				}else{
-					console.log('ShippingCarrier expects type ShippingCarrierCodeType');
-				}
-			}
-		}
-	});
 	this.ShippingCarrierID = ShippingCarrierID;
 	this.Description = Description;
 	this.ShippingCarrier = ShippingCarrier;
@@ -37,7 +18,7 @@ ShippingCarrierDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
 		ShippingCarrierID: (this.ShippingCarrierID === undefined)? null : this.ShippingCarrierID,
 		Description: (this.Description === undefined)? null : this.Description,
-		ShippingCarrier: (this.ShippingCarrier === undefined)? null : this.ShippingCarrier.toJSON(),
+		ShippingCarrier: (this.ShippingCarrier === undefined)? null : this.ShippingCarrier,
 		DetailVersion: (this.DetailVersion === undefined)? null : this.DetailVersion,
 		UpdateTime: (this.UpdateTime === undefined)? null : this.UpdateTime
 	};

@@ -2,9 +2,7 @@ function OrderArrayType(Order) {
 
 	/**
 	  Documentation
-	   
-                An array of Orders.
-            
+	   An array of Orders.
 	 */
 
 	/**

@@ -2,10 +2,8 @@ function ItemCompatibilityListType(Compatibility, ReplaceAll) {
 
 	/**
 	  Documentation
-	   
-                A list of compatible applications specified as name and value pairs. Describes an assembly with which a part is compatible (i.e., compatibility by application). For example, to specify a part's compatibility with a vehicle, the name would map to standard
-                vehicle characteristics (e.g., Year, Make, Model, Trim, and Engine). The values would desribe the specific vehicle, such as a 2006 Honda Accord.
-            
+	   A list of compatible applications specified as name and value pairs. Describes an assembly with which a part is compatible (i.e., compatibility by application). For example, to specify a part's compatibility with a vehicle, the name would
+                    map to standard vehicle characteristics (e.g., Year, Make, Model, Trim, and Engine). The values would desribe the specific vehicle, such as a 2006 Honda Accord.
 	 */
 
 	/**

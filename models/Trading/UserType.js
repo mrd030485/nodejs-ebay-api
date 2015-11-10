@@ -1,63 +1,30 @@
-var FeedbackRatingStarCodeType = require('./FeedbackRatingStarCodeType'),
-	AddressType = require('./AddressType'),
-	SiteCodeType = require('./SiteCodeType'),
-	UserStatusCodeType = require('./UserStatusCodeType'),
+var AddressType = require('./AddressType'),
 	UserIDType = require('./UserIDType'),
-	VATStatusCodeType = require('./VATStatusCodeType'),
 	BuyerType = require('./BuyerType'),
 	SellerType = require('./SellerType'),
 	BusinessRoleType = require('./BusinessRoleType'),
 	CharityAffiliationsType = require('./CharityAffiliationsType'),
-	PayPalAccountLevelCodeType = require('./PayPalAccountLevelCodeType'),
-	PayPalAccountTypeCodeType = require('./PayPalAccountTypeCodeType'),
-	PayPalAccountStatusCodeType = require('./PayPalAccountStatusCodeType'),
-	SellerPaymentMethodCodeType = require('./SellerPaymentMethodCodeType'),
 	BiddingSummaryType = require('./BiddingSummaryType');
 
 function UserType(AboutMePage, EIASToken, Email, FeedbackScore, UniqueNegativeFeedbackCount, UniquePositiveFeedbackCount, PositiveFeedbackPercent, FeedbackPrivate, FeedbackRatingStar, IDVerified, eBayGoodStanding, NewUser, RegistrationAddress, RegistrationDate, Site, Status, UserID, UserIDChanged, UserIDLastChanged, VATStatus, BuyerInfo, SellerInfo, BusinessRole, CharityAffiliations, PayPalAccountLevel, PayPalAccountType, PayPalAccountStatus, UserSubscription, SiteVerified, SkypeID, eBayWikiReadOnly, TUVLevel, VATID, MotorsDealer, SellerPaymentMethod, BiddingSummary, UserAnonymized, UniqueNeutralFeedbackCount, EnterpriseSeller, BillingEmail, QualifiesForSelling, StaticAlias, ShippingAddress, UserFirstName, UserLastName) {
 
 	/**
 	  Documentation
-	   
-                Type to contain the data for one eBay user. Depending on the context, the user might be the seller or the buyer on either side of an order, or the bidder or winning bidder in a listing. An object of this type is returned by a number of calls, including
-                the GetUser call.
-            
+	   Type to contain the data for one eBay user. Depending on the context, the user might be the seller or the buyer on either side of an order, or the bidder or winning bidder in a listing. An object of this type is returned by a number of
+                    calls, including the GetUser call.
 	 */
 
 	/**
 	 * Arrays
-	 *	UserSubscription: EBaySubscriptionTypeCodeType
 	 */
-	var _FeedbackRatingStar;
 	var _RegistrationAddress;
-	var _Site;
-	var _Status;
 	var _UserID;
-	var _VATStatus;
 	var _BuyerInfo;
 	var _SellerInfo;
 	var _BusinessRole;
 	var _CharityAffiliations;
-	var _PayPalAccountLevel;
-	var _PayPalAccountType;
-	var _PayPalAccountStatus;
-	var _SellerPaymentMethod;
 	var _BiddingSummary;
 	var _ShippingAddress;
-	Object.defineProperty(this, 'FeedbackRatingStar', {
-		 get: function(){
-			 return _FeedbackRatingStar;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof FeedbackRatingStarCodeType){ 
-					_FeedbackRatingStar = value; 
-				}else{
-					console.log('FeedbackRatingStar expects type FeedbackRatingStarCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'RegistrationAddress', {
 		 get: function(){
 			 return _RegistrationAddress;
@@ -72,34 +39,6 @@ function UserType(AboutMePage, EIASToken, Email, FeedbackScore, UniqueNegativeFe
 			}
 		}
 	});
-	Object.defineProperty(this, 'Site', {
-		 get: function(){
-			 return _Site;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SiteCodeType){ 
-					_Site = value; 
-				}else{
-					console.log('Site expects type SiteCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof UserStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type UserStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'UserID', {
 		 get: function(){
 			 return _UserID;
@@ -110,20 +49,6 @@ function UserType(AboutMePage, EIASToken, Email, FeedbackScore, UniqueNegativeFe
 					_UserID = value; 
 				}else{
 					console.log('UserID expects type UserIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'VATStatus', {
-		 get: function(){
-			 return _VATStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof VATStatusCodeType){ 
-					_VATStatus = value; 
-				}else{
-					console.log('VATStatus expects type VATStatusCodeType');
 				}
 			}
 		}
@@ -180,62 +105,6 @@ function UserType(AboutMePage, EIASToken, Email, FeedbackScore, UniqueNegativeFe
 					_CharityAffiliations = value; 
 				}else{
 					console.log('CharityAffiliations expects type CharityAffiliationsType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PayPalAccountLevel', {
-		 get: function(){
-			 return _PayPalAccountLevel;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PayPalAccountLevelCodeType){ 
-					_PayPalAccountLevel = value; 
-				}else{
-					console.log('PayPalAccountLevel expects type PayPalAccountLevelCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PayPalAccountType', {
-		 get: function(){
-			 return _PayPalAccountType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PayPalAccountTypeCodeType){ 
-					_PayPalAccountType = value; 
-				}else{
-					console.log('PayPalAccountType expects type PayPalAccountTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PayPalAccountStatus', {
-		 get: function(){
-			 return _PayPalAccountStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PayPalAccountStatusCodeType){ 
-					_PayPalAccountStatus = value; 
-				}else{
-					console.log('PayPalAccountStatus expects type PayPalAccountStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SellerPaymentMethod', {
-		 get: function(){
-			 return _SellerPaymentMethod;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellerPaymentMethodCodeType){ 
-					_SellerPaymentMethod = value; 
-				}else{
-					console.log('SellerPaymentMethod expects type SellerPaymentMethodCodeType');
 				}
 			}
 		}
@@ -324,25 +193,25 @@ UserType.prototype.toJSON = function(with_null) {
 		UniquePositiveFeedbackCount: (this.UniquePositiveFeedbackCount === undefined)? null : this.UniquePositiveFeedbackCount,
 		PositiveFeedbackPercent: (this.PositiveFeedbackPercent === undefined)? null : this.PositiveFeedbackPercent,
 		FeedbackPrivate: (this.FeedbackPrivate === undefined)? null : this.FeedbackPrivate,
-		FeedbackRatingStar: (this.FeedbackRatingStar === undefined)? null : this.FeedbackRatingStar.toJSON(),
+		FeedbackRatingStar: (this.FeedbackRatingStar === undefined)? null : this.FeedbackRatingStar,
 		IDVerified: (this.IDVerified === undefined)? null : this.IDVerified,
 		eBayGoodStanding: (this.eBayGoodStanding === undefined)? null : this.eBayGoodStanding,
 		NewUser: (this.NewUser === undefined)? null : this.NewUser,
 		RegistrationAddress: (this.RegistrationAddress === undefined)? null : this.RegistrationAddress.toJSON(),
 		RegistrationDate: (this.RegistrationDate === undefined)? null : this.RegistrationDate,
-		Site: (this.Site === undefined)? null : this.Site.toJSON(),
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Site: (this.Site === undefined)? null : this.Site,
+		Status: (this.Status === undefined)? null : this.Status,
 		UserID: (this.UserID === undefined)? null : this.UserID.toJSON(),
 		UserIDChanged: (this.UserIDChanged === undefined)? null : this.UserIDChanged,
 		UserIDLastChanged: (this.UserIDLastChanged === undefined)? null : this.UserIDLastChanged,
-		VATStatus: (this.VATStatus === undefined)? null : this.VATStatus.toJSON(),
+		VATStatus: (this.VATStatus === undefined)? null : this.VATStatus,
 		BuyerInfo: (this.BuyerInfo === undefined)? null : this.BuyerInfo.toJSON(),
 		SellerInfo: (this.SellerInfo === undefined)? null : this.SellerInfo.toJSON(),
 		BusinessRole: (this.BusinessRole === undefined)? null : this.BusinessRole.toJSON(),
 		CharityAffiliations: (this.CharityAffiliations === undefined)? null : this.CharityAffiliations.toJSON(),
-		PayPalAccountLevel: (this.PayPalAccountLevel === undefined)? null : this.PayPalAccountLevel.toJSON(),
-		PayPalAccountType: (this.PayPalAccountType === undefined)? null : this.PayPalAccountType.toJSON(),
-		PayPalAccountStatus: (this.PayPalAccountStatus === undefined)? null : this.PayPalAccountStatus.toJSON(),
+		PayPalAccountLevel: (this.PayPalAccountLevel === undefined)? null : this.PayPalAccountLevel,
+		PayPalAccountType: (this.PayPalAccountType === undefined)? null : this.PayPalAccountType,
+		PayPalAccountStatus: (this.PayPalAccountStatus === undefined)? null : this.PayPalAccountStatus,
 		UserSubscription: (this.UserSubscription === undefined)? null : this.UserSubscription,
 		SiteVerified: (this.SiteVerified === undefined)? null : this.SiteVerified,
 		SkypeID: (this.SkypeID === undefined)? null : this.SkypeID,
@@ -350,7 +219,7 @@ UserType.prototype.toJSON = function(with_null) {
 		TUVLevel: (this.TUVLevel === undefined)? null : this.TUVLevel,
 		VATID: (this.VATID === undefined)? null : this.VATID,
 		MotorsDealer: (this.MotorsDealer === undefined)? null : this.MotorsDealer,
-		SellerPaymentMethod: (this.SellerPaymentMethod === undefined)? null : this.SellerPaymentMethod.toJSON(),
+		SellerPaymentMethod: (this.SellerPaymentMethod === undefined)? null : this.SellerPaymentMethod,
 		BiddingSummary: (this.BiddingSummary === undefined)? null : this.BiddingSummary.toJSON(),
 		UserAnonymized: (this.UserAnonymized === undefined)? null : this.UserAnonymized,
 		UniqueNeutralFeedbackCount: (this.UniqueNeutralFeedbackCount === undefined)? null : this.UniqueNeutralFeedbackCount,

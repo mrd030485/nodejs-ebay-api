@@ -2,9 +2,7 @@ function AverageRatingDetailArrayType(AverageRatingDetails) {
 
 	/**
 	  Documentation
-	   
-                This type has been deprecated and its functionality replaced by <b>SellerRatingSummaryArrayType</b>.
-            
+	   This type has been deprecated and its functionality replaced by <b>SellerRatingSummaryArrayType</b>.
 	 */
 
 	/**

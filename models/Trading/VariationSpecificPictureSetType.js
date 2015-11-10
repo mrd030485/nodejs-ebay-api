@@ -4,10 +4,8 @@ function VariationSpecificPictureSetType(VariationSpecificValue, PictureURL, Gal
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>VariationSpecificPictureSet</b> container, which is used to specify the URL(s) where the picture(s) of the variation specific will be hosted. If the <b>Variations.Pictures</b> container is used, at least one
-                <b>VariationSpecificPictureSet</b> container is required.
-            
+	   Type defining the <b>VariationSpecificPictureSet</b> container, which is used to specify the URL(s) where the picture(s) of the variation specific will be hosted. If the <b>Variations.Pictures</b> container is used,
+                    at least one <b>VariationSpecificPictureSet</b> container is required.
 	 */
 
 	/**

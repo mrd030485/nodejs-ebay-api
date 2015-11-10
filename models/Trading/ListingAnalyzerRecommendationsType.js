@@ -4,9 +4,7 @@ function ListingAnalyzerRecommendationsType(ListingTipArray) {
 
 	/**
 	  Documentation
-	   
-                Contains results returned from the Listing Analyzer recommendation engine.
-            
+	   Contains results returned from the Listing Analyzer recommendation engine.
 	 */
 
 	/**

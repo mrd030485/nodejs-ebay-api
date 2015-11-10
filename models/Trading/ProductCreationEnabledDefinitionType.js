@@ -2,9 +2,7 @@ function ProductCreationEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines the product creation enable feature. If a field of this type is present, the corresponding feature applies to the site. The field is returned as an empty element (e.g., a boolean value is not returned).
-            
+	   Defines the product creation enable feature. If a field of this type is present, the corresponding feature applies to the site. The field is returned as an empty element (e.g., a boolean value is not returned).
 	 */
 
 	/**

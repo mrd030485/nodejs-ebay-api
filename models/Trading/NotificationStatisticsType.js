@@ -2,9 +2,7 @@ function NotificationStatisticsType(DeliveredCount, QueuedNewCount, QueuedPendin
 
 	/**
 	  Documentation
-	   
-                Summary information about notifications delivered, failed, errors, queued for a given application ID and time period.
-            
+	   Summary information about notifications delivered, failed, errors, queued for a given application ID and time period.
 	 */
 
 	/**

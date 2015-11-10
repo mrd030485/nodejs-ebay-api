@@ -2,10 +2,8 @@ function ShippingPackageInfoType(StoreID, ShippingTrackingEvent, ScheduledDelive
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>ShippingPackageInfoType</b> container, which is returned in order management calls. The <b>ShippingPackageInfoType</b> container provides information on delivery times and tracking information for a shipping
-                package.
-            
+	   Type defining the <b>ShippingPackageInfoType</b> container, which is returned in order management calls. The <b>ShippingPackageInfoType</b> container provides information on delivery times and tracking information
+                    for a shipping package.
 	 */
 
 	/**

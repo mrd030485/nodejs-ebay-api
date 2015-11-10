@@ -2,9 +2,7 @@ function OrderIDArrayType(OrderID) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>OrderIDArray</b> container, which consists of an array of order IDs. These order IDs specify the single and multiple line item orders to retrieve.
-            
+	   Type defining the <b>OrderIDArray</b> container, which consists of an array of order IDs. These order IDs specify the single and multiple line item orders to retrieve.
 	 */
 
 	/**

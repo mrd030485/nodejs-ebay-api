@@ -2,9 +2,7 @@ function DispatchCutoffTimePreferencesType(CutoffTime) {
 
 	/**
 	  Documentation
-	   
-                Contains a seller's cut off time preferences for same day handling for item shipping.
-            
+	   Contains a seller's cut off time preferences for same day handling for item shipping.
 	 */
 
 	/**

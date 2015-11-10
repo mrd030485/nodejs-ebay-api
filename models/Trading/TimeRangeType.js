@@ -2,9 +2,7 @@ function TimeRangeType(TimeFrom, TimeTo) {
 
 	/**
 	  Documentation
-	   
-                Specifies the Date range.
-            
+	   Specifies the Date range.
 	 */
 
 	/**

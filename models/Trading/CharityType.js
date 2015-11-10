@@ -1,32 +1,13 @@
-var CharityStatusCodeType = require('./CharityStatusCodeType');
-
 function CharityType(CharityName, CharityNumber, DonationPercent, CharityID, Mission, LogoURL, Status, CharityListing) {
 
 	/**
 	  Documentation
-	   
-                Identifies a Giving Works listing and benefiting nonprofit charity organization.
-            
+	   Identifies a Giving Works listing and benefiting nonprofit charity organization.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _Status;
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CharityStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type CharityStatusCodeType');
-				}
-			}
-		}
-	});
 	this.CharityName = CharityName;
 	this.CharityNumber = CharityNumber;
 	this.DonationPercent = DonationPercent;
@@ -44,7 +25,7 @@ CharityType.prototype.toJSON = function(with_null) {
 		CharityID: (this.CharityID === undefined)? null : this.CharityID,
 		Mission: (this.Mission === undefined)? null : this.Mission,
 		LogoURL: (this.LogoURL === undefined)? null : this.LogoURL,
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		CharityListing: (this.CharityListing === undefined)? null : this.CharityListing
 	};
 	if(!with_null) {

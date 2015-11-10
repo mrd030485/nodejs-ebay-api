@@ -5,9 +5,7 @@ function PaginatedItemArrayType(ItemArray, PaginationResult) {
 
 	/**
 	  Documentation
-	   
-                Contains a paginated list of items.
-            
+	   Contains a paginated list of items.
 	 */
 
 	/**

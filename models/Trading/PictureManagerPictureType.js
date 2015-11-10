@@ -2,10 +2,7 @@ function PictureManagerPictureType(PictureURL, Name, Date, DisplayFormat) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Pictures Manager was retired.
-                
-            
+	   This type is deprecated as Pictures Manager was retired. 
 	 */
 
 	/**

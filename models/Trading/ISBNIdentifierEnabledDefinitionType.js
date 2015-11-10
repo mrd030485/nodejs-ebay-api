@@ -2,10 +2,7 @@ function ISBNIdentifierEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated and has been replaced by <b>ISBNEnabledDefinitionType</b>.
-                
-            
+	   This type is deprecated and has been replaced by <b>ISBNEnabledDefinitionType</b>. 
 	 */
 
 	/**

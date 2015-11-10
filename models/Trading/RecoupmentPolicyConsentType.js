@@ -2,14 +2,11 @@ function RecoupmentPolicyConsentType(Site) {
 
 	/**
 	  Documentation
-	   
-                Container for supported site information
-            
+	   Container for supported site information
 	 */
 
 	/**
 	 * Arrays
-	 *	Site: SiteCodeType
 	 */
 	this.Site = Site;
 }

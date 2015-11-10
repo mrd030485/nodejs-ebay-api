@@ -2,9 +2,7 @@ function HistogramEntryType(Count) {
 
 	/**
 	  Documentation
-	   
-                A generic histogram entry type.
-            
+	   A generic histogram entry type.
 	 */
 
 	/**

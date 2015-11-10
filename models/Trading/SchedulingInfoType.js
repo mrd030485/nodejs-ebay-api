@@ -2,9 +2,7 @@ function SchedulingInfoType(MaxScheduledMinutes, MinScheduledMinutes, MaxSchedul
 
 	/**
 	  Documentation
-	   
-                Contains information for scheduling limits for the user.
-            
+	   Contains information for scheduling limits for the user.
 	 */
 
 	/**

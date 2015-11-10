@@ -2,9 +2,7 @@ function OrderTransactionArrayType(OrderTransaction) {
 
 	/**
 	  Documentation
-	   
-                Contains a list of orders, transactions, or both, each of OrderTransactionType.
-            
+	   Contains a list of orders, transactions, or both, each of OrderTransactionType.
 	 */
 
 	/**

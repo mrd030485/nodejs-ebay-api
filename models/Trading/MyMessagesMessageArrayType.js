@@ -2,9 +2,7 @@ function MyMessagesMessageArrayType(Message) {
 
 	/**
 	  Documentation
-	   
-                Contains a list of message data.
-            
+	   Contains a list of message data.
 	 */
 
 	/**

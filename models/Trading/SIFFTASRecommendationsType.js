@@ -4,9 +4,7 @@ function SIFFTASRecommendationsType(AttributeSetArray) {
 
 	/**
 	  Documentation
-	   
-                Reserved for future use..
-            
+	   Reserved for future use..
 	 */
 
 	/**

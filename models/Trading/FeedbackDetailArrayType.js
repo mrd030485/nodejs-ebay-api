@@ -2,9 +2,7 @@ function FeedbackDetailArrayType(FeedbackDetail) {
 
 	/**
 	  Documentation
-	   
-                Contains multiple individual feedback detail entries.
-            
+	   Contains multiple individual feedback detail entries.
 	 */
 
 	/**

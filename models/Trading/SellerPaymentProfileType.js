@@ -2,9 +2,7 @@ function SellerPaymentProfileType(PaymentProfileID, PaymentProfileName) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SellerPaymentProfile</b> container, which is used in an Add/Revise/Relist Trading API call to reference a Business Policies payment profile.
-            
+	   Type defining the <b>SellerPaymentProfile</b> container, which is used in an Add/Revise/Relist Trading API call to reference a Business Policies payment profile.
 	 */
 
 	/**

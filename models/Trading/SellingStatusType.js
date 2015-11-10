@@ -1,6 +1,5 @@
 var AmountType = require('./AmountType'),
 	UserType = require('./UserType'),
-	ListingStatusCodeType = require('./ListingStatusCodeType'),
 	PromotionalSaleDetailsType = require('./PromotionalSaleDetailsType'),
 	SuggestedBidValueType = require('./SuggestedBidValueType');
 
@@ -8,9 +7,7 @@ function SellingStatusType(BidCount, BidIncrement, ConvertedCurrentPrice, Curren
 
 	/**
 	  Documentation
-	   
-                Contains various details about the current status of a listing. These values are computed by eBay and cannot be specified at listing time.
-            
+	   Contains various details about the current status of a listing. These values are computed by eBay and cannot be specified at listing time.
 	 */
 
 	/**
@@ -21,7 +18,6 @@ function SellingStatusType(BidCount, BidIncrement, ConvertedCurrentPrice, Curren
 	var _CurrentPrice;
 	var _HighBidder;
 	var _MinimumToBid;
-	var _ListingStatus;
 	var _FinalValueFee;
 	var _PromotionalSaleDetails;
 	var _SuggestedBidValues;
@@ -91,20 +87,6 @@ function SellingStatusType(BidCount, BidIncrement, ConvertedCurrentPrice, Curren
 					_MinimumToBid = value; 
 				}else{
 					console.log('MinimumToBid expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ListingStatus', {
-		 get: function(){
-			 return _ListingStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingStatusCodeType){ 
-					_ListingStatus = value; 
-				}else{
-					console.log('ListingStatus expects type ListingStatusCodeType');
 				}
 			}
 		}
@@ -183,7 +165,7 @@ SellingStatusType.prototype.toJSON = function(with_null) {
 		ReserveMet: (this.ReserveMet === undefined)? null : this.ReserveMet,
 		SecondChanceEligible: (this.SecondChanceEligible === undefined)? null : this.SecondChanceEligible,
 		BidderCount: (this.BidderCount === undefined)? null : this.BidderCount,
-		ListingStatus: (this.ListingStatus === undefined)? null : this.ListingStatus.toJSON(),
+		ListingStatus: (this.ListingStatus === undefined)? null : this.ListingStatus,
 		FinalValueFee: (this.FinalValueFee === undefined)? null : this.FinalValueFee.toJSON(),
 		PromotionalSaleDetails: (this.PromotionalSaleDetails === undefined)? null : this.PromotionalSaleDetails.toJSON(),
 		AdminEnded: (this.AdminEnded === undefined)? null : this.AdminEnded,

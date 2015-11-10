@@ -2,9 +2,7 @@ function ShippingCostPaidByDetailsType(ShippingCostPaidByOption, Description) {
 
 	/**
 	  Documentation
-	   
-                This type defines the ShippingCostPaidBy container that is returned in GeteBayDetails if ReturnPolicyDetails is set as a DetailNameCodeType value (or if no value is included in the request.
-            
+	   This type defines the ShippingCostPaidBy container that is returned in GeteBayDetails if ReturnPolicyDetails is set as a DetailNameCodeType value (or if no value is included in the request.
 	 */
 
 	/**

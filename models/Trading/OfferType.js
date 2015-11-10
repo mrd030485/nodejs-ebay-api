@@ -1,6 +1,4 @@
-var BidActionCodeType = require('./BidActionCodeType'),
-	CurrencyCodeType = require('./CurrencyCodeType'),
-	ItemIDType = require('./ItemIDType'),
+var ItemIDType = require('./ItemIDType'),
 	AmountType = require('./AmountType'),
 	UserType = require('./UserType'),
 	BestOfferIDType = require('./BestOfferIDType');
@@ -9,52 +7,19 @@ function OfferType(Action, Currency, ItemID, MaxBid, Quantity, SecondChanceEnabl
 
 	/**
 	  Documentation
-	   
-                Contains information pertaining to an offer made on an item listing and the current bidding or purchase state of the listing.
-            
+	   Contains information pertaining to an offer made on an item listing and the current bidding or purchase state of the listing.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _Action;
-	var _Currency;
 	var _ItemID;
 	var _MaxBid;
-	var _SiteCurrency;
 	var _HighestBid;
 	var _ConvertedPrice;
 	var _User;
 	var _BestOfferID;
 	var _MyMaxBid;
-	Object.defineProperty(this, 'Action', {
-		 get: function(){
-			 return _Action;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof BidActionCodeType){ 
-					_Action = value; 
-				}else{
-					console.log('Action expects type BidActionCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Currency', {
-		 get: function(){
-			 return _Currency;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CurrencyCodeType){ 
-					_Currency = value; 
-				}else{
-					console.log('Currency expects type CurrencyCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ItemID', {
 		 get: function(){
 			 return _ItemID;
@@ -79,20 +44,6 @@ function OfferType(Action, Currency, ItemID, MaxBid, Quantity, SecondChanceEnabl
 					_MaxBid = value; 
 				}else{
 					console.log('MaxBid expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SiteCurrency', {
-		 get: function(){
-			 return _SiteCurrency;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CurrencyCodeType){ 
-					_SiteCurrency = value; 
-				}else{
-					console.log('SiteCurrency expects type CurrencyCodeType');
 				}
 			}
 		}
@@ -187,13 +138,13 @@ function OfferType(Action, Currency, ItemID, MaxBid, Quantity, SecondChanceEnabl
 }
 OfferType.prototype.toJSON = function(with_null) {
 	var json = { 
-		Action: (this.Action === undefined)? null : this.Action.toJSON(),
-		Currency: (this.Currency === undefined)? null : this.Currency.toJSON(),
+		Action: (this.Action === undefined)? null : this.Action,
+		Currency: (this.Currency === undefined)? null : this.Currency,
 		ItemID: (this.ItemID === undefined)? null : this.ItemID.toJSON(),
 		MaxBid: (this.MaxBid === undefined)? null : this.MaxBid.toJSON(),
 		Quantity: (this.Quantity === undefined)? null : this.Quantity,
 		SecondChanceEnabled: (this.SecondChanceEnabled === undefined)? null : this.SecondChanceEnabled,
-		SiteCurrency: (this.SiteCurrency === undefined)? null : this.SiteCurrency.toJSON(),
+		SiteCurrency: (this.SiteCurrency === undefined)? null : this.SiteCurrency,
 		TimeBid: (this.TimeBid === undefined)? null : this.TimeBid,
 		HighestBid: (this.HighestBid === undefined)? null : this.HighestBid.toJSON(),
 		ConvertedPrice: (this.ConvertedPrice === undefined)? null : this.ConvertedPrice.toJSON(),

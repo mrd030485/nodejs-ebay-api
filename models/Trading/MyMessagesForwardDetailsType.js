@@ -2,9 +2,7 @@ function MyMessagesForwardDetailsType(UserForwardDate, ForwardMessageEncoding) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
-            
+	   This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
 	 */
 
 	/**

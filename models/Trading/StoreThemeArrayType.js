@@ -4,9 +4,7 @@ function StoreThemeArrayType(Theme, GenericColorSchemeArray) {
 
 	/**
 	  Documentation
-	   
-                Set of Store themes.
-            
+	   Set of Store themes.
 	 */
 
 	/**

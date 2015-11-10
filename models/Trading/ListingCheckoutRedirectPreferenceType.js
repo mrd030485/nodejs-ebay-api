@@ -2,9 +2,7 @@ function ListingCheckoutRedirectPreferenceType(ProStoresStoreName, SellerThirdPa
 
 	/**
 	  Documentation
-	   
-                ProStores listing level preferences.
-            
+	   ProStores listing level preferences.
 	 */
 
 	/**

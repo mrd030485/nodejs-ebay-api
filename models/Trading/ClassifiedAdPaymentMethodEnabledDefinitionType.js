@@ -2,9 +2,7 @@ function ClassifiedAdPaymentMethodEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether Contact Seller is enabled Classified Ads.
-            
+	   Indicates whether Contact Seller is enabled Classified Ads.
 	 */
 
 	/**

@@ -4,9 +4,7 @@ function SuggestedCategoryType(Category, PercentItemFound) {
 
 	/**
 	  Documentation
-	   
-                Defines a suggested category, returned in response to a search for categories that contain listings with certain keywords in their titles and descriptions.
-            
+	   Defines a suggested category, returned in response to a search for categories that contain listings with certain keywords in their titles and descriptions.
 	 */
 
 	/**

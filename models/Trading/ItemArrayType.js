@@ -2,9 +2,7 @@ function ItemArrayType(Item) {
 
 	/**
 	  Documentation
-	   
-                Container for a list of items. Can contain zero, one, or multiple ItemType objects, each of which conveys the data for one item listing.
-            
+	   Container for a list of items. Can contain zero, one, or multiple ItemType objects, each of which conveys the data for one item listing.
 	 */
 
 	/**

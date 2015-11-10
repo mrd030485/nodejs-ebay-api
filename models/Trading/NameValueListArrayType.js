@@ -2,9 +2,7 @@ function NameValueListArrayType(NameValueList) {
 
 	/**
 	  Documentation
-	   
-                A list of one or more valid names and corresponding values. Currently used for Item Specifics and Variations.
-            
+	   A list of one or more valid names and corresponding values. Currently used for Item Specifics and Variations.
 	 */
 
 	/**

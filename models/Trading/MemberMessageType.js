@@ -1,49 +1,14 @@
-var MessageTypeCodeType = require('./MessageTypeCodeType'),
-	QuestionTypeCodeType = require('./QuestionTypeCodeType');
-
 function MemberMessageType(MessageType, QuestionType, EmailCopyToSender, HideSendersEmailAddress, DisplayToPublic, SenderID, SenderEmail, RecipientID, Subject, Body, MessageID, ParentMessageID, MessageMedia) {
 
 	/**
 	  Documentation
-	   
-                Container for individual message information.
-            
+	   Container for individual message information.
 	 */
 
 	/**
 	 * Arrays
 	 *	MessageMedia: MessageMediaType
 	 */
-	var _MessageType;
-	var _QuestionType;
-	Object.defineProperty(this, 'MessageType', {
-		 get: function(){
-			 return _MessageType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MessageTypeCodeType){ 
-					_MessageType = value; 
-				}else{
-					console.log('MessageType expects type MessageTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'QuestionType', {
-		 get: function(){
-			 return _QuestionType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof QuestionTypeCodeType){ 
-					_QuestionType = value; 
-				}else{
-					console.log('QuestionType expects type QuestionTypeCodeType');
-				}
-			}
-		}
-	});
 	this.MessageType = MessageType;
 	this.QuestionType = QuestionType;
 	this.EmailCopyToSender = EmailCopyToSender;
@@ -60,8 +25,8 @@ function MemberMessageType(MessageType, QuestionType, EmailCopyToSender, HideSen
 }
 MemberMessageType.prototype.toJSON = function(with_null) {
 	var json = { 
-		MessageType: (this.MessageType === undefined)? null : this.MessageType.toJSON(),
-		QuestionType: (this.QuestionType === undefined)? null : this.QuestionType.toJSON(),
+		MessageType: (this.MessageType === undefined)? null : this.MessageType,
+		QuestionType: (this.QuestionType === undefined)? null : this.QuestionType,
 		EmailCopyToSender: (this.EmailCopyToSender === undefined)? null : this.EmailCopyToSender,
 		HideSendersEmailAddress: (this.HideSendersEmailAddress === undefined)? null : this.HideSendersEmailAddress,
 		DisplayToPublic: (this.DisplayToPublic === undefined)? null : this.DisplayToPublic,

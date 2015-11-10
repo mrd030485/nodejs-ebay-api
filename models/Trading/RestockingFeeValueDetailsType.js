@@ -2,9 +2,8 @@ function RestockingFeeValueDetailsType(RestockingFeeValueOption, Description) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>RestockingFeeValue</b> container, which contains the allowed values (and a text description of each value) that may be specified in the <b>RestockingFeeValueOption</b> field of an Add/Revise/Relist API call.
-            
+	   Type defining the <b>RestockingFeeValue</b> container, which contains the allowed values (and a text description of each value) that may be specified in the <b>RestockingFeeValueOption</b> field of an Add/Revise/Relist
+                    API call.
 	 */
 
 	/**

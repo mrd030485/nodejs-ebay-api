@@ -1,24 +1,19 @@
 var AmountType = require('./AmountType'),
 	MeasureType = require('./MeasureType'),
 	AddressType = require('./AddressType'),
-	ShippingPackageCodeType = require('./ShippingPackageCodeType'),
-	ShipmentDeliveryStatusCodeType = require('./ShipmentDeliveryStatusCodeType'),
-	ShipmentStatusCodeType = require('./ShipmentStatusCodeType'),
 	ShipmentLineItemType = require('./ShipmentLineItemType');
 
 function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, PackageLength, PackageWidth, PayPalShipmentID, ShipmentID, PostageTotal, PrintedTime, ShipFromAddress, ShippingAddress, ShippingCarrierUsed, ShippingFeature, ShippingPackage, ShippingServiceUsed, ShipmentTrackingNumber, WeightMajor, WeightMinor, ItemTransactionID, DeliveryDate, DeliveryStatus, RefundGrantedTime, RefundRequestedTime, Status, ShippedTime, Notes, ShipmentTrackingDetails, ShipmentLineItem) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>Shipment</b> container, which is used by the seller in <b>CompleteSale</b> to provide shipping information. The <b>Shipment</b> container is also returned in the <b>GetSellingManagerSaleRecord</b>
-                response.
-            
+	   Type defining the <b>Shipment</b> container, which is used by the seller in <b>CompleteSale</b> to provide shipping information. The <b>Shipment</b> container is also returned in the <b>GetSellingManagerSaleRecord</b>
+                    response.
+                
 	 */
 
 	/**
 	 * Arrays
-	 *	ShippingFeature: ShippingFeatureCodeType
 	 *	ItemTransactionID: ItemTransactionIDType
 	 *	ShipmentTrackingDetails: ShipmentTrackingDetailsType
 	 */
@@ -29,11 +24,8 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 	var _PostageTotal;
 	var _ShipFromAddress;
 	var _ShippingAddress;
-	var _ShippingPackage;
 	var _WeightMajor;
 	var _WeightMinor;
-	var _DeliveryStatus;
-	var _Status;
 	var _ShipmentLineItem;
 	Object.defineProperty(this, 'InsuredValue', {
 		 get: function(){
@@ -133,20 +125,6 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 			}
 		}
 	});
-	Object.defineProperty(this, 'ShippingPackage', {
-		 get: function(){
-			 return _ShippingPackage;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingPackageCodeType){ 
-					_ShippingPackage = value; 
-				}else{
-					console.log('ShippingPackage expects type ShippingPackageCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'WeightMajor', {
 		 get: function(){
 			 return _WeightMajor;
@@ -171,34 +149,6 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 					_WeightMinor = value; 
 				}else{
 					console.log('WeightMinor expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'DeliveryStatus', {
-		 get: function(){
-			 return _DeliveryStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShipmentDeliveryStatusCodeType){ 
-					_DeliveryStatus = value; 
-				}else{
-					console.log('DeliveryStatus expects type ShipmentDeliveryStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShipmentStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type ShipmentStatusCodeType');
 				}
 			}
 		}
@@ -261,17 +211,17 @@ ShipmentType.prototype.toJSON = function(with_null) {
 		ShippingAddress: (this.ShippingAddress === undefined)? null : this.ShippingAddress.toJSON(),
 		ShippingCarrierUsed: (this.ShippingCarrierUsed === undefined)? null : this.ShippingCarrierUsed,
 		ShippingFeature: (this.ShippingFeature === undefined)? null : this.ShippingFeature,
-		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage.toJSON(),
+		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
 		ShippingServiceUsed: (this.ShippingServiceUsed === undefined)? null : this.ShippingServiceUsed,
 		ShipmentTrackingNumber: (this.ShipmentTrackingNumber === undefined)? null : this.ShipmentTrackingNumber,
 		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
 		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON(),
 		ItemTransactionID: (this.ItemTransactionID === undefined)? null : this.ItemTransactionID,
 		DeliveryDate: (this.DeliveryDate === undefined)? null : this.DeliveryDate,
-		DeliveryStatus: (this.DeliveryStatus === undefined)? null : this.DeliveryStatus.toJSON(),
+		DeliveryStatus: (this.DeliveryStatus === undefined)? null : this.DeliveryStatus,
 		RefundGrantedTime: (this.RefundGrantedTime === undefined)? null : this.RefundGrantedTime,
 		RefundRequestedTime: (this.RefundRequestedTime === undefined)? null : this.RefundRequestedTime,
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		ShippedTime: (this.ShippedTime === undefined)? null : this.ShippedTime,
 		Notes: (this.Notes === undefined)? null : this.Notes,
 		ShipmentTrackingDetails: (this.ShipmentTrackingDetails === undefined)? null : this.ShipmentTrackingDetails,

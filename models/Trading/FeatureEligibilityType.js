@@ -2,9 +2,7 @@ function FeatureEligibilityType(QualifiesForBuyItNow, QualifiesForBuyItNowMultip
 
 	/**
 	  Documentation
-	   
-                Indicates whether the seller making the request can list with certain features. A seller's eligibility is determined by their feedback rating.
-            
+	   Indicates whether the seller making the request can list with certain features. A seller's eligibility is determined by their feedback rating.
 	 */
 
 	/**

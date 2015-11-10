@@ -2,9 +2,7 @@ function ReturnPolicyType(RefundOption, Refund, ReturnsWithinOption, ReturnsWith
 
 	/**
 	  Documentation
-	   
-                Type used to express the details of the return policy for an item.
-            
+	   Type used to express the details of the return policy for an item.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function eBayMotorsProStreetCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which address option the category supports for Classified Ad format listings. Added for EbayMotors Pro users
-            
+	   Indicates which address option the category supports for Classified Ad format listings. Added for EbayMotors Pro users
 	 */
 
 	/**

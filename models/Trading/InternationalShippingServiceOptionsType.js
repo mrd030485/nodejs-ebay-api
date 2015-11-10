@@ -4,9 +4,7 @@ function InternationalShippingServiceOptionsType(ShippingService, ShippingServic
 
 	/**
 	  Documentation
-	   
-                Container consisting of shipping costs and other details related to an international shipping service. If one or more international shipping services are provided, the seller must specify at least one domestic shipping service as well.
-            
+	   Container consisting of shipping costs and other details related to an international shipping service. If one or more international shipping services are provided, the seller must specify at least one domestic shipping service as well.
 	 */
 
 	/**

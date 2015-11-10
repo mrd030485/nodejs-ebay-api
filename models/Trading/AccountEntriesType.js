@@ -2,9 +2,7 @@ function AccountEntriesType(AccountEntry) {
 
 	/**
 	  Documentation
-	   
-                Type defining the array of <b>AccountEntry</b> objects that are conditionally returned in the <b>GetAccount</b> response.
-            
+	   Type defining the array of <b>AccountEntry</b> objects that are conditionally returned in the <b>GetAccount</b> response.
 	 */
 
 	/**

@@ -1,16 +1,12 @@
 var AmountType = require('./AmountType'),
-	ItemIDType = require('./ItemIDType'),
-	SellerBusinessCodeType = require('./SellerBusinessCodeType'),
-	EndReasonCodeType = require('./EndReasonCodeType');
+	ItemIDType = require('./ItemIDType');
 
 function ListingDetailsType(Adult, BindingAuction, CheckoutEnabled, ConvertedBuyItNowPrice, ConvertedStartPrice, ConvertedReservePrice, HasReservePrice, RelistedItemID, SecondChanceOriginalItemID, StartTime, EndTime, ViewItemURL, HasUnansweredQuestions, HasPublicMessages, BuyItNowAvailable, SellerBusinessType, MinimumBestOfferPrice, MinimumBestOfferMessage, LocalListingDistance, TCROriginalItemID, ViewItemURLForNaturalSearch, PayPerLeadEnabled, BestOfferAutoAcceptPrice, EndingReason) {
 
 	/**
 	  Documentation
-	   
-                Various details about a listing. Some of the details are calculated or derived after an item is listed. The details in this type include the start and end time and the converted (localized) prices. The details in this type also include input values applicable
-                to the Best Offer feature. Additional details in this type include flags indicating if a seller specified fields whose values are not visible to the requesting user.
-            
+	   Various details about a listing. Some of the details are calculated or derived after an item is listed. The details in this type include the start and end time and the converted (localized) prices. The details in this type also include
+                    input values applicable to the Best Offer feature. Additional details in this type include flags indicating if a seller specified fields whose values are not visible to the requesting user.
 	 */
 
 	/**
@@ -21,11 +17,9 @@ function ListingDetailsType(Adult, BindingAuction, CheckoutEnabled, ConvertedBuy
 	var _ConvertedReservePrice;
 	var _RelistedItemID;
 	var _SecondChanceOriginalItemID;
-	var _SellerBusinessType;
 	var _MinimumBestOfferPrice;
 	var _TCROriginalItemID;
 	var _BestOfferAutoAcceptPrice;
-	var _EndingReason;
 	Object.defineProperty(this, 'ConvertedBuyItNowPrice', {
 		 get: function(){
 			 return _ConvertedBuyItNowPrice;
@@ -96,20 +90,6 @@ function ListingDetailsType(Adult, BindingAuction, CheckoutEnabled, ConvertedBuy
 			}
 		}
 	});
-	Object.defineProperty(this, 'SellerBusinessType', {
-		 get: function(){
-			 return _SellerBusinessType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellerBusinessCodeType){ 
-					_SellerBusinessType = value; 
-				}else{
-					console.log('SellerBusinessType expects type SellerBusinessCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'MinimumBestOfferPrice', {
 		 get: function(){
 			 return _MinimumBestOfferPrice;
@@ -148,20 +128,6 @@ function ListingDetailsType(Adult, BindingAuction, CheckoutEnabled, ConvertedBuy
 					_BestOfferAutoAcceptPrice = value; 
 				}else{
 					console.log('BestOfferAutoAcceptPrice expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'EndingReason', {
-		 get: function(){
-			 return _EndingReason;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof EndReasonCodeType){ 
-					_EndingReason = value; 
-				}else{
-					console.log('EndingReason expects type EndReasonCodeType');
 				}
 			}
 		}
@@ -208,7 +174,7 @@ ListingDetailsType.prototype.toJSON = function(with_null) {
 		HasUnansweredQuestions: (this.HasUnansweredQuestions === undefined)? null : this.HasUnansweredQuestions,
 		HasPublicMessages: (this.HasPublicMessages === undefined)? null : this.HasPublicMessages,
 		BuyItNowAvailable: (this.BuyItNowAvailable === undefined)? null : this.BuyItNowAvailable,
-		SellerBusinessType: (this.SellerBusinessType === undefined)? null : this.SellerBusinessType.toJSON(),
+		SellerBusinessType: (this.SellerBusinessType === undefined)? null : this.SellerBusinessType,
 		MinimumBestOfferPrice: (this.MinimumBestOfferPrice === undefined)? null : this.MinimumBestOfferPrice.toJSON(),
 		MinimumBestOfferMessage: (this.MinimumBestOfferMessage === undefined)? null : this.MinimumBestOfferMessage,
 		LocalListingDistance: (this.LocalListingDistance === undefined)? null : this.LocalListingDistance,
@@ -216,7 +182,7 @@ ListingDetailsType.prototype.toJSON = function(with_null) {
 		ViewItemURLForNaturalSearch: (this.ViewItemURLForNaturalSearch === undefined)? null : this.ViewItemURLForNaturalSearch,
 		PayPerLeadEnabled: (this.PayPerLeadEnabled === undefined)? null : this.PayPerLeadEnabled,
 		BestOfferAutoAcceptPrice: (this.BestOfferAutoAcceptPrice === undefined)? null : this.BestOfferAutoAcceptPrice.toJSON(),
-		EndingReason: (this.EndingReason === undefined)? null : this.EndingReason.toJSON()
+		EndingReason: (this.EndingReason === undefined)? null : this.EndingReason
 	};
 	if(!with_null) {
 		for(var k in json) {

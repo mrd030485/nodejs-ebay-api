@@ -2,9 +2,7 @@ function CategoryArrayType(Category) {
 
 	/**
 	  Documentation
-	   
-                Container for a list of categories.
-            
+	   Container for a list of categories.
 	 */
 
 	/**

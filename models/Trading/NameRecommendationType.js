@@ -1,13 +1,10 @@
-var RecommendationValidationRulesType = require('./RecommendationValidationRulesType'),
-	ItemSpecificSourceCodeType = require('./ItemSpecificSourceCodeType');
+var RecommendationValidationRulesType = require('./RecommendationValidationRulesType');
 
 function NameRecommendationType(Name, ValidationRules, ValueRecommendation, HelpURL, Source, HelpText) {
 
 	/**
 	  Documentation
-	   
-                Defines details about recommended names and values for custom Item Specifics.
-            
+	   Defines details about recommended names and values for custom Item Specifics.
 	 */
 
 	/**
@@ -15,7 +12,6 @@ function NameRecommendationType(Name, ValidationRules, ValueRecommendation, Help
 	 *	ValueRecommendation: ValueRecommendationType
 	 */
 	var _ValidationRules;
-	var _Source;
 	Object.defineProperty(this, 'ValidationRules', {
 		 get: function(){
 			 return _ValidationRules;
@@ -26,20 +22,6 @@ function NameRecommendationType(Name, ValidationRules, ValueRecommendation, Help
 					_ValidationRules = value; 
 				}else{
 					console.log('ValidationRules expects type RecommendationValidationRulesType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Source', {
-		 get: function(){
-			 return _Source;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ItemSpecificSourceCodeType){ 
-					_Source = value; 
-				}else{
-					console.log('Source expects type ItemSpecificSourceCodeType');
 				}
 			}
 		}
@@ -57,7 +39,7 @@ NameRecommendationType.prototype.toJSON = function(with_null) {
 		ValidationRules: (this.ValidationRules === undefined)? null : this.ValidationRules.toJSON(),
 		ValueRecommendation: (this.ValueRecommendation === undefined)? null : this.ValueRecommendation,
 		HelpURL: (this.HelpURL === undefined)? null : this.HelpURL,
-		Source: (this.Source === undefined)? null : this.Source.toJSON(),
+		Source: (this.Source === undefined)? null : this.Source,
 		HelpText: (this.HelpText === undefined)? null : this.HelpText
 	};
 	if(!with_null) {

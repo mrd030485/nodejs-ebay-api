@@ -5,9 +5,7 @@ function PaginatedTransactionArrayType(TransactionArray, PaginationResult) {
 
 	/**
 	  Documentation
-	   
-                Contains a paginated list of order line items.
-            
+	   Contains a paginated list of order line items.
 	 */
 
 	/**

@@ -9,10 +9,7 @@ function MyMessagesAlertType(Sender, RecipientUserID, Subject, Priority, AlertID
 
 	/**
 	  Documentation
-	   
-                This type is deprecated because <b>MyMessagesAlert*</b> are deprecated.
-                
-            
+	   This type is deprecated because <b>MyMessagesAlert*</b> are deprecated. 
 	 */
 
 	/**

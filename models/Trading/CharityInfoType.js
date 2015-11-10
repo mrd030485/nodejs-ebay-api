@@ -1,12 +1,8 @@
-var CharityStatusCodeType = require('./CharityStatusCodeType');
-
 function CharityInfoType(Name, ListingNPEmailNotifPref, ListingNPEmail, ListingNPContactName, Mission, LogoURL, Status, SearchableString, CharityRegion, CharityDomain, CharityID, LogoURLSelling, DisplayLogoSelling, DisplayNameInCheckout, Description, ShowMultipleDonationAmountInCheckout, ExternalID, PopularityIndex, EIN, NonProfitSecondName, NonProfitAddress, NonProfitSocialAddress) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>Charity</b> container, which consists of all details related to a nonprofit charity organization.
-            
+	   Type defining the <b>Charity</b> container, which consists of all details related to a nonprofit charity organization.
 	 */
 
 	/**
@@ -14,21 +10,6 @@ function CharityInfoType(Name, ListingNPEmailNotifPref, ListingNPEmail, ListingN
 	 *	NonProfitAddress: NonProfitAddressType
 	 *	NonProfitSocialAddress: NonProfitSocialAddressType
 	 */
-	var _Status;
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CharityStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type CharityStatusCodeType');
-				}
-			}
-		}
-	});
 	this.Name = Name;
 	this.ListingNPEmailNotifPref = ListingNPEmailNotifPref;
 	this.ListingNPEmail = ListingNPEmail;
@@ -60,7 +41,7 @@ CharityInfoType.prototype.toJSON = function(with_null) {
 		ListingNPContactName: (this.ListingNPContactName === undefined)? null : this.ListingNPContactName,
 		Mission: (this.Mission === undefined)? null : this.Mission,
 		LogoURL: (this.LogoURL === undefined)? null : this.LogoURL,
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		SearchableString: (this.SearchableString === undefined)? null : this.SearchableString,
 		CharityRegion: (this.CharityRegion === undefined)? null : this.CharityRegion,
 		CharityDomain: (this.CharityDomain === undefined)? null : this.CharityDomain,

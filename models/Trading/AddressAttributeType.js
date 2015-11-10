@@ -2,9 +2,7 @@ function AddressAttributeType(type) {
 
 	/**
 	  Documentation
-	   
-                This type is used to display the value of the <b>type</b> attribute of the <b>AddressAttribute</b> field.
-            
+	   This type is used to display the value of the <b>type</b> attribute of the <b>AddressAttribute</b> field.
 	 */
 
 	/**

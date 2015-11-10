@@ -2,10 +2,8 @@ function DigitalDeliveryUserType(Name, Email) {
 
 	/**
 	  Documentation
-	   
-                <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, this type is not applicable. </span> <br> This type is used to provide the name and email
-                of both the purchaser of a digital gift card, and the recipient of the digital gift card.
-            
+	   <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, this type is not applicable. </span> <br> This type is used to provide the
+                    name and email of both the purchaser of a digital gift card, and the recipient of the digital gift card.
 	 */
 
 	/**

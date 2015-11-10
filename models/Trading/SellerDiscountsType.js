@@ -4,9 +4,7 @@ function SellerDiscountsType(OriginalItemPrice, OriginalItemShippingCost, Origin
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SellerDiscounts</b> container, which consists of one or more <b>SellerDiscount</b> nodes, as well as the original purchase price and shipping cost of the order line item.
-            
+	   Type defining the <b>SellerDiscounts</b> container, which consists of one or more <b>SellerDiscount</b> nodes, as well as the original purchase price and shipping cost of the order line item.
 	 */
 
 	/**

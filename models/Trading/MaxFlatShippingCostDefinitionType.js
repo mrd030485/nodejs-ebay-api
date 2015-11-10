@@ -2,9 +2,7 @@ function MaxFlatShippingCostDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Max Flat Shipping Cost
-            
+	   Max Flat Shipping Cost
 	 */
 
 	/**

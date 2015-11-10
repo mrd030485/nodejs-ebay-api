@@ -1,48 +1,13 @@
-var SellingManagerEmailTypeCodeType = require('./SellingManagerEmailTypeCodeType'),
-	SellingManagerEmailSentStatusCodeType = require('./SellingManagerEmailSentStatusCodeType');
-
 function SellingManagerEmailLogType(EmailType, CustomEmailName, EmailState, EventTime) {
 
 	/**
 	  Documentation
-	   
-                Contains list of Email log.
-            
+	   Contains list of Email log.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _EmailType;
-	var _EmailState;
-	Object.defineProperty(this, 'EmailType', {
-		 get: function(){
-			 return _EmailType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellingManagerEmailTypeCodeType){ 
-					_EmailType = value; 
-				}else{
-					console.log('EmailType expects type SellingManagerEmailTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'EmailState', {
-		 get: function(){
-			 return _EmailState;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellingManagerEmailSentStatusCodeType){ 
-					_EmailState = value; 
-				}else{
-					console.log('EmailState expects type SellingManagerEmailSentStatusCodeType');
-				}
-			}
-		}
-	});
 	this.EmailType = EmailType;
 	this.CustomEmailName = CustomEmailName;
 	this.EmailState = EmailState;
@@ -50,9 +15,9 @@ function SellingManagerEmailLogType(EmailType, CustomEmailName, EmailState, Even
 }
 SellingManagerEmailLogType.prototype.toJSON = function(with_null) {
 	var json = { 
-		EmailType: (this.EmailType === undefined)? null : this.EmailType.toJSON(),
+		EmailType: (this.EmailType === undefined)? null : this.EmailType,
 		CustomEmailName: (this.CustomEmailName === undefined)? null : this.CustomEmailName,
-		EmailState: (this.EmailState === undefined)? null : this.EmailState.toJSON(),
+		EmailState: (this.EmailState === undefined)? null : this.EmailState,
 		EventTime: (this.EventTime === undefined)? null : this.EventTime
 	};
 	if(!with_null) {

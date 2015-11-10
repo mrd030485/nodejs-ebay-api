@@ -2,9 +2,7 @@ function VeROReasonCodeDetailsType(VeROSiteDetail) {
 
 	/**
 	  Documentation
-	   
-                Container for reason code details for all sites.
-            
+	   Container for reason code details for all sites.
 	 */
 
 	/**

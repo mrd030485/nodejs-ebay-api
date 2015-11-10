@@ -4,10 +4,7 @@ function ProductFamilyType(ParentProduct, FamilyMembers) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as <b>GetProduct*</b> calls were deprecated.
-                
-            
+	   This type is deprecated as <b>GetProduct*</b> calls were deprecated. 
 	 */
 
 	/**

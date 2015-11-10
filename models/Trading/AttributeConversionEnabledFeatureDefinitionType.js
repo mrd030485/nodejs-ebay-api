@@ -2,9 +2,7 @@ function AttributeConversionEnabledFeatureDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type has been deprecated, as "old" eBay attributes are no longer supported.
-            
+	   This type has been deprecated, as "old" eBay attributes are no longer supported.
 	 */
 
 	/**

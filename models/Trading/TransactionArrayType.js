@@ -2,9 +2,7 @@ function TransactionArrayType(Transaction) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>TransactionArray</b> container, which contains an array of <b>Transaction</b> containers. Each <b>Transaction</b> container consists of detailed information on one order line item.
-            
+	   Type defining the <b>TransactionArray</b> container, which contains an array of <b>Transaction</b> containers. Each <b>Transaction</b> container consists of detailed information on one order line item.
 	 */
 
 	/**

@@ -1,82 +1,16 @@
-var GalleryTypeCodeType = require('./GalleryTypeCodeType'),
-	PhotoDisplayCodeType = require('./PhotoDisplayCodeType'),
-	PictureSourceCodeType = require('./PictureSourceCodeType'),
-	GalleryStatusCodeType = require('./GalleryStatusCodeType'),
-	ExtendedPictureDetailsType = require('./ExtendedPictureDetailsType');
+var ExtendedPictureDetailsType = require('./ExtendedPictureDetailsType');
 
 function PictureDetailsType(GalleryType, GalleryURL, PhotoDisplay, PictureURL, PictureSource, GalleryDuration, GalleryStatus, GalleryErrorInfo, ExternalPictureURL, ExtendedPictureDetails) {
 
 	/**
 	  Documentation
-	   
-                Contains the data for the pictures associated with an item. Not applicable to Half.com.
-            
+	   Contains the data for the pictures associated with an item. Not applicable to Half.com.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _GalleryType;
-	var _PhotoDisplay;
-	var _PictureSource;
-	var _GalleryStatus;
 	var _ExtendedPictureDetails;
-	Object.defineProperty(this, 'GalleryType', {
-		 get: function(){
-			 return _GalleryType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GalleryTypeCodeType){ 
-					_GalleryType = value; 
-				}else{
-					console.log('GalleryType expects type GalleryTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PhotoDisplay', {
-		 get: function(){
-			 return _PhotoDisplay;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PhotoDisplayCodeType){ 
-					_PhotoDisplay = value; 
-				}else{
-					console.log('PhotoDisplay expects type PhotoDisplayCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PictureSource', {
-		 get: function(){
-			 return _PictureSource;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PictureSourceCodeType){ 
-					_PictureSource = value; 
-				}else{
-					console.log('PictureSource expects type PictureSourceCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'GalleryStatus', {
-		 get: function(){
-			 return _GalleryStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GalleryStatusCodeType){ 
-					_GalleryStatus = value; 
-				}else{
-					console.log('GalleryStatus expects type GalleryStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ExtendedPictureDetails', {
 		 get: function(){
 			 return _ExtendedPictureDetails;
@@ -104,13 +38,13 @@ function PictureDetailsType(GalleryType, GalleryURL, PhotoDisplay, PictureURL, P
 }
 PictureDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		GalleryType: (this.GalleryType === undefined)? null : this.GalleryType.toJSON(),
+		GalleryType: (this.GalleryType === undefined)? null : this.GalleryType,
 		GalleryURL: (this.GalleryURL === undefined)? null : this.GalleryURL,
-		PhotoDisplay: (this.PhotoDisplay === undefined)? null : this.PhotoDisplay.toJSON(),
+		PhotoDisplay: (this.PhotoDisplay === undefined)? null : this.PhotoDisplay,
 		PictureURL: (this.PictureURL === undefined)? null : this.PictureURL,
-		PictureSource: (this.PictureSource === undefined)? null : this.PictureSource.toJSON(),
+		PictureSource: (this.PictureSource === undefined)? null : this.PictureSource,
 		GalleryDuration: (this.GalleryDuration === undefined)? null : this.GalleryDuration,
-		GalleryStatus: (this.GalleryStatus === undefined)? null : this.GalleryStatus.toJSON(),
+		GalleryStatus: (this.GalleryStatus === undefined)? null : this.GalleryStatus,
 		GalleryErrorInfo: (this.GalleryErrorInfo === undefined)? null : this.GalleryErrorInfo,
 		ExternalPictureURL: (this.ExternalPictureURL === undefined)? null : this.ExternalPictureURL,
 		ExtendedPictureDetails: (this.ExtendedPictureDetails === undefined)? null : this.ExtendedPictureDetails.toJSON()

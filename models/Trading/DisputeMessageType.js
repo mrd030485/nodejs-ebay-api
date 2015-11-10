@@ -1,32 +1,13 @@
-var DisputeMessageSourceCodeType = require('./DisputeMessageSourceCodeType');
-
 function DisputeMessageType(MessageID, MessageSource, MessageCreationTime, MessageText) {
 
 	/**
 	  Documentation
-	   
-                Contains a message posted to a dispute. The message can be posted by the buyer, the seller, or an eBay representative.
-            
+	   Contains a message posted to a dispute. The message can be posted by the buyer, the seller, or an eBay representative.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _MessageSource;
-	Object.defineProperty(this, 'MessageSource', {
-		 get: function(){
-			 return _MessageSource;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof DisputeMessageSourceCodeType){ 
-					_MessageSource = value; 
-				}else{
-					console.log('MessageSource expects type DisputeMessageSourceCodeType');
-				}
-			}
-		}
-	});
 	this.MessageID = MessageID;
 	this.MessageSource = MessageSource;
 	this.MessageCreationTime = MessageCreationTime;
@@ -35,7 +16,7 @@ function DisputeMessageType(MessageID, MessageSource, MessageCreationTime, Messa
 DisputeMessageType.prototype.toJSON = function(with_null) {
 	var json = { 
 		MessageID: (this.MessageID === undefined)? null : this.MessageID,
-		MessageSource: (this.MessageSource === undefined)? null : this.MessageSource.toJSON(),
+		MessageSource: (this.MessageSource === undefined)? null : this.MessageSource,
 		MessageCreationTime: (this.MessageCreationTime === undefined)? null : this.MessageCreationTime,
 		MessageText: (this.MessageText === undefined)? null : this.MessageText
 	};

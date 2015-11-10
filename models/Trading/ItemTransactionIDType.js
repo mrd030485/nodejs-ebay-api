@@ -5,9 +5,7 @@ function ItemTransactionIDType(ItemID, TransactionID, SKU, OrderLineItemID) {
 
 	/**
 	  Documentation
-	   
-                This container is designed to return all order line items related to specific multiple-item, fixed-price listings. Additionally, a SKU filter can be used to return all order line items related to a specific product or variation of an item.
-            
+	   This container is designed to return all order line items related to specific multiple-item, fixed-price listings. Additionally, a SKU filter can be used to return all order line items related to a specific product or variation of an item.
 	 */
 
 	/**

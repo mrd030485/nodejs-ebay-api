@@ -2,9 +2,7 @@ function ASQPreferencesType(ResetDefaultSubjects, Subject) {
 
 	/**
 	  Documentation
-	   
-                This type is used by the <b>ASQPreferences</b> container to allow the seller to add custom Ask Seller a Question (ASQ) subjects to item listings, or to reset the custom subjects to the default eBay values.
-            
+	   This type is used by the <b>ASQPreferences</b> container to allow the seller to add custom Ask Seller a Question (ASQ) subjects to item listings, or to reset the custom subjects to the default eBay values.
 	 */
 
 	/**

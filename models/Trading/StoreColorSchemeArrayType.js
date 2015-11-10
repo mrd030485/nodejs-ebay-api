@@ -2,9 +2,7 @@ function StoreColorSchemeArrayType(ColorScheme) {
 
 	/**
 	  Documentation
-	   
-                Set of eBay Store color schemes.
-            
+	   Set of eBay Store color schemes.
 	 */
 
 	/**

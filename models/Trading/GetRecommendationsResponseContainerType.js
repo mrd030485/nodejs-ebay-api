@@ -10,9 +10,7 @@ function GetRecommendationsResponseContainerType(ListingAnalyzerRecommendations,
 
 	/**
 	  Documentation
-	   
-                Returns recommended changes or opportunities for improvement related to listing data that was passed in a GetItemRecommendations request.
-            
+	   Returns recommended changes or opportunities for improvement related to listing data that was passed in a GetItemRecommendations request.
 	 */
 
 	/**

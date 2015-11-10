@@ -2,9 +2,7 @@ function ShipmentLineItemType(LineItem) {
 
 	/**
 	  Documentation
-	   
-                This type provides information about one or more order line items in a Global Shipping Program package.
-            
+	   This type provides information about one or more order line items in a Global Shipping Program package.
 	 */
 
 	/**

@@ -1,21 +1,16 @@
-var ItemIDType = require('./ItemIDType'),
-	PromotionSchemeCodeType = require('./PromotionSchemeCodeType'),
-	PromotionMethodCodeType = require('./PromotionMethodCodeType');
+var ItemIDType = require('./ItemIDType');
 
 function PromotionRuleType(PromotedStoreCategoryID, PromotedeBayCategoryID, PromotedKeywords, ReferringItemID, ReferringStoreCategoryID, ReferringeBayCategoryID, ReferringKeywords, PromotionScheme, PromotionMethod) {
 
 	/**
 	  Documentation
 	   
-            
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _ReferringItemID;
-	var _PromotionScheme;
-	var _PromotionMethod;
 	Object.defineProperty(this, 'ReferringItemID', {
 		 get: function(){
 			 return _ReferringItemID;
@@ -26,34 +21,6 @@ function PromotionRuleType(PromotedStoreCategoryID, PromotedeBayCategoryID, Prom
 					_ReferringItemID = value; 
 				}else{
 					console.log('ReferringItemID expects type ItemIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PromotionScheme', {
-		 get: function(){
-			 return _PromotionScheme;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionSchemeCodeType){ 
-					_PromotionScheme = value; 
-				}else{
-					console.log('PromotionScheme expects type PromotionSchemeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PromotionMethod', {
-		 get: function(){
-			 return _PromotionMethod;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionMethodCodeType){ 
-					_PromotionMethod = value; 
-				}else{
-					console.log('PromotionMethod expects type PromotionMethodCodeType');
 				}
 			}
 		}
@@ -77,8 +44,8 @@ PromotionRuleType.prototype.toJSON = function(with_null) {
 		ReferringStoreCategoryID: (this.ReferringStoreCategoryID === undefined)? null : this.ReferringStoreCategoryID,
 		ReferringeBayCategoryID: (this.ReferringeBayCategoryID === undefined)? null : this.ReferringeBayCategoryID,
 		ReferringKeywords: (this.ReferringKeywords === undefined)? null : this.ReferringKeywords,
-		PromotionScheme: (this.PromotionScheme === undefined)? null : this.PromotionScheme.toJSON(),
-		PromotionMethod: (this.PromotionMethod === undefined)? null : this.PromotionMethod.toJSON()
+		PromotionScheme: (this.PromotionScheme === undefined)? null : this.PromotionScheme,
+		PromotionMethod: (this.PromotionMethod === undefined)? null : this.PromotionMethod
 	};
 	if(!with_null) {
 		for(var k in json) {

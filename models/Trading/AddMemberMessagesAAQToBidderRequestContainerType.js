@@ -4,10 +4,8 @@ function AddMemberMessagesAAQToBidderRequestContainerType(CorrelationID, ItemID,
 
 	/**
 	  Documentation
-	   
-                This type is used by the <b>AddMemberMessagesAAQToBidderRequestContainer</b> container. A <b>AddMemberMessagesAAQToBidderRequestContainer</b> container is required for each bidder the seller is sending a message to. The seller
-                can communicate with up to 10 bidders with one <b>AddMemberMessagesAAQToBidder</b> call.
-            
+	   This type is used by the <b>AddMemberMessagesAAQToBidderRequestContainer</b> container. A <b>AddMemberMessagesAAQToBidderRequestContainer</b> container is required for each bidder the seller is sending a message
+                    to. The seller can communicate with up to 10 bidders with one <b>AddMemberMessagesAAQToBidder</b> call.
 	 */
 
 	/**

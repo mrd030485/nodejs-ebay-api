@@ -2,9 +2,7 @@ function eBayMotorsProCounterOfferEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether counter offers are allowed on best offers for this category. Returned only if this category overrides the site default. Added for EbayMotors Pro users.
-            
+	   Indicates whether counter offers are allowed on best offers for this category. Returned only if this category overrides the site default. Added for EbayMotors Pro users.
 	 */
 
 	/**

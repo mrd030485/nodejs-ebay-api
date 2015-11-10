@@ -2,10 +2,8 @@ function RefundDetailsType(RefundOption, Description) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>ReturnPolicyDetails.Refund</b> container that is returned in <b>GeteBayDetails</b>. All of the values (along with descriptions for each value) that can be used as a Refund Option when listing an item is returned
-                under the <b>ReturnPolicyDetails.Refund</b> container.
-            
+	   Type defining the <b>ReturnPolicyDetails.Refund</b> container that is returned in <b>GeteBayDetails</b>. All of the values (along with descriptions for each value) that can be used as a Refund Option when listing
+                    an item is returned under the <b>ReturnPolicyDetails.Refund</b> container.
 	 */
 
 	/**

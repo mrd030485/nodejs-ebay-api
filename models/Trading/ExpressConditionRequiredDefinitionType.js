@@ -2,10 +2,7 @@ function ExpressConditionRequiredDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as the eBay Express is no longer available.
-                
-            
+	   This type is deprecated as the eBay Express is no longer available. 
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ReasonCodeDetailType(BriefText, DetailedText) {
 
 	/**
 	  Documentation
-	   
-                A container for VeRO reason code details.
-            
+	   A container for VeRO reason code details.
 	 */
 
 	/**

@@ -133,9 +133,7 @@ function FeatureDefinitionsType(ListingDurations, ShippingTermsRequired, BestOff
 
 	/**
 	  Documentation
-	   
-                A container node for definitions of the features specified in FeatureID in the GetCategoryFeatures request. If no feature ID was specified, all definitions are returned.
-            
+	   A container node for definitions of the features specified in FeatureID in the GetCategoryFeatures request. If no feature ID was specified, all definitions are returned.
 	 */
 
 	/**

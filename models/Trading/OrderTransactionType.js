@@ -5,9 +5,7 @@ function OrderTransactionType(Order, Transaction) {
 
 	/**
 	  Documentation
-	   
-                Contains an order or a transaction. A transaction is the sale of one or more items from a seller's listing to a buyer. An order combines two or more transactions into a single payment.
-            
+	   Contains an order or a transaction. A transaction is the sale of one or more items from a seller's listing to a buyer. An order combines two or more transactions into a single payment.
 	 */
 
 	/**

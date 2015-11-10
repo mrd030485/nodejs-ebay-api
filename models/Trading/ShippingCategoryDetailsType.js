@@ -2,10 +2,9 @@ function ShippingCategoryDetailsType(ShippingCategory, Description, DetailVersio
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>ShippingCategoryDetails</b> container. When the <b>DetailName</b> field is set to ShippingCategoryDetails in a GeteBayDetails request, one <b>ShippingCategoryDetails</b> container is returned
-                for each valid shipping category used on the eBay site. Besides being useful to view the list of valid shipping categories, this container is also useful to discover when the last update to shipping categories was made by eBay.
-            
+	   This type defines the <b>ShippingCategoryDetails</b> container. When the <b>DetailName</b> field is set to ShippingCategoryDetails in a GeteBayDetails request, one <b>ShippingCategoryDetails</b> container
+                    is returned for each valid shipping category used on the eBay site. Besides being useful to view the list of valid shipping categories, this container is also useful to discover when the last update to shipping categories was made
+                    by eBay.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function DutchBINEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Dutch auctions are deprecated.
-            
+	   This type is deprecated as Dutch auctions are deprecated.
 	 */
 
 	/**

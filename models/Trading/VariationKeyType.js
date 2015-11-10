@@ -5,9 +5,7 @@ function VariationKeyType(ItemID, VariationSpecifics) {
 
 	/**
 	  Documentation
-	   
-                Used to provide input for ItemID and VariationSpecific
-            
+	   Used to provide input for ItemID and VariationSpecific
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function RecoupmentPolicyDetailsType(EnforcedOnListingSite, EnforcedOnRegistrati
 
 	/**
 	  Documentation
-	   
-                Details the recoupment policy on this site. There are two sites involved in recoupment - the listing site and the user registration site, each of which must agree before eBay enforces recoupment for a seller and listing.
-            
+	   Details the recoupment policy on this site. There are two sites involved in recoupment - the listing site and the user registration site, each of which must agree before eBay enforces recoupment for a seller and listing.
 	 */
 
 	/**

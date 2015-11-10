@@ -2,9 +2,7 @@ function SellerProvidedTitleSupportedDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                If present, the site defines category settings for whether the seller can provide their own title for a US or CA eBay Motors listing.
-            
+	   If present, the site defines category settings for whether the seller can provide their own title for a US or CA eBay Motors listing.
 	 */
 
 	/**

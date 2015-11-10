@@ -4,9 +4,7 @@ function PricingRecommendationsType(ProductInfo) {
 
 	/**
 	  Documentation
-	   
-                Pricing data returned from the Product Pricing engine.
-            
+	   Pricing data returned from the Product Pricing engine.
 	 */
 
 	/**

@@ -1,138 +1,26 @@
-var AdFormatEnabledCodeType = require('./AdFormatEnabledCodeType'),
-	ClassifiedAdPaymentMethodEnabledCodeType = require('./ClassifiedAdPaymentMethodEnabledCodeType'),
-	ClassifiedAdBestOfferEnabledCodeType = require('./ClassifiedAdBestOfferEnabledCodeType'),
-	ItemSpecificsEnabledCodeType = require('./ItemSpecificsEnabledCodeType'),
-	INEscrowWorkflowTimelineCodeType = require('./INEscrowWorkflowTimelineCodeType'),
-	ListingEnhancementDurationReferenceType = require('./ListingEnhancementDurationReferenceType'),
-	GeographicExposureCodeType = require('./GeographicExposureCodeType'),
+var ListingEnhancementDurationReferenceType = require('./ListingEnhancementDurationReferenceType'),
 	StoreOwnerExtendedListingDurationsType = require('./StoreOwnerExtendedListingDurationsType'),
 	AmountType = require('./AmountType'),
-	AttributeConversionEnabledCodeType = require('./AttributeConversionEnabledCodeType'),
-	ItemCompatibilityEnabledCodeType = require('./ItemCompatibilityEnabledCodeType'),
-	ConditionEnabledCodeType = require('./ConditionEnabledCodeType'),
-	ConditionValuesType = require('./ConditionValuesType'),
-	ProductCreationEnabledCodeType = require('./ProductCreationEnabledCodeType'),
-	ProductIdentiferEnabledCodeType = require('./ProductIdentiferEnabledCodeType'),
-	PaymentOptionsGroupEnabledCodeType = require('./PaymentOptionsGroupEnabledCodeType'),
-	ProfileCategoryGroupCodeType = require('./ProfileCategoryGroupCodeType');
+	ConditionValuesType = require('./ConditionValuesType');
 
 function SiteDefaultsType(ListingDuration, ShippingTermsRequired, BestOfferEnabled, DutchBINEnabled, UserConsentRequired, HomePageFeaturedEnabled, ProPackEnabled, BasicUpgradePackEnabled, ValuePackEnabled, ProPackPlusEnabled, AdFormatEnabled, BestOfferCounterEnabled, BestOfferAutoDeclineEnabled, LocalMarketSpecialitySubscription, LocalMarketRegularSubscription, LocalMarketPremiumSubscription, LocalMarketNonSubscription, ExpressEnabled, ExpressPicturesRequired, ExpressConditionRequired, MinimumReservePrice, SellerContactDetailsEnabled, TransactionConfirmationRequestEnabled, StoreInventoryEnabled, SkypeMeTransactionalEnabled, SkypeMeNonTransactionalEnabled, LocalListingDistancesRegular, LocalListingDistancesSpecialty, LocalListingDistancesNonSubscription, ClassifiedAdPaymentMethodEnabled, ClassifiedAdShippingMethodEnabled, ClassifiedAdBestOfferEnabled, ClassifiedAdCounterOfferEnabled, ClassifiedAdAutoDeclineEnabled, ClassifiedAdContactByPhoneEnabled, ClassifiedAdContactByEmailEnabled, SafePaymentRequired, ClassifiedAdPayPerLeadEnabled, ItemSpecificsEnabled, PaisaPayFullEscrowEnabled, ISBNIdentifierEnabled, UPCIdentifierEnabled, EANIdentifierEnabled, BrandMPNIdentifierEnabled, ClassifiedAdAutoAcceptEnabled, BestOfferAutoAcceptEnabled, CrossBorderTradeNorthAmericaEnabled, CrossBorderTradeGBEnabled, CrossBorderTradeAustraliaEnabled, PayPalBuyerProtectionEnabled, BuyerGuaranteeEnabled, INEscrowWorkflowTimeline, CombinedFixedPriceTreatmentEnabled, GalleryFeaturedDurations, PayPalRequired, eBayMotorsProAdFormatEnabled, eBayMotorsProContactByPhoneEnabled, eBayMotorsProPhoneCount, eBayMotorsProContactByAddressEnabled, eBayMotorsProStreetCount, eBayMotorsProCompanyNameEnabled, eBayMotorsProContactByEmailEnabled, eBayMotorsProBestOfferEnabled, eBayMotorsProAutoAcceptEnabled, eBayMotorsProAutoDeclineEnabled, eBayMotorsProPaymentMethodCheckOutEnabled, eBayMotorsProShippingMethodEnabled, eBayMotorsProCounterOfferEnabled, eBayMotorsProSellerContactDetailsEnabled, LocalMarketAdFormatEnabled, LocalMarketContactByPhoneEnabled, LocalMarketPhoneCount, LocalMarketContactByAddressEnabled, LocalMarketStreetCount, LocalMarketCompanyNameEnabled, LocalMarketContactByEmailEnabled, LocalMarketBestOfferEnabled, LocalMarketAutoAcceptEnabled, LocalMarketAutoDeclineEnabled, LocalMarketPaymentMethodCheckOutEnabled, LocalMarketShippingMethodEnabled, LocalMarketCounterOfferEnabled, LocalMarketSellerContactDetailsEnabled, ClassifiedAdPhoneCount, ClassifiedAdContactByAddressEnabled, ClassifiedAdStreetCount, ClassifiedAdCompanyNameEnabled, SpecialitySubscription, RegularSubscription, PremiumSubscription, NonSubscription, PayPalRequiredForStoreOwner, ReviseQuantityAllowed, RevisePriceAllowed, StoreOwnerExtendedListingDurationsEnabled, StoreOwnerExtendedListingDurations, ReturnPolicyEnabled, HandlingTimeEnabled, MaxFlatShippingCost, MaxFlatShippingCostCBTExempt, Group1MaxFlatShippingCost, Group2MaxFlatShippingCost, Group3MaxFlatShippingCost, PaymentMethod, VariationsEnabled, AttributeConversionEnabled, FreeGalleryPlusEnabled, FreePicturePackEnabled, ItemCompatibilityEnabled, MinItemCompatibility, MaxItemCompatibility, ConditionEnabled, ConditionValues, ValueCategory, ProductCreationEnabled, EANEnabled, ISBNEnabled, UPCEnabled, MaxGranularFitmentCount, CompatibleVehicleType, PaymentOptionsGroup, ShippingProfileCategoryGroup, PaymentProfileCategoryGroup, ReturnPolicyProfileCategoryGroup, VINSupported, VRMSupported, SellerProvidedTitleSupported, DepositSupported, GlobalShippingEnabled, AdditionalCompatibilityEnabled, PickupDropOffEnabled, DigitalGoodDeliveryEnabled) {
 
 	/**
 	  Documentation
-	   
-                A container for feature definitions that apply to the entire site.
-            
+	   A container for feature definitions that apply to the entire site.
 	 */
 
 	/**
 	 * Arrays
 	 *	ListingDuration: ListingDurationReferenceType
-	 *	PaymentMethod: BuyerPaymentMethodCodeType
 	 */
-	var _AdFormatEnabled;
-	var _ClassifiedAdPaymentMethodEnabled;
-	var _ClassifiedAdBestOfferEnabled;
-	var _ItemSpecificsEnabled;
-	var _INEscrowWorkflowTimeline;
 	var _GalleryFeaturedDurations;
-	var _eBayMotorsProAdFormatEnabled;
-	var _eBayMotorsProBestOfferEnabled;
-	var _eBayMotorsProPaymentMethodCheckOutEnabled;
-	var _LocalMarketAdFormatEnabled;
-	var _LocalMarketBestOfferEnabled;
-	var _LocalMarketPaymentMethodCheckOutEnabled;
-	var _SpecialitySubscription;
-	var _RegularSubscription;
-	var _PremiumSubscription;
-	var _NonSubscription;
 	var _StoreOwnerExtendedListingDurations;
 	var _MaxFlatShippingCost;
 	var _Group1MaxFlatShippingCost;
 	var _Group2MaxFlatShippingCost;
 	var _Group3MaxFlatShippingCost;
-	var _AttributeConversionEnabled;
-	var _ItemCompatibilityEnabled;
-	var _ConditionEnabled;
 	var _ConditionValues;
-	var _ProductCreationEnabled;
-	var _EANEnabled;
-	var _ISBNEnabled;
-	var _UPCEnabled;
-	var _PaymentOptionsGroup;
-	var _ShippingProfileCategoryGroup;
-	var _PaymentProfileCategoryGroup;
-	var _ReturnPolicyProfileCategoryGroup;
-	Object.defineProperty(this, 'AdFormatEnabled', {
-		 get: function(){
-			 return _AdFormatEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AdFormatEnabledCodeType){ 
-					_AdFormatEnabled = value; 
-				}else{
-					console.log('AdFormatEnabled expects type AdFormatEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ClassifiedAdPaymentMethodEnabled', {
-		 get: function(){
-			 return _ClassifiedAdPaymentMethodEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdPaymentMethodEnabledCodeType){ 
-					_ClassifiedAdPaymentMethodEnabled = value; 
-				}else{
-					console.log('ClassifiedAdPaymentMethodEnabled expects type ClassifiedAdPaymentMethodEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ClassifiedAdBestOfferEnabled', {
-		 get: function(){
-			 return _ClassifiedAdBestOfferEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdBestOfferEnabledCodeType){ 
-					_ClassifiedAdBestOfferEnabled = value; 
-				}else{
-					console.log('ClassifiedAdBestOfferEnabled expects type ClassifiedAdBestOfferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ItemSpecificsEnabled', {
-		 get: function(){
-			 return _ItemSpecificsEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ItemSpecificsEnabledCodeType){ 
-					_ItemSpecificsEnabled = value; 
-				}else{
-					console.log('ItemSpecificsEnabled expects type ItemSpecificsEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'INEscrowWorkflowTimeline', {
-		 get: function(){
-			 return _INEscrowWorkflowTimeline;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof INEscrowWorkflowTimelineCodeType){ 
-					_INEscrowWorkflowTimeline = value; 
-				}else{
-					console.log('INEscrowWorkflowTimeline expects type INEscrowWorkflowTimelineCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'GalleryFeaturedDurations', {
 		 get: function(){
 			 return _GalleryFeaturedDurations;
@@ -143,146 +31,6 @@ function SiteDefaultsType(ListingDuration, ShippingTermsRequired, BestOfferEnabl
 					_GalleryFeaturedDurations = value; 
 				}else{
 					console.log('GalleryFeaturedDurations expects type ListingEnhancementDurationReferenceType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'eBayMotorsProAdFormatEnabled', {
-		 get: function(){
-			 return _eBayMotorsProAdFormatEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AdFormatEnabledCodeType){ 
-					_eBayMotorsProAdFormatEnabled = value; 
-				}else{
-					console.log('eBayMotorsProAdFormatEnabled expects type AdFormatEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'eBayMotorsProBestOfferEnabled', {
-		 get: function(){
-			 return _eBayMotorsProBestOfferEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdBestOfferEnabledCodeType){ 
-					_eBayMotorsProBestOfferEnabled = value; 
-				}else{
-					console.log('eBayMotorsProBestOfferEnabled expects type ClassifiedAdBestOfferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'eBayMotorsProPaymentMethodCheckOutEnabled', {
-		 get: function(){
-			 return _eBayMotorsProPaymentMethodCheckOutEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdPaymentMethodEnabledCodeType){ 
-					_eBayMotorsProPaymentMethodCheckOutEnabled = value; 
-				}else{
-					console.log('eBayMotorsProPaymentMethodCheckOutEnabled expects type ClassifiedAdPaymentMethodEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'LocalMarketAdFormatEnabled', {
-		 get: function(){
-			 return _LocalMarketAdFormatEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AdFormatEnabledCodeType){ 
-					_LocalMarketAdFormatEnabled = value; 
-				}else{
-					console.log('LocalMarketAdFormatEnabled expects type AdFormatEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'LocalMarketBestOfferEnabled', {
-		 get: function(){
-			 return _LocalMarketBestOfferEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdBestOfferEnabledCodeType){ 
-					_LocalMarketBestOfferEnabled = value; 
-				}else{
-					console.log('LocalMarketBestOfferEnabled expects type ClassifiedAdBestOfferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'LocalMarketPaymentMethodCheckOutEnabled', {
-		 get: function(){
-			 return _LocalMarketPaymentMethodCheckOutEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ClassifiedAdPaymentMethodEnabledCodeType){ 
-					_LocalMarketPaymentMethodCheckOutEnabled = value; 
-				}else{
-					console.log('LocalMarketPaymentMethodCheckOutEnabled expects type ClassifiedAdPaymentMethodEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SpecialitySubscription', {
-		 get: function(){
-			 return _SpecialitySubscription;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GeographicExposureCodeType){ 
-					_SpecialitySubscription = value; 
-				}else{
-					console.log('SpecialitySubscription expects type GeographicExposureCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'RegularSubscription', {
-		 get: function(){
-			 return _RegularSubscription;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GeographicExposureCodeType){ 
-					_RegularSubscription = value; 
-				}else{
-					console.log('RegularSubscription expects type GeographicExposureCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PremiumSubscription', {
-		 get: function(){
-			 return _PremiumSubscription;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GeographicExposureCodeType){ 
-					_PremiumSubscription = value; 
-				}else{
-					console.log('PremiumSubscription expects type GeographicExposureCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'NonSubscription', {
-		 get: function(){
-			 return _NonSubscription;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof GeographicExposureCodeType){ 
-					_NonSubscription = value; 
-				}else{
-					console.log('NonSubscription expects type GeographicExposureCodeType');
 				}
 			}
 		}
@@ -357,48 +105,6 @@ function SiteDefaultsType(ListingDuration, ShippingTermsRequired, BestOfferEnabl
 			}
 		}
 	});
-	Object.defineProperty(this, 'AttributeConversionEnabled', {
-		 get: function(){
-			 return _AttributeConversionEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AttributeConversionEnabledCodeType){ 
-					_AttributeConversionEnabled = value; 
-				}else{
-					console.log('AttributeConversionEnabled expects type AttributeConversionEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ItemCompatibilityEnabled', {
-		 get: function(){
-			 return _ItemCompatibilityEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ItemCompatibilityEnabledCodeType){ 
-					_ItemCompatibilityEnabled = value; 
-				}else{
-					console.log('ItemCompatibilityEnabled expects type ItemCompatibilityEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ConditionEnabled', {
-		 get: function(){
-			 return _ConditionEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ConditionEnabledCodeType){ 
-					_ConditionEnabled = value; 
-				}else{
-					console.log('ConditionEnabled expects type ConditionEnabledCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ConditionValues', {
 		 get: function(){
 			 return _ConditionValues;
@@ -409,118 +115,6 @@ function SiteDefaultsType(ListingDuration, ShippingTermsRequired, BestOfferEnabl
 					_ConditionValues = value; 
 				}else{
 					console.log('ConditionValues expects type ConditionValuesType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ProductCreationEnabled', {
-		 get: function(){
-			 return _ProductCreationEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductCreationEnabledCodeType){ 
-					_ProductCreationEnabled = value; 
-				}else{
-					console.log('ProductCreationEnabled expects type ProductCreationEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'EANEnabled', {
-		 get: function(){
-			 return _EANEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductIdentiferEnabledCodeType){ 
-					_EANEnabled = value; 
-				}else{
-					console.log('EANEnabled expects type ProductIdentiferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ISBNEnabled', {
-		 get: function(){
-			 return _ISBNEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductIdentiferEnabledCodeType){ 
-					_ISBNEnabled = value; 
-				}else{
-					console.log('ISBNEnabled expects type ProductIdentiferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'UPCEnabled', {
-		 get: function(){
-			 return _UPCEnabled;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductIdentiferEnabledCodeType){ 
-					_UPCEnabled = value; 
-				}else{
-					console.log('UPCEnabled expects type ProductIdentiferEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PaymentOptionsGroup', {
-		 get: function(){
-			 return _PaymentOptionsGroup;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentOptionsGroupEnabledCodeType){ 
-					_PaymentOptionsGroup = value; 
-				}else{
-					console.log('PaymentOptionsGroup expects type PaymentOptionsGroupEnabledCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ShippingProfileCategoryGroup', {
-		 get: function(){
-			 return _ShippingProfileCategoryGroup;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProfileCategoryGroupCodeType){ 
-					_ShippingProfileCategoryGroup = value; 
-				}else{
-					console.log('ShippingProfileCategoryGroup expects type ProfileCategoryGroupCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PaymentProfileCategoryGroup', {
-		 get: function(){
-			 return _PaymentProfileCategoryGroup;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProfileCategoryGroupCodeType){ 
-					_PaymentProfileCategoryGroup = value; 
-				}else{
-					console.log('PaymentProfileCategoryGroup expects type ProfileCategoryGroupCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ReturnPolicyProfileCategoryGroup', {
-		 get: function(){
-			 return _ReturnPolicyProfileCategoryGroup;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProfileCategoryGroupCodeType){ 
-					_ReturnPolicyProfileCategoryGroup = value; 
-				}else{
-					console.log('ReturnPolicyProfileCategoryGroup expects type ProfileCategoryGroupCodeType');
 				}
 			}
 		}
@@ -670,7 +264,7 @@ SiteDefaultsType.prototype.toJSON = function(with_null) {
 		BasicUpgradePackEnabled: (this.BasicUpgradePackEnabled === undefined)? null : this.BasicUpgradePackEnabled,
 		ValuePackEnabled: (this.ValuePackEnabled === undefined)? null : this.ValuePackEnabled,
 		ProPackPlusEnabled: (this.ProPackPlusEnabled === undefined)? null : this.ProPackPlusEnabled,
-		AdFormatEnabled: (this.AdFormatEnabled === undefined)? null : this.AdFormatEnabled.toJSON(),
+		AdFormatEnabled: (this.AdFormatEnabled === undefined)? null : this.AdFormatEnabled,
 		BestOfferCounterEnabled: (this.BestOfferCounterEnabled === undefined)? null : this.BestOfferCounterEnabled,
 		BestOfferAutoDeclineEnabled: (this.BestOfferAutoDeclineEnabled === undefined)? null : this.BestOfferAutoDeclineEnabled,
 		LocalMarketSpecialitySubscription: (this.LocalMarketSpecialitySubscription === undefined)? null : this.LocalMarketSpecialitySubscription,
@@ -689,16 +283,16 @@ SiteDefaultsType.prototype.toJSON = function(with_null) {
 		LocalListingDistancesRegular: (this.LocalListingDistancesRegular === undefined)? null : this.LocalListingDistancesRegular,
 		LocalListingDistancesSpecialty: (this.LocalListingDistancesSpecialty === undefined)? null : this.LocalListingDistancesSpecialty,
 		LocalListingDistancesNonSubscription: (this.LocalListingDistancesNonSubscription === undefined)? null : this.LocalListingDistancesNonSubscription,
-		ClassifiedAdPaymentMethodEnabled: (this.ClassifiedAdPaymentMethodEnabled === undefined)? null : this.ClassifiedAdPaymentMethodEnabled.toJSON(),
+		ClassifiedAdPaymentMethodEnabled: (this.ClassifiedAdPaymentMethodEnabled === undefined)? null : this.ClassifiedAdPaymentMethodEnabled,
 		ClassifiedAdShippingMethodEnabled: (this.ClassifiedAdShippingMethodEnabled === undefined)? null : this.ClassifiedAdShippingMethodEnabled,
-		ClassifiedAdBestOfferEnabled: (this.ClassifiedAdBestOfferEnabled === undefined)? null : this.ClassifiedAdBestOfferEnabled.toJSON(),
+		ClassifiedAdBestOfferEnabled: (this.ClassifiedAdBestOfferEnabled === undefined)? null : this.ClassifiedAdBestOfferEnabled,
 		ClassifiedAdCounterOfferEnabled: (this.ClassifiedAdCounterOfferEnabled === undefined)? null : this.ClassifiedAdCounterOfferEnabled,
 		ClassifiedAdAutoDeclineEnabled: (this.ClassifiedAdAutoDeclineEnabled === undefined)? null : this.ClassifiedAdAutoDeclineEnabled,
 		ClassifiedAdContactByPhoneEnabled: (this.ClassifiedAdContactByPhoneEnabled === undefined)? null : this.ClassifiedAdContactByPhoneEnabled,
 		ClassifiedAdContactByEmailEnabled: (this.ClassifiedAdContactByEmailEnabled === undefined)? null : this.ClassifiedAdContactByEmailEnabled,
 		SafePaymentRequired: (this.SafePaymentRequired === undefined)? null : this.SafePaymentRequired,
 		ClassifiedAdPayPerLeadEnabled: (this.ClassifiedAdPayPerLeadEnabled === undefined)? null : this.ClassifiedAdPayPerLeadEnabled,
-		ItemSpecificsEnabled: (this.ItemSpecificsEnabled === undefined)? null : this.ItemSpecificsEnabled.toJSON(),
+		ItemSpecificsEnabled: (this.ItemSpecificsEnabled === undefined)? null : this.ItemSpecificsEnabled,
 		PaisaPayFullEscrowEnabled: (this.PaisaPayFullEscrowEnabled === undefined)? null : this.PaisaPayFullEscrowEnabled,
 		ISBNIdentifierEnabled: (this.ISBNIdentifierEnabled === undefined)? null : this.ISBNIdentifierEnabled,
 		UPCIdentifierEnabled: (this.UPCIdentifierEnabled === undefined)? null : this.UPCIdentifierEnabled,
@@ -711,35 +305,35 @@ SiteDefaultsType.prototype.toJSON = function(with_null) {
 		CrossBorderTradeAustraliaEnabled: (this.CrossBorderTradeAustraliaEnabled === undefined)? null : this.CrossBorderTradeAustraliaEnabled,
 		PayPalBuyerProtectionEnabled: (this.PayPalBuyerProtectionEnabled === undefined)? null : this.PayPalBuyerProtectionEnabled,
 		BuyerGuaranteeEnabled: (this.BuyerGuaranteeEnabled === undefined)? null : this.BuyerGuaranteeEnabled,
-		INEscrowWorkflowTimeline: (this.INEscrowWorkflowTimeline === undefined)? null : this.INEscrowWorkflowTimeline.toJSON(),
+		INEscrowWorkflowTimeline: (this.INEscrowWorkflowTimeline === undefined)? null : this.INEscrowWorkflowTimeline,
 		CombinedFixedPriceTreatmentEnabled: (this.CombinedFixedPriceTreatmentEnabled === undefined)? null : this.CombinedFixedPriceTreatmentEnabled,
 		GalleryFeaturedDurations: (this.GalleryFeaturedDurations === undefined)? null : this.GalleryFeaturedDurations.toJSON(),
 		PayPalRequired: (this.PayPalRequired === undefined)? null : this.PayPalRequired,
-		eBayMotorsProAdFormatEnabled: (this.eBayMotorsProAdFormatEnabled === undefined)? null : this.eBayMotorsProAdFormatEnabled.toJSON(),
+		eBayMotorsProAdFormatEnabled: (this.eBayMotorsProAdFormatEnabled === undefined)? null : this.eBayMotorsProAdFormatEnabled,
 		eBayMotorsProContactByPhoneEnabled: (this.eBayMotorsProContactByPhoneEnabled === undefined)? null : this.eBayMotorsProContactByPhoneEnabled,
 		eBayMotorsProPhoneCount: (this.eBayMotorsProPhoneCount === undefined)? null : this.eBayMotorsProPhoneCount,
 		eBayMotorsProContactByAddressEnabled: (this.eBayMotorsProContactByAddressEnabled === undefined)? null : this.eBayMotorsProContactByAddressEnabled,
 		eBayMotorsProStreetCount: (this.eBayMotorsProStreetCount === undefined)? null : this.eBayMotorsProStreetCount,
 		eBayMotorsProCompanyNameEnabled: (this.eBayMotorsProCompanyNameEnabled === undefined)? null : this.eBayMotorsProCompanyNameEnabled,
 		eBayMotorsProContactByEmailEnabled: (this.eBayMotorsProContactByEmailEnabled === undefined)? null : this.eBayMotorsProContactByEmailEnabled,
-		eBayMotorsProBestOfferEnabled: (this.eBayMotorsProBestOfferEnabled === undefined)? null : this.eBayMotorsProBestOfferEnabled.toJSON(),
+		eBayMotorsProBestOfferEnabled: (this.eBayMotorsProBestOfferEnabled === undefined)? null : this.eBayMotorsProBestOfferEnabled,
 		eBayMotorsProAutoAcceptEnabled: (this.eBayMotorsProAutoAcceptEnabled === undefined)? null : this.eBayMotorsProAutoAcceptEnabled,
 		eBayMotorsProAutoDeclineEnabled: (this.eBayMotorsProAutoDeclineEnabled === undefined)? null : this.eBayMotorsProAutoDeclineEnabled,
-		eBayMotorsProPaymentMethodCheckOutEnabled: (this.eBayMotorsProPaymentMethodCheckOutEnabled === undefined)? null : this.eBayMotorsProPaymentMethodCheckOutEnabled.toJSON(),
+		eBayMotorsProPaymentMethodCheckOutEnabled: (this.eBayMotorsProPaymentMethodCheckOutEnabled === undefined)? null : this.eBayMotorsProPaymentMethodCheckOutEnabled,
 		eBayMotorsProShippingMethodEnabled: (this.eBayMotorsProShippingMethodEnabled === undefined)? null : this.eBayMotorsProShippingMethodEnabled,
 		eBayMotorsProCounterOfferEnabled: (this.eBayMotorsProCounterOfferEnabled === undefined)? null : this.eBayMotorsProCounterOfferEnabled,
 		eBayMotorsProSellerContactDetailsEnabled: (this.eBayMotorsProSellerContactDetailsEnabled === undefined)? null : this.eBayMotorsProSellerContactDetailsEnabled,
-		LocalMarketAdFormatEnabled: (this.LocalMarketAdFormatEnabled === undefined)? null : this.LocalMarketAdFormatEnabled.toJSON(),
+		LocalMarketAdFormatEnabled: (this.LocalMarketAdFormatEnabled === undefined)? null : this.LocalMarketAdFormatEnabled,
 		LocalMarketContactByPhoneEnabled: (this.LocalMarketContactByPhoneEnabled === undefined)? null : this.LocalMarketContactByPhoneEnabled,
 		LocalMarketPhoneCount: (this.LocalMarketPhoneCount === undefined)? null : this.LocalMarketPhoneCount,
 		LocalMarketContactByAddressEnabled: (this.LocalMarketContactByAddressEnabled === undefined)? null : this.LocalMarketContactByAddressEnabled,
 		LocalMarketStreetCount: (this.LocalMarketStreetCount === undefined)? null : this.LocalMarketStreetCount,
 		LocalMarketCompanyNameEnabled: (this.LocalMarketCompanyNameEnabled === undefined)? null : this.LocalMarketCompanyNameEnabled,
 		LocalMarketContactByEmailEnabled: (this.LocalMarketContactByEmailEnabled === undefined)? null : this.LocalMarketContactByEmailEnabled,
-		LocalMarketBestOfferEnabled: (this.LocalMarketBestOfferEnabled === undefined)? null : this.LocalMarketBestOfferEnabled.toJSON(),
+		LocalMarketBestOfferEnabled: (this.LocalMarketBestOfferEnabled === undefined)? null : this.LocalMarketBestOfferEnabled,
 		LocalMarketAutoAcceptEnabled: (this.LocalMarketAutoAcceptEnabled === undefined)? null : this.LocalMarketAutoAcceptEnabled,
 		LocalMarketAutoDeclineEnabled: (this.LocalMarketAutoDeclineEnabled === undefined)? null : this.LocalMarketAutoDeclineEnabled,
-		LocalMarketPaymentMethodCheckOutEnabled: (this.LocalMarketPaymentMethodCheckOutEnabled === undefined)? null : this.LocalMarketPaymentMethodCheckOutEnabled.toJSON(),
+		LocalMarketPaymentMethodCheckOutEnabled: (this.LocalMarketPaymentMethodCheckOutEnabled === undefined)? null : this.LocalMarketPaymentMethodCheckOutEnabled,
 		LocalMarketShippingMethodEnabled: (this.LocalMarketShippingMethodEnabled === undefined)? null : this.LocalMarketShippingMethodEnabled,
 		LocalMarketCounterOfferEnabled: (this.LocalMarketCounterOfferEnabled === undefined)? null : this.LocalMarketCounterOfferEnabled,
 		LocalMarketSellerContactDetailsEnabled: (this.LocalMarketSellerContactDetailsEnabled === undefined)? null : this.LocalMarketSellerContactDetailsEnabled,
@@ -747,10 +341,10 @@ SiteDefaultsType.prototype.toJSON = function(with_null) {
 		ClassifiedAdContactByAddressEnabled: (this.ClassifiedAdContactByAddressEnabled === undefined)? null : this.ClassifiedAdContactByAddressEnabled,
 		ClassifiedAdStreetCount: (this.ClassifiedAdStreetCount === undefined)? null : this.ClassifiedAdStreetCount,
 		ClassifiedAdCompanyNameEnabled: (this.ClassifiedAdCompanyNameEnabled === undefined)? null : this.ClassifiedAdCompanyNameEnabled,
-		SpecialitySubscription: (this.SpecialitySubscription === undefined)? null : this.SpecialitySubscription.toJSON(),
-		RegularSubscription: (this.RegularSubscription === undefined)? null : this.RegularSubscription.toJSON(),
-		PremiumSubscription: (this.PremiumSubscription === undefined)? null : this.PremiumSubscription.toJSON(),
-		NonSubscription: (this.NonSubscription === undefined)? null : this.NonSubscription.toJSON(),
+		SpecialitySubscription: (this.SpecialitySubscription === undefined)? null : this.SpecialitySubscription,
+		RegularSubscription: (this.RegularSubscription === undefined)? null : this.RegularSubscription,
+		PremiumSubscription: (this.PremiumSubscription === undefined)? null : this.PremiumSubscription,
+		NonSubscription: (this.NonSubscription === undefined)? null : this.NonSubscription,
 		PayPalRequiredForStoreOwner: (this.PayPalRequiredForStoreOwner === undefined)? null : this.PayPalRequiredForStoreOwner,
 		ReviseQuantityAllowed: (this.ReviseQuantityAllowed === undefined)? null : this.ReviseQuantityAllowed,
 		RevisePriceAllowed: (this.RevisePriceAllowed === undefined)? null : this.RevisePriceAllowed,
@@ -765,25 +359,25 @@ SiteDefaultsType.prototype.toJSON = function(with_null) {
 		Group3MaxFlatShippingCost: (this.Group3MaxFlatShippingCost === undefined)? null : this.Group3MaxFlatShippingCost.toJSON(),
 		PaymentMethod: (this.PaymentMethod === undefined)? null : this.PaymentMethod,
 		VariationsEnabled: (this.VariationsEnabled === undefined)? null : this.VariationsEnabled,
-		AttributeConversionEnabled: (this.AttributeConversionEnabled === undefined)? null : this.AttributeConversionEnabled.toJSON(),
+		AttributeConversionEnabled: (this.AttributeConversionEnabled === undefined)? null : this.AttributeConversionEnabled,
 		FreeGalleryPlusEnabled: (this.FreeGalleryPlusEnabled === undefined)? null : this.FreeGalleryPlusEnabled,
 		FreePicturePackEnabled: (this.FreePicturePackEnabled === undefined)? null : this.FreePicturePackEnabled,
-		ItemCompatibilityEnabled: (this.ItemCompatibilityEnabled === undefined)? null : this.ItemCompatibilityEnabled.toJSON(),
+		ItemCompatibilityEnabled: (this.ItemCompatibilityEnabled === undefined)? null : this.ItemCompatibilityEnabled,
 		MinItemCompatibility: (this.MinItemCompatibility === undefined)? null : this.MinItemCompatibility,
 		MaxItemCompatibility: (this.MaxItemCompatibility === undefined)? null : this.MaxItemCompatibility,
-		ConditionEnabled: (this.ConditionEnabled === undefined)? null : this.ConditionEnabled.toJSON(),
+		ConditionEnabled: (this.ConditionEnabled === undefined)? null : this.ConditionEnabled,
 		ConditionValues: (this.ConditionValues === undefined)? null : this.ConditionValues.toJSON(),
 		ValueCategory: (this.ValueCategory === undefined)? null : this.ValueCategory,
-		ProductCreationEnabled: (this.ProductCreationEnabled === undefined)? null : this.ProductCreationEnabled.toJSON(),
-		EANEnabled: (this.EANEnabled === undefined)? null : this.EANEnabled.toJSON(),
-		ISBNEnabled: (this.ISBNEnabled === undefined)? null : this.ISBNEnabled.toJSON(),
-		UPCEnabled: (this.UPCEnabled === undefined)? null : this.UPCEnabled.toJSON(),
+		ProductCreationEnabled: (this.ProductCreationEnabled === undefined)? null : this.ProductCreationEnabled,
+		EANEnabled: (this.EANEnabled === undefined)? null : this.EANEnabled,
+		ISBNEnabled: (this.ISBNEnabled === undefined)? null : this.ISBNEnabled,
+		UPCEnabled: (this.UPCEnabled === undefined)? null : this.UPCEnabled,
 		MaxGranularFitmentCount: (this.MaxGranularFitmentCount === undefined)? null : this.MaxGranularFitmentCount,
 		CompatibleVehicleType: (this.CompatibleVehicleType === undefined)? null : this.CompatibleVehicleType,
-		PaymentOptionsGroup: (this.PaymentOptionsGroup === undefined)? null : this.PaymentOptionsGroup.toJSON(),
-		ShippingProfileCategoryGroup: (this.ShippingProfileCategoryGroup === undefined)? null : this.ShippingProfileCategoryGroup.toJSON(),
-		PaymentProfileCategoryGroup: (this.PaymentProfileCategoryGroup === undefined)? null : this.PaymentProfileCategoryGroup.toJSON(),
-		ReturnPolicyProfileCategoryGroup: (this.ReturnPolicyProfileCategoryGroup === undefined)? null : this.ReturnPolicyProfileCategoryGroup.toJSON(),
+		PaymentOptionsGroup: (this.PaymentOptionsGroup === undefined)? null : this.PaymentOptionsGroup,
+		ShippingProfileCategoryGroup: (this.ShippingProfileCategoryGroup === undefined)? null : this.ShippingProfileCategoryGroup,
+		PaymentProfileCategoryGroup: (this.PaymentProfileCategoryGroup === undefined)? null : this.PaymentProfileCategoryGroup,
+		ReturnPolicyProfileCategoryGroup: (this.ReturnPolicyProfileCategoryGroup === undefined)? null : this.ReturnPolicyProfileCategoryGroup,
 		VINSupported: (this.VINSupported === undefined)? null : this.VINSupported,
 		VRMSupported: (this.VRMSupported === undefined)? null : this.VRMSupported,
 		SellerProvidedTitleSupported: (this.SellerProvidedTitleSupported === undefined)? null : this.SellerProvidedTitleSupported,

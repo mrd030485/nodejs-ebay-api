@@ -2,14 +2,11 @@ function PaymentInformationCodeType(Payment) {
 
 	/**
 	  Documentation
-	   
-                Contains details payment information
-            
+	   Contains details payment information
 	 */
 
 	/**
 	 * Arrays
-	 *	Payment: PaymentTransactionCodeType
 	 */
 	this.Payment = Payment;
 }

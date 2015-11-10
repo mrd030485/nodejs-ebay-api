@@ -1,37 +1,15 @@
-var ShippingServiceCodeType = require('./ShippingServiceCodeType');
-
 function ShippingServiceDetailsType(Description, ExpeditedService, InternationalService, ShippingService, ShippingServiceID, ShippingTimeMax, ShippingTimeMin, ShippingServiceCode, ServiceType, ShippingPackage, DimensionsRequired, ValidForSellingFlow, SurchargeApplicable, ShippingCarrier, CODService, DeprecationDetails, MappedToShippingServiceID, CostGroupFlat, ShippingServicePackageDetails, WeightRequired, DetailVersion, UpdateTime, ShippingCategory) {
 
 	/**
 	  Documentation
-	   
-                Details about a specific shipping service.
-            
+	   Details about a specific shipping service.
 	 */
 
 	/**
 	 * Arrays
-	 *	ServiceType: ShippingTypeCodeType
-	 *	ShippingPackage: ShippingPackageCodeType
-	 *	ShippingCarrier: ShippingCarrierCodeType
 	 *	DeprecationDetails: AnnouncementMessageType
 	 *	ShippingServicePackageDetails: ShippingServicePackageDetailsType
 	 */
-	var _ShippingServiceCode;
-	Object.defineProperty(this, 'ShippingServiceCode', {
-		 get: function(){
-			 return _ShippingServiceCode;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingServiceCodeType){ 
-					_ShippingServiceCode = value; 
-				}else{
-					console.log('ShippingServiceCode expects type ShippingServiceCodeType');
-				}
-			}
-		}
-	});
 	this.Description = Description;
 	this.ExpeditedService = ExpeditedService;
 	this.InternationalService = InternationalService;
@@ -65,7 +43,7 @@ ShippingServiceDetailsType.prototype.toJSON = function(with_null) {
 		ShippingServiceID: (this.ShippingServiceID === undefined)? null : this.ShippingServiceID,
 		ShippingTimeMax: (this.ShippingTimeMax === undefined)? null : this.ShippingTimeMax,
 		ShippingTimeMin: (this.ShippingTimeMin === undefined)? null : this.ShippingTimeMin,
-		ShippingServiceCode: (this.ShippingServiceCode === undefined)? null : this.ShippingServiceCode.toJSON(),
+		ShippingServiceCode: (this.ShippingServiceCode === undefined)? null : this.ShippingServiceCode,
 		ServiceType: (this.ServiceType === undefined)? null : this.ServiceType,
 		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
 		DimensionsRequired: (this.DimensionsRequired === undefined)? null : this.DimensionsRequired,

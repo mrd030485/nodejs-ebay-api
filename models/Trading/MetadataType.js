@@ -2,9 +2,7 @@ function MetadataType(Name, Value) {
 
 	/**
 	  Documentation
-	   
-                This type is used by the <b>Metadata</b> container to provide price guidance information, which includes the minimum and maximum recommended prices for the item, which are based on recent sales of similar items.
-            
+	   This type is used by the <b>Metadata</b> container to provide price guidance information, which includes the minimum and maximum recommended prices for the item, which are based on recent sales of similar items.
 	 */
 
 	/**

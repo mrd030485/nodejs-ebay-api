@@ -1,20 +1,16 @@
-var AmountType = require('./AmountType'),
-	InsuranceOptionCodeType = require('./InsuranceOptionCodeType');
+var AmountType = require('./AmountType');
 
 function InsuranceDetailsType(InsuranceFee, InsuranceOption) {
 
 	/**
 	  Documentation
-	   
-                Contains the cost of shipping insurance and other insurance-related information.
-            
+	   Contains the cost of shipping insurance and other insurance-related information.
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _InsuranceFee;
-	var _InsuranceOption;
 	Object.defineProperty(this, 'InsuranceFee', {
 		 get: function(){
 			 return _InsuranceFee;
@@ -29,27 +25,13 @@ function InsuranceDetailsType(InsuranceFee, InsuranceOption) {
 			}
 		}
 	});
-	Object.defineProperty(this, 'InsuranceOption', {
-		 get: function(){
-			 return _InsuranceOption;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof InsuranceOptionCodeType){ 
-					_InsuranceOption = value; 
-				}else{
-					console.log('InsuranceOption expects type InsuranceOptionCodeType');
-				}
-			}
-		}
-	});
 	this.InsuranceFee = InsuranceFee;
 	this.InsuranceOption = InsuranceOption;
 }
 InsuranceDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
 		InsuranceFee: (this.InsuranceFee === undefined)? null : this.InsuranceFee.toJSON(),
-		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption.toJSON()
+		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption
 	};
 	if(!with_null) {
 		for(var k in json) {

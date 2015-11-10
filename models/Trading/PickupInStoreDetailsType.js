@@ -2,11 +2,9 @@ function PickupInStoreDetailsType(EligibleForPickupInStore, EligibleForPickupDro
 
 	/**
 	  Documentation
-	   
-                Complex type defining the <b>PickupInStoreDetails</b> container, that is used in Add/Revise/Relist calls to enable the listing for In-Store Pickup or Click and Collect. <br/><br/> <span class="tablenote"> <strong>Note:</strong>
-                At this time, the In-Store Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. The Click and Collect feature is only available to large merchants on the
-                eBay UK (site ID - 3) and eBay Australia (Site ID - 15) sites. </span>
-            
+	   Complex type defining the <b>PickupInStoreDetails</b> container, that is used in Add/Revise/Relist calls to enable the listing for In-Store Pickup or Click and Collect. <br/><br/> <span class="tablenote">
+                    <strong>Note:</strong> At this time, the In-Store Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. The Click and Collect feature is only
+                    available to large merchants on the eBay UK (site ID - 3) and eBay Australia (Site ID - 15) sites. </span>
 	 */
 
 	/**

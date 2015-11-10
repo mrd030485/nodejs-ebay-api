@@ -2,9 +2,7 @@ function ThemeGroupType(GroupID, GroupName, ThemeID, ThemeTotal) {
 
 	/**
 	  Documentation
-	   
-                Data for one theme group. Returned for GetDescriptionTemplates if theme groups are requested.
-            
+	   Data for one theme group. Returned for GetDescriptionTemplates if theme groups are requested.
 	 */
 
 	/**

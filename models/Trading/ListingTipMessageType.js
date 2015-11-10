@@ -2,9 +2,7 @@ function ListingTipMessageType(ListingTipMessageID, ShortMessage, LongMessage, H
 
 	/**
 	  Documentation
-	   
-                Contains the message portion of a listing tip that is returned by the Listing Analyzer engine.
-            
+	   Contains the message portion of a listing tip that is returned by the Listing Analyzer engine.
 	 */
 
 	/**

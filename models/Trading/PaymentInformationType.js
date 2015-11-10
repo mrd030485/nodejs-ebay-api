@@ -2,9 +2,7 @@ function PaymentInformationType(Payment) {
 
 	/**
 	  Documentation
-	   
-                This type contains information about the way a buyer payment is allocated for a specified order.
-            
+	   This type contains information about the way a buyer payment is allocated for a specified order.
 	 */
 
 	/**

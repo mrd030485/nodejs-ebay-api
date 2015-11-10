@@ -10,9 +10,7 @@ function VariationType(SKU, StartPrice, Quantity, VariationSpecifics, UnitsAvail
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>Variation</b> container, which provides full details on each item variation in a multi-variation listing.
-            
+	   This type defines the <b>Variation</b> container, which provides full details on each item variation in a multi-variation listing.
 	 */
 
 	/**

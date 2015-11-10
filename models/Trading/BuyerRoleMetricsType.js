@@ -2,9 +2,7 @@ function BuyerRoleMetricsType(PositiveFeedbackLeftCount, NegativeFeedbackLeftCou
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BuyerRoleMetrics</b> container, which consists of details relating to the eBay buyer's one-year history of leaving feedback for the seller.
-            
+	   Type defining the <b>BuyerRoleMetrics</b> container, which consists of details relating to the eBay buyer's one-year history of leaving feedback for the seller.
 	 */
 
 	/**

@@ -4,9 +4,7 @@ function SellerDiscountType(CampaignID, CampaignDisplayName, ItemDiscountAmount,
 
 	/**
 	  Documentation
-	   
-                Type that defines the <b>SellerDiscount</b> container, which contains the ID, name, and amount of the seller discount.
-            
+	   Type that defines the <b>SellerDiscount</b> container, which contains the ID, name, and amount of the seller discount.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function eBayMotorsProBestOfferEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether Contact Seller is enabled for Classified Ads. Added for EbayMotors Pro users.
-            
+	   Indicates whether Contact Seller is enabled for Classified Ads. Added for EbayMotors Pro users.
 	 */
 
 	/**

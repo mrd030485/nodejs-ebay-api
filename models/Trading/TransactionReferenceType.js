@@ -2,9 +2,7 @@ function TransactionReferenceType(type) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <strong>ReferenceID</strong> element, which is used to display the unique identifier of a payment (and payment type through the <strong>type</strong> attribute.
-            
+	   Type defining the <strong>ReferenceID</strong> element, which is used to display the unique identifier of a payment (and payment type through the <strong>type</strong> attribute.
 	 */
 
 	/**

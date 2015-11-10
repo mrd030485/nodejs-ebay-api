@@ -1,15 +1,12 @@
 var ExternalProductIDType = require('./ExternalProductIDType'),
 	NameValueListArrayType = require('./NameValueListArrayType'),
-	ReviewDetailsType = require('./ReviewDetailsType'),
-	ProductStateCodeType = require('./ProductStateCodeType');
+	ReviewDetailsType = require('./ReviewDetailsType');
 
 function CatalogProductType(Title, DetailsURL, StockPhotoURL, DisplayStockPhotos, ItemCount, ExternalProductID, ProductReferenceID, AttributeSetID, ItemSpecifics, ReviewCount, ReviewDetails, ProductState) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated.
-            
+	   This type is deprecated.
 	 */
 
 	/**
@@ -18,7 +15,6 @@ function CatalogProductType(Title, DetailsURL, StockPhotoURL, DisplayStockPhotos
 	var _ExternalProductID;
 	var _ItemSpecifics;
 	var _ReviewDetails;
-	var _ProductState;
 	Object.defineProperty(this, 'ExternalProductID', {
 		 get: function(){
 			 return _ExternalProductID;
@@ -61,20 +57,6 @@ function CatalogProductType(Title, DetailsURL, StockPhotoURL, DisplayStockPhotos
 			}
 		}
 	});
-	Object.defineProperty(this, 'ProductState', {
-		 get: function(){
-			 return _ProductState;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ProductStateCodeType){ 
-					_ProductState = value; 
-				}else{
-					console.log('ProductState expects type ProductStateCodeType');
-				}
-			}
-		}
-	});
 	this.Title = Title;
 	this.DetailsURL = DetailsURL;
 	this.StockPhotoURL = StockPhotoURL;
@@ -101,7 +83,7 @@ CatalogProductType.prototype.toJSON = function(with_null) {
 		ItemSpecifics: (this.ItemSpecifics === undefined)? null : this.ItemSpecifics.toJSON(),
 		ReviewCount: (this.ReviewCount === undefined)? null : this.ReviewCount,
 		ReviewDetails: (this.ReviewDetails === undefined)? null : this.ReviewDetails.toJSON(),
-		ProductState: (this.ProductState === undefined)? null : this.ProductState.toJSON()
+		ProductState: (this.ProductState === undefined)? null : this.ProductState
 	};
 	if(!with_null) {
 		for(var k in json) {

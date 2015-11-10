@@ -2,9 +2,7 @@ function ClassifiedAdContactByPhoneEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the telephone can be a contact method for the category.
-            
+	   Indicates whether the telephone can be a contact method for the category.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function NameValueRelationshipType(ParentName, ParentValue) {
 
 	/**
 	  Documentation
-	   
-                Information about a parent name-value pair. Currently used to indicate relationships between Item Specifics.
-            
+	   Information about a parent name-value pair. Currently used to indicate relationships between Item Specifics.
 	 */
 
 	/**

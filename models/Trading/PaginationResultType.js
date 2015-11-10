@@ -2,9 +2,8 @@ function PaginationResultType(TotalNumberOfPages, TotalNumberOfEntries) {
 
 	/**
 	  Documentation
-	   
-                Shows the pagination of data returned by call requests. Pagination of returned data is not needed nor supported for every Trading API call. See the documentation for individual calls to determine whether pagination is supported, required, or desirable.
-            
+	   Shows the pagination of data returned by call requests. Pagination of returned data is not needed nor supported for every Trading API call. See the documentation for individual calls to determine whether pagination is supported, required,
+                    or desirable.
 	 */
 
 	/**

@@ -2,10 +2,7 @@ function XSLFileType(FileName, FileVersion, FileContent) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated because the calls that use it are deprected.
-                
-            
+	   This type is deprecated because the calls that use it are deprected. 
 	 */
 
 	/**

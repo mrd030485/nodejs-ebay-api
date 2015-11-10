@@ -2,9 +2,7 @@ function CategoryMappingType() {
 
 	/**
 	  Documentation
-	   
-                Mapping between an old category ID and an active category ID.
-            
+	   Mapping between an old category ID and an active category ID.
 	 */
 
 	/**

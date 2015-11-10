@@ -2,9 +2,7 @@ function CancelOfferArrayType(CancelOffer) {
 
 	/**
 	  Documentation
-	   
-                This type is not used by any Trading API call.
-            
+	   This type is not used by any Trading API call.
 	 */
 
 	/**

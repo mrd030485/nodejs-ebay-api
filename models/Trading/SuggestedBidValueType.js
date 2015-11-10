@@ -2,9 +2,7 @@ function SuggestedBidValueType(BidValue) {
 
 	/**
 	  Documentation
-	   
-                Container for next bid suggestion values for auction items.
-            
+	   Container for next bid suggestion values for auction items.
 	 */
 
 	/**

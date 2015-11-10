@@ -2,9 +2,7 @@ function ReturnPolicyEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines the feature that specifies whether a return policy could be enabled on the site.
-            
+	   Defines the feature that specifies whether a return policy could be enabled on the site.
 	 */
 
 	/**

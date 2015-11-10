@@ -1,19 +1,14 @@
 var AmountType = require('./AmountType'),
 	UserType = require('./UserType'),
 	ShippingDetailsType = require('./ShippingDetailsType'),
-	DepositTypeCodeType = require('./DepositTypeCodeType'),
 	ItemType = require('./ItemType'),
 	TransactionStatusType = require('./TransactionStatusType'),
-	decimal = require('./decimal'),
 	SellingManagerProductDetailsType = require('./SellingManagerProductDetailsType'),
 	ShippingServiceOptionsType = require('./ShippingServiceOptionsType'),
-	PaidStatusCodeType = require('./PaidStatusCodeType'),
 	FeedbackInfoType = require('./FeedbackInfoType'),
 	OrderType = require('./OrderType'),
 	ListingCheckoutRedirectPreferenceType = require('./ListingCheckoutRedirectPreferenceType'),
 	RefundArrayType = require('./RefundArrayType'),
-	SiteCodeType = require('./SiteCodeType'),
-	TransactionPlatformCodeType = require('./TransactionPlatformCodeType'),
 	VariationType = require('./VariationType'),
 	TaxesType = require('./TaxesType'),
 	PaymentHoldDetailType = require('./PaymentHoldDetailType'),
@@ -31,11 +26,9 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 
 	/**
 	  Documentation
-	   
-                Contains information about a single order line item (transaction). An order line item contains information about the sale of one or multiple items from a single listing to a single buyer. The eBay system creates an order line item when a buyer has committed
-                to make a purchase in an auction or fixed-price listing. A fixed-priced listing (with multiple identical items or a similar item with variations) can spawn one or more order line items. Auction listings and single-item, fixed-price listings
-                can only spawn one order line item.
-            
+	   Contains information about a single order line item (transaction). An order line item contains information about the sale of one or multiple items from a single listing to a single buyer. The eBay system creates an order line item when
+                    a buyer has committed to make a purchase in an auction or fixed-price listing. A fixed-priced listing (with multiple identical items or a similar item with variations) can spawn one or more order line items. Auction listings and single-item,
+                    fixed-price listings can only spawn one order line item.
 	 */
 
 	/**
@@ -49,16 +42,12 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 	var _ShippingDetails;
 	var _ConvertedAmountPaid;
 	var _ConvertedTransactionPrice;
-	var _DepositType;
 	var _Item;
 	var _Status;
 	var _TransactionPrice;
-	var _VATPercent;
 	var _SellingManagerProductDetails;
 	var _ShippingServiceSelected;
 	var _DutchAuctionBid;
-	var _BuyerPaidStatus;
-	var _SellerPaidStatus;
 	var _TotalPrice;
 	var _FeedbackLeft;
 	var _FeedbackReceived;
@@ -66,8 +55,6 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 	var _FinalValueFee;
 	var _ListingCheckoutRedirectPreference;
 	var _RefundArray;
-	var _TransactionSiteID;
-	var _Platform;
 	var _BuyerGuaranteePrice;
 	var _Variation;
 	var _Taxes;
@@ -183,20 +170,6 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 			}
 		}
 	});
-	Object.defineProperty(this, 'DepositType', {
-		 get: function(){
-			 return _DepositType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof DepositTypeCodeType){ 
-					_DepositType = value; 
-				}else{
-					console.log('DepositType expects type DepositTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Item', {
 		 get: function(){
 			 return _Item;
@@ -239,20 +212,6 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 			}
 		}
 	});
-	Object.defineProperty(this, 'VATPercent', {
-		 get: function(){
-			 return _VATPercent;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof decimal){ 
-					_VATPercent = value; 
-				}else{
-					console.log('VATPercent expects type decimal');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'SellingManagerProductDetails', {
 		 get: function(){
 			 return _SellingManagerProductDetails;
@@ -291,34 +250,6 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 					_DutchAuctionBid = value; 
 				}else{
 					console.log('DutchAuctionBid expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'BuyerPaidStatus', {
-		 get: function(){
-			 return _BuyerPaidStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaidStatusCodeType){ 
-					_BuyerPaidStatus = value; 
-				}else{
-					console.log('BuyerPaidStatus expects type PaidStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SellerPaidStatus', {
-		 get: function(){
-			 return _SellerPaidStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaidStatusCodeType){ 
-					_SellerPaidStatus = value; 
-				}else{
-					console.log('SellerPaidStatus expects type PaidStatusCodeType');
 				}
 			}
 		}
@@ -417,34 +348,6 @@ function TransactionType(AmountPaid, AdjustmentAmount, ConvertedAdjustmentAmount
 					_RefundArray = value; 
 				}else{
 					console.log('RefundArray expects type RefundArrayType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'TransactionSiteID', {
-		 get: function(){
-			 return _TransactionSiteID;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SiteCodeType){ 
-					_TransactionSiteID = value; 
-				}else{
-					console.log('TransactionSiteID expects type SiteCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Platform', {
-		 get: function(){
-			 return _Platform;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof TransactionPlatformCodeType){ 
-					_Platform = value; 
-				}else{
-					console.log('Platform expects type TransactionPlatformCodeType');
 				}
 			}
 		}
@@ -766,21 +669,21 @@ TransactionType.prototype.toJSON = function(with_null) {
 		ConvertedAmountPaid: (this.ConvertedAmountPaid === undefined)? null : this.ConvertedAmountPaid.toJSON(),
 		ConvertedTransactionPrice: (this.ConvertedTransactionPrice === undefined)? null : this.ConvertedTransactionPrice.toJSON(),
 		CreatedDate: (this.CreatedDate === undefined)? null : this.CreatedDate,
-		DepositType: (this.DepositType === undefined)? null : this.DepositType.toJSON(),
+		DepositType: (this.DepositType === undefined)? null : this.DepositType,
 		Item: (this.Item === undefined)? null : this.Item.toJSON(),
 		QuantityPurchased: (this.QuantityPurchased === undefined)? null : this.QuantityPurchased,
 		Status: (this.Status === undefined)? null : this.Status.toJSON(),
 		TransactionID: (this.TransactionID === undefined)? null : this.TransactionID,
 		TransactionPrice: (this.TransactionPrice === undefined)? null : this.TransactionPrice.toJSON(),
 		BestOfferSale: (this.BestOfferSale === undefined)? null : this.BestOfferSale,
-		VATPercent: (this.VATPercent === undefined)? null : this.VATPercent.toJSON(),
+		VATPercent: (this.VATPercent === undefined)? null : this.VATPercent,
 		ExternalTransaction: (this.ExternalTransaction === undefined)? null : this.ExternalTransaction,
 		SellingManagerProductDetails: (this.SellingManagerProductDetails === undefined)? null : this.SellingManagerProductDetails.toJSON(),
 		ShippingServiceSelected: (this.ShippingServiceSelected === undefined)? null : this.ShippingServiceSelected.toJSON(),
 		BuyerMessage: (this.BuyerMessage === undefined)? null : this.BuyerMessage,
 		DutchAuctionBid: (this.DutchAuctionBid === undefined)? null : this.DutchAuctionBid.toJSON(),
-		BuyerPaidStatus: (this.BuyerPaidStatus === undefined)? null : this.BuyerPaidStatus.toJSON(),
-		SellerPaidStatus: (this.SellerPaidStatus === undefined)? null : this.SellerPaidStatus.toJSON(),
+		BuyerPaidStatus: (this.BuyerPaidStatus === undefined)? null : this.BuyerPaidStatus,
+		SellerPaidStatus: (this.SellerPaidStatus === undefined)? null : this.SellerPaidStatus,
 		PaidTime: (this.PaidTime === undefined)? null : this.PaidTime,
 		ShippedTime: (this.ShippedTime === undefined)? null : this.ShippedTime,
 		TotalPrice: (this.TotalPrice === undefined)? null : this.TotalPrice.toJSON(),
@@ -790,8 +693,8 @@ TransactionType.prototype.toJSON = function(with_null) {
 		FinalValueFee: (this.FinalValueFee === undefined)? null : this.FinalValueFee.toJSON(),
 		ListingCheckoutRedirectPreference: (this.ListingCheckoutRedirectPreference === undefined)? null : this.ListingCheckoutRedirectPreference.toJSON(),
 		RefundArray: (this.RefundArray === undefined)? null : this.RefundArray.toJSON(),
-		TransactionSiteID: (this.TransactionSiteID === undefined)? null : this.TransactionSiteID.toJSON(),
-		Platform: (this.Platform === undefined)? null : this.Platform.toJSON(),
+		TransactionSiteID: (this.TransactionSiteID === undefined)? null : this.TransactionSiteID,
+		Platform: (this.Platform === undefined)? null : this.Platform,
 		CartID: (this.CartID === undefined)? null : this.CartID,
 		SellerContactBuyerByEmail: (this.SellerContactBuyerByEmail === undefined)? null : this.SellerContactBuyerByEmail,
 		PayPalEmailAddress: (this.PayPalEmailAddress === undefined)? null : this.PayPalEmailAddress,

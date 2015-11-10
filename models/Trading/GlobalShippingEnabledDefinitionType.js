@@ -2,9 +2,7 @@ function GlobalShippingEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Specifies whether the Global Shipping Program (GSP) is enabled are not. The field is returned as an empty element (i.e., a boolean value is not returned).
-            
+	   Specifies whether the Global Shipping Program (GSP) is enabled are not. The field is returned as an empty element (i.e., a boolean value is not returned).
 	 */
 
 	/**

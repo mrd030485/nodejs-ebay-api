@@ -1,50 +1,16 @@
-var SellingManagerAutoRelistTypeCodeType = require('./SellingManagerAutoRelistTypeCodeType'),
-	SellingManagerAutoRelistOptionCodeType = require('./SellingManagerAutoRelistOptionCodeType'),
-	BestOfferDetailsType = require('./BestOfferDetailsType');
+var BestOfferDetailsType = require('./BestOfferDetailsType');
 
 function SellingManagerAutoRelistType(Type, RelistCondition, RelistAfterDays, RelistAfterHours, RelistAtSpecificTimeOfDay, BestOfferDetails, ListingHoldInventoryLevel) {
 
 	/**
 	  Documentation
-	   
-                Provides information about an automated relisting rule. Automated relisting rules cannot be combined with automated listing rules. A template can have one set of information per automated relisting rule specified.
-            
+	   Provides information about an automated relisting rule. Automated relisting rules cannot be combined with automated listing rules. A template can have one set of information per automated relisting rule specified.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _Type;
-	var _RelistCondition;
 	var _BestOfferDetails;
-	Object.defineProperty(this, 'Type', {
-		 get: function(){
-			 return _Type;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellingManagerAutoRelistTypeCodeType){ 
-					_Type = value; 
-				}else{
-					console.log('Type expects type SellingManagerAutoRelistTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'RelistCondition', {
-		 get: function(){
-			 return _RelistCondition;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellingManagerAutoRelistOptionCodeType){ 
-					_RelistCondition = value; 
-				}else{
-					console.log('RelistCondition expects type SellingManagerAutoRelistOptionCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'BestOfferDetails', {
 		 get: function(){
 			 return _BestOfferDetails;
@@ -69,8 +35,8 @@ function SellingManagerAutoRelistType(Type, RelistCondition, RelistAfterDays, Re
 }
 SellingManagerAutoRelistType.prototype.toJSON = function(with_null) {
 	var json = { 
-		Type: (this.Type === undefined)? null : this.Type.toJSON(),
-		RelistCondition: (this.RelistCondition === undefined)? null : this.RelistCondition.toJSON(),
+		Type: (this.Type === undefined)? null : this.Type,
+		RelistCondition: (this.RelistCondition === undefined)? null : this.RelistCondition,
 		RelistAfterDays: (this.RelistAfterDays === undefined)? null : this.RelistAfterDays,
 		RelistAfterHours: (this.RelistAfterHours === undefined)? null : this.RelistAfterHours,
 		RelistAtSpecificTimeOfDay: (this.RelistAtSpecificTimeOfDay === undefined)? null : this.RelistAtSpecificTimeOfDay,

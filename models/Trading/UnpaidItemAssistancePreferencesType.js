@@ -2,10 +2,8 @@ function UnpaidItemAssistancePreferencesType(DelayBeforeOpeningDispute, OptInSta
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>UnpaidItemAssistancePreferences</b> container. This container is used in <b>SetUserPreferences</b> to set the preferences related to the <b>Unpaid Item Assistant</b> feature. The <b>UnpaidItemAssistancePreferences</b>
-                container is also returned in <b>GetUserPreferences</b> (if the <b>ShowUnpaidItemAssistancePreference</b> flag is included and set to true in the request).
-            
+	   This type defines the <b>UnpaidItemAssistancePreferences</b> container. This container is used in <b>SetUserPreferences</b> to set the preferences related to the <b>Unpaid Item Assistant</b> feature.
+                    The <b>UnpaidItemAssistancePreferences</b> container is also returned in <b>GetUserPreferences</b> (if the <b>ShowUnpaidItemAssistancePreference</b> flag is included and set to true in the request).
 	 */
 
 	/**

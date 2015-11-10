@@ -2,9 +2,7 @@ function FeedbackPeriodArrayType(FeedbackPeriod) {
 
 	/**
 	  Documentation
-	   
-                Container for a set of feedback statistics. Contains zero one or multiple FeedbackPeriod objects. Output only, for the summary feedback data returned by GetFeedback.
-            
+	   Container for a set of feedback statistics. Contains zero one or multiple FeedbackPeriod objects. Output only, for the summary feedback data returned by GetFeedback.
 	 */
 
 	/**

@@ -5,9 +5,7 @@ function StoreColorSchemeType(ColorSchemeID, Name, Color, Font) {
 
 	/**
 	  Documentation
-	   
-                Store color scheme.
-            
+	   Store color scheme.
 	 */
 
 	/**

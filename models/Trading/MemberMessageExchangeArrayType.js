@@ -2,9 +2,7 @@ function MemberMessageExchangeArrayType(MemberMessageExchange) {
 
 	/**
 	  Documentation
-	   
-                Container for messages. Returned for GetMemberMessages if messages that meet the request criteria exist.
-            
+	   Container for messages. Returned for GetMemberMessages if messages that meet the request criteria exist.
 	 */
 
 	/**

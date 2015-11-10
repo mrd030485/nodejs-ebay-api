@@ -2,9 +2,7 @@ function ClassifiedAdCompanyNameEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of a company name when contacting the seller for Classified Ad format listings. Added for the For Sale By Owner format.
-            
+	   Indicates whether the category supports the use of a company name when contacting the seller for Classified Ad format listings. Added for the For Sale By Owner format.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function eBayMotorsProShippingMethodEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates if the category supports shipping options for Classified Ad format listings. Added for EbayMotors Pro users.
-            
+	   Indicates if the category supports shipping options for Classified Ad format listings. Added for EbayMotors Pro users.
 	 */
 
 	/**

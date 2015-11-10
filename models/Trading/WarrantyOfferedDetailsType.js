@@ -3,7 +3,6 @@ function WarrantyOfferedDetailsType(WarrantyOfferedOption, Description) {
 	/**
 	  Documentation
 	   
-            
 	 */
 
 	/**

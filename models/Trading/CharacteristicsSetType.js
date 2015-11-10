@@ -2,9 +2,7 @@ function CharacteristicsSetType(Name, AttributeSetID, AttributeSetVersion, Chara
 
 	/**
 	  Documentation
-	   
-                No longer applicable to any category.
-            
+	   No longer applicable to any category.
 	 */
 
 	/**

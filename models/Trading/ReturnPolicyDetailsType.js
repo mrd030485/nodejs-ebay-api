@@ -2,9 +2,7 @@ function ReturnPolicyDetailsType(Refund, ReturnsWithin, ReturnsAccepted, Descrip
 
 	/**
 	  Documentation
-	   
-                Type for the return policy details of an item.
-            
+	   Type for the return policy details of an item.
 	 */
 
 	/**

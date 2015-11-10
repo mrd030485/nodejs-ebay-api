@@ -5,9 +5,7 @@ function ItemsCanceledEventType(CanceledItemIDArray, EligibleForRelist, SellerID
 
 	/**
 	  Documentation
-	   
-                This event is not functional.
-            
+	   This event is not functional.
 	 */
 
 base: undefined

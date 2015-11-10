@@ -7,7 +7,6 @@ function SellingManagerAutoListAccordingToScheduleType(DayOfWeek, ListingPeriodI
 
 	/**
 	 * Arrays
-	 *	DayOfWeek: DayOfWeekCodeType
 	 */
 	this.DayOfWeek = DayOfWeek;
 	this.ListingPeriodInWeeks = ListingPeriodInWeeks;

@@ -4,9 +4,7 @@ function ProStoresCheckoutPreferenceType(CheckoutRedirectProStores, ProStoresDet
 
 	/**
 	  Documentation
-	   
-                <b>This type is deprecated because 3rd Party Checkout was deprecated.</b>
-            
+	   <b>This type is deprecated because 3rd Party Checkout was deprecated.</b>
 	 */
 
 	/**

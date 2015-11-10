@@ -2,10 +2,8 @@ function SellerReturnPreferencesType(OptedIn) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SellerReturnPreferences</b> container, which consists of the <b>OptedIn</b> flag that indicates whether or not the seller has opted in to eBay Managed Returns. <br><br> eBay Managed Returns are
-                currently only available on the US and UK sites.
-            
+	   Type defining the <b>SellerReturnPreferences</b> container, which consists of the <b>OptedIn</b> flag that indicates whether or not the seller has opted in to eBay Managed Returns. <br><br> eBay Managed
+                    Returns are currently only available on the US and UK sites.
 	 */
 
 	/**

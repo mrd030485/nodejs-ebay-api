@@ -1,6 +1,4 @@
-var PaymentTransactionStatusCodeType = require('./PaymentTransactionStatusCodeType'),
-	RefundSourceTypeCodeType = require('./RefundSourceTypeCodeType'),
-	UserIdentityType = require('./UserIdentityType'),
+var UserIdentityType = require('./UserIdentityType'),
 	AmountType = require('./AmountType'),
 	TransactionReferenceType = require('./TransactionReferenceType');
 
@@ -8,49 +6,17 @@ function RefundTransactionInfoType(RefundStatus, RefundType, RefundTo, RefundTim
 
 	/**
 	  Documentation
-	   
-                Type defining the <strong>Refund</strong> container, which consists of detailed information on an In-Store Pickup item refund. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At this time, the In-Store
-                Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. </span>
-            
+	   Type defining the <strong>Refund</strong> container, which consists of detailed information on an In-Store Pickup item refund. <br/><br/> <span class="tablenote"> <strong>Note:</strong> At this
+                    time, the In-Store Pickup feature is generally only available to large retail merchants, and can only be applied to multi-quantity, fixed-price listings. </span>
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _RefundStatus;
-	var _RefundType;
 	var _RefundTo;
 	var _RefundAmount;
 	var _ReferenceID;
 	var _FeeOrCreditAmount;
-	Object.defineProperty(this, 'RefundStatus', {
-		 get: function(){
-			 return _RefundStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentTransactionStatusCodeType){ 
-					_RefundStatus = value; 
-				}else{
-					console.log('RefundStatus expects type PaymentTransactionStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'RefundType', {
-		 get: function(){
-			 return _RefundType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof RefundSourceTypeCodeType){ 
-					_RefundType = value; 
-				}else{
-					console.log('RefundType expects type RefundSourceTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'RefundTo', {
 		 get: function(){
 			 return _RefundTo;
@@ -117,8 +83,8 @@ function RefundTransactionInfoType(RefundStatus, RefundType, RefundTo, RefundTim
 }
 RefundTransactionInfoType.prototype.toJSON = function(with_null) {
 	var json = { 
-		RefundStatus: (this.RefundStatus === undefined)? null : this.RefundStatus.toJSON(),
-		RefundType: (this.RefundType === undefined)? null : this.RefundType.toJSON(),
+		RefundStatus: (this.RefundStatus === undefined)? null : this.RefundStatus,
+		RefundType: (this.RefundType === undefined)? null : this.RefundType,
 		RefundTo: (this.RefundTo === undefined)? null : this.RefundTo.toJSON(),
 		RefundTime: (this.RefundTime === undefined)? null : this.RefundTime,
 		RefundAmount: (this.RefundAmount === undefined)? null : this.RefundAmount.toJSON(),

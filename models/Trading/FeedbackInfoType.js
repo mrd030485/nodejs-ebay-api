@@ -1,34 +1,16 @@
-var CommentTypeCodeType = require('./CommentTypeCodeType'),
-	UserIDType = require('./UserIDType');
+var UserIDType = require('./UserIDType');
 
 function FeedbackInfoType(CommentText, CommentType, TargetUser) {
 
 	/**
 	  Documentation
-	   
-                Type defining the Feedback details for an order line item, including the eBay User ID of the user the feedback is intended for, the Feedback rating, and the Feedback comment.
-            
+	   Type defining the Feedback details for an order line item, including the eBay User ID of the user the feedback is intended for, the Feedback rating, and the Feedback comment.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _CommentType;
 	var _TargetUser;
-	Object.defineProperty(this, 'CommentType', {
-		 get: function(){
-			 return _CommentType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CommentTypeCodeType){ 
-					_CommentType = value; 
-				}else{
-					console.log('CommentType expects type CommentTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'TargetUser', {
 		 get: function(){
 			 return _TargetUser;
@@ -50,7 +32,7 @@ function FeedbackInfoType(CommentText, CommentType, TargetUser) {
 FeedbackInfoType.prototype.toJSON = function(with_null) {
 	var json = { 
 		CommentText: (this.CommentText === undefined)? null : this.CommentText,
-		CommentType: (this.CommentType === undefined)? null : this.CommentType.toJSON(),
+		CommentType: (this.CommentType === undefined)? null : this.CommentType,
 		TargetUser: (this.TargetUser === undefined)? null : this.TargetUser.toJSON()
 	};
 	if(!with_null) {

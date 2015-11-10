@@ -2,9 +2,7 @@ function ReviewDetailsType(AverageRating, Review) {
 
 	/**
 	  Documentation
-	   
-                Contains product reviews written by eBay members.
-            
+	   Contains product reviews written by eBay members.
 	 */
 
 	/**

@@ -4,9 +4,7 @@ function SiteWideCharacteristicsType(CharacteristicsSet, ExcludeCategoryID) {
 
 	/**
 	  Documentation
-	   
-                A list of one or more characteristics sets mapped to the category, if any. Use this information when working with Item Specifics (Attributes) and Pre-filled Item Information (Catalogs) functionality.
-            
+	   A list of one or more characteristics sets mapped to the category, if any. Use this information when working with Item Specifics (Attributes) and Pre-filled Item Information (Catalogs) functionality.
 	 */
 
 	/**

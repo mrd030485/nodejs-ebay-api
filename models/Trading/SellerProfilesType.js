@@ -6,9 +6,7 @@ function SellerProfilesType(SellerShippingProfile, SellerReturnProfile, SellerPa
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SellerProfiles</b> container, which consists of references to a seller's payment, shipping, and/or return policy profiles.
-            
+	   Type defining the <b>SellerProfiles</b> container, which consists of references to a seller's payment, shipping, and/or return policy profiles.
 	 */
 
 	/**

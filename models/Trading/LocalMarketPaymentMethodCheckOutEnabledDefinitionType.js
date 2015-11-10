@@ -2,9 +2,7 @@ function LocalMarketPaymentMethodCheckOutEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports the use of payment method checkOut for Classified Ad format listings. Added for Local market users.
-            
+	   Indicates whether the category supports the use of payment method checkOut for Classified Ad format listings. Added for Local market users.
 	 */
 
 	/**

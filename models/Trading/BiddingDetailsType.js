@@ -4,9 +4,7 @@ function BiddingDetailsType(ConvertedMaxBid, MaxBid, QuantityBid, QuantityWon, W
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BiddingDetails</b> container, which consists of information about the buyer's bidding history on a single auction item.
-            
+	   Type defining the <b>BiddingDetails</b> container, which consists of information about the buyer's bidding history on a single auction item.
 	 */
 
 	/**

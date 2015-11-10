@@ -1,21 +1,17 @@
-var RequiredSellerActionArrayType = require('./RequiredSellerActionArrayType'),
-	PaymentHoldReasonCodeType = require('./PaymentHoldReasonCodeType');
+var RequiredSellerActionArrayType = require('./RequiredSellerActionArrayType');
 
 function PaymentHoldDetailType(ExpectedReleaseDate, RequiredSellerActionArray, NumOfReqSellerActions, PaymentHoldReason) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>PaymentHoldDetails</b> container, which consists of information related to the payment hold on the order, including the reason why the buyer's payment for the order is being held, the expected release date of the funds
-                into the seller's account, and possible action(s) the seller can take to expedite the payout of funds into their account.
-            
+	   This type defines the <b>PaymentHoldDetails</b> container, which consists of information related to the payment hold on the order, including the reason why the buyer's payment for the order is being held, the expected release
+                    date of the funds into the seller's account, and possible action(s) the seller can take to expedite the payout of funds into their account.
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _RequiredSellerActionArray;
-	var _PaymentHoldReason;
 	Object.defineProperty(this, 'RequiredSellerActionArray', {
 		 get: function(){
 			 return _RequiredSellerActionArray;
@@ -30,20 +26,6 @@ function PaymentHoldDetailType(ExpectedReleaseDate, RequiredSellerActionArray, N
 			}
 		}
 	});
-	Object.defineProperty(this, 'PaymentHoldReason', {
-		 get: function(){
-			 return _PaymentHoldReason;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentHoldReasonCodeType){ 
-					_PaymentHoldReason = value; 
-				}else{
-					console.log('PaymentHoldReason expects type PaymentHoldReasonCodeType');
-				}
-			}
-		}
-	});
 	this.ExpectedReleaseDate = ExpectedReleaseDate;
 	this.RequiredSellerActionArray = RequiredSellerActionArray;
 	this.NumOfReqSellerActions = NumOfReqSellerActions;
@@ -54,7 +36,7 @@ PaymentHoldDetailType.prototype.toJSON = function(with_null) {
 		ExpectedReleaseDate: (this.ExpectedReleaseDate === undefined)? null : this.ExpectedReleaseDate,
 		RequiredSellerActionArray: (this.RequiredSellerActionArray === undefined)? null : this.RequiredSellerActionArray.toJSON(),
 		NumOfReqSellerActions: (this.NumOfReqSellerActions === undefined)? null : this.NumOfReqSellerActions,
-		PaymentHoldReason: (this.PaymentHoldReason === undefined)? null : this.PaymentHoldReason.toJSON()
+		PaymentHoldReason: (this.PaymentHoldReason === undefined)? null : this.PaymentHoldReason
 	};
 	if(!with_null) {
 		for(var k in json) {

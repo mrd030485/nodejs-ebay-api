@@ -2,9 +2,7 @@ function RemindersType(PaymentToSendCount, FeedbackToReceiveCount, FeedbackToSen
 
 	/**
 	  Documentation
-	   
-                Specifies the type of reminders for which you want information.
-            
+	   Specifies the type of reminders for which you want information.
 	 */
 
 	/**

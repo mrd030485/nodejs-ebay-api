@@ -2,9 +2,7 @@ function UnitOfMeasurementDetailsType(UnitOfMeasurement, DetailVersion, UpdateTi
 
 	/**
 	  Documentation
-	   
-                Units of measurement are no longer returned in GeteBayDetails, so this type is no longer applicable.
-            
+	   Units of measurement are no longer returned in GeteBayDetails, so this type is no longer applicable.
 	 */
 
 	/**

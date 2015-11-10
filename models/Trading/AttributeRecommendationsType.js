@@ -4,9 +4,7 @@ function AttributeRecommendationsType(AttributeSetArray) {
 
 	/**
 	  Documentation
-	   
-                This type was deprecated along with the <b>GetItemRecommendations</b> call.
-            
+	   This type was deprecated along with the <b>GetItemRecommendations</b> call.
 	 */
 
 	/**

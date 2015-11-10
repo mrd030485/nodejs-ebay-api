@@ -2,9 +2,7 @@ function SellerExcludeShipToLocationPreferencesType(ExcludeShipToLocation) {
 
 	/**
 	  Documentation
-	   
-                Container consisting for the list of locations to where the seller will not ship items.
-            
+	   Container consisting for the list of locations to where the seller will not ship items.
 	 */
 
 	/**

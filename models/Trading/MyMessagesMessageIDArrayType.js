@@ -2,9 +2,7 @@ function MyMessagesMessageIDArrayType(MessageID) {
 
 	/**
 	  Documentation
-	   
-                Contains a list of up to 10 MessageID values.
-            
+	   Contains a list of up to 10 MessageID values.
 	 */
 
 	/**

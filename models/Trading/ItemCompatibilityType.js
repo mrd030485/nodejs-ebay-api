@@ -2,9 +2,7 @@ function ItemCompatibilityType(Delete, NameValueList, CompatibilityNotes) {
 
 	/**
 	  Documentation
-	   
-                All information corresponding to an individual compatibility by application.
-            
+	   All information corresponding to an individual compatibility by application.
 	 */
 
 	/**

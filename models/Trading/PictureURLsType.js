@@ -2,9 +2,7 @@ function PictureURLsType(eBayPictureURL, ExternalPictureURL) {
 
 	/**
 	  Documentation
-	   
-                This container returns the URLs of the seller's self-hosted (hosted outside of eBay) pictures and the URL for the corresponding eBay Picture Services (EPS), that was generated when the picture was uploaded.
-            
+	   This container returns the URLs of the seller's self-hosted (hosted outside of eBay) pictures and the URL for the corresponding eBay Picture Services (EPS), that was generated when the picture was uploaded.
 	 */
 
 	/**

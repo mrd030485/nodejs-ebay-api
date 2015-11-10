@@ -1,22 +1,17 @@
-var AccountStateCodeType = require('./AccountStateCodeType'),
-	AmountType = require('./AmountType'),
-	SellerPaymentMethodCodeType = require('./SellerPaymentMethodCodeType');
+var AmountType = require('./AmountType');
 
 function AccountSummaryType(AccountState, InvoicePayment, InvoiceCredit, InvoiceNewFee, AdditionalAccount, AmountPastDue, BankAccountInfo, BankModifyDate, BillingCycleDate, CreditCardExpiration, CreditCardInfo, CreditCardModifyDate, CurrentBalance, Email, InvoiceBalance, InvoiceDate, LastAmountPaid, LastPaymentDate, PastDue, PaymentMethod) {
 
 	/**
 	  Documentation
-	   
-                Summary data for the requesting user's seller account as a whole. This includes a balance for the account, any past due amount and date, and defining data for additional accounts (if the user has changed country of residency while having an active eBay
-                account).
-            
+	   Summary data for the requesting user's seller account as a whole. This includes a balance for the account, any past due amount and date, and defining data for additional accounts (if the user has changed country of residency while having
+                    an active eBay account).
 	 */
 
 	/**
 	 * Arrays
 	 *	AdditionalAccount: AdditionalAccountType
 	 */
-	var _AccountState;
 	var _InvoicePayment;
 	var _InvoiceCredit;
 	var _InvoiceNewFee;
@@ -24,21 +19,6 @@ function AccountSummaryType(AccountState, InvoicePayment, InvoiceCredit, Invoice
 	var _CurrentBalance;
 	var _InvoiceBalance;
 	var _LastAmountPaid;
-	var _PaymentMethod;
-	Object.defineProperty(this, 'AccountState', {
-		 get: function(){
-			 return _AccountState;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AccountStateCodeType){ 
-					_AccountState = value; 
-				}else{
-					console.log('AccountState expects type AccountStateCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'InvoicePayment', {
 		 get: function(){
 			 return _InvoicePayment;
@@ -137,20 +117,6 @@ function AccountSummaryType(AccountState, InvoicePayment, InvoiceCredit, Invoice
 			}
 		}
 	});
-	Object.defineProperty(this, 'PaymentMethod', {
-		 get: function(){
-			 return _PaymentMethod;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SellerPaymentMethodCodeType){ 
-					_PaymentMethod = value; 
-				}else{
-					console.log('PaymentMethod expects type SellerPaymentMethodCodeType');
-				}
-			}
-		}
-	});
 	this.AccountState = AccountState;
 	this.InvoicePayment = InvoicePayment;
 	this.InvoiceCredit = InvoiceCredit;
@@ -174,7 +140,7 @@ function AccountSummaryType(AccountState, InvoicePayment, InvoiceCredit, Invoice
 }
 AccountSummaryType.prototype.toJSON = function(with_null) {
 	var json = { 
-		AccountState: (this.AccountState === undefined)? null : this.AccountState.toJSON(),
+		AccountState: (this.AccountState === undefined)? null : this.AccountState,
 		InvoicePayment: (this.InvoicePayment === undefined)? null : this.InvoicePayment.toJSON(),
 		InvoiceCredit: (this.InvoiceCredit === undefined)? null : this.InvoiceCredit.toJSON(),
 		InvoiceNewFee: (this.InvoiceNewFee === undefined)? null : this.InvoiceNewFee.toJSON(),
@@ -193,7 +159,7 @@ AccountSummaryType.prototype.toJSON = function(with_null) {
 		LastAmountPaid: (this.LastAmountPaid === undefined)? null : this.LastAmountPaid.toJSON(),
 		LastPaymentDate: (this.LastPaymentDate === undefined)? null : this.LastPaymentDate,
 		PastDue: (this.PastDue === undefined)? null : this.PastDue,
-		PaymentMethod: (this.PaymentMethod === undefined)? null : this.PaymentMethod.toJSON()
+		PaymentMethod: (this.PaymentMethod === undefined)? null : this.PaymentMethod
 	};
 	if(!with_null) {
 		for(var k in json) {

@@ -2,9 +2,7 @@ function NotificationDetailsArrayType(NotificationDetails) {
 
 	/**
 	  Documentation
-	   
-                Returns information about notifications sent to the given application for the given ItemID. It will only be returned if ItemID was specified in the input parameters.
-            
+	   Returns information about notifications sent to the given application for the given ItemID. It will only be returned if ItemID was specified in the input parameters.
 	 */
 
 	/**

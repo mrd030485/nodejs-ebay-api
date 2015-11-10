@@ -1,16 +1,13 @@
 var ItemIDType = require('./ItemIDType'),
 	OrderIDType = require('./OrderIDType'),
 	ExternalProductIDType = require('./ExternalProductIDType'),
-	PaymentTypeCodeType = require('./PaymentTypeCodeType'),
 	AmountType = require('./AmountType');
 
 function SellerPaymentType(ItemID, TransactionID, OrderID, SellerInventoryID, PrivateNotes, ExternalProductID, Title, PaymentType, TransactionPrice, ShippingReimbursement, Commission, AmountPaid, PaidTime, OrderLineItemID) {
 
 	/**
 	  Documentation
-	   
-                A payment between Half.com and a seller. The financial value of a payment is typically based on an amount that a buyer paid to Half.com for one order line item, plus the buyer's shipping cost, minus Half.com's commission.
-            
+	   A payment between Half.com and a seller. The financial value of a payment is typically based on an amount that a buyer paid to Half.com for one order line item, plus the buyer's shipping cost, minus Half.com's commission.
 	 */
 
 	/**
@@ -19,7 +16,6 @@ function SellerPaymentType(ItemID, TransactionID, OrderID, SellerInventoryID, Pr
 	var _ItemID;
 	var _OrderID;
 	var _ExternalProductID;
-	var _PaymentType;
 	var _TransactionPrice;
 	var _ShippingReimbursement;
 	var _Commission;
@@ -62,20 +58,6 @@ function SellerPaymentType(ItemID, TransactionID, OrderID, SellerInventoryID, Pr
 					_ExternalProductID = value; 
 				}else{
 					console.log('ExternalProductID expects type ExternalProductIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PaymentType', {
-		 get: function(){
-			 return _PaymentType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentTypeCodeType){ 
-					_PaymentType = value; 
-				}else{
-					console.log('PaymentType expects type PaymentTypeCodeType');
 				}
 			}
 		}
@@ -160,7 +142,7 @@ SellerPaymentType.prototype.toJSON = function(with_null) {
 		PrivateNotes: (this.PrivateNotes === undefined)? null : this.PrivateNotes,
 		ExternalProductID: (this.ExternalProductID === undefined)? null : this.ExternalProductID.toJSON(),
 		Title: (this.Title === undefined)? null : this.Title,
-		PaymentType: (this.PaymentType === undefined)? null : this.PaymentType.toJSON(),
+		PaymentType: (this.PaymentType === undefined)? null : this.PaymentType,
 		TransactionPrice: (this.TransactionPrice === undefined)? null : this.TransactionPrice.toJSON(),
 		ShippingReimbursement: (this.ShippingReimbursement === undefined)? null : this.ShippingReimbursement.toJSON(),
 		Commission: (this.Commission === undefined)? null : this.Commission.toJSON(),

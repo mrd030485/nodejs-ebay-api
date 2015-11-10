@@ -6,7 +6,6 @@ function SellingManagerProductSpecificsType(PrimaryCategoryID, Variations, ItemS
 	/**
 	  Documentation
 	   Describes a Selling Manager Template
-            
 	 */
 
 	/**

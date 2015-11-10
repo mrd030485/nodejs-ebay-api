@@ -6,7 +6,6 @@ function SellingManagerTemplateDetailsType(SaleTemplateID, SaleTemplateName, Suc
 	/**
 	  Documentation
 	   Describes a Selling Manager Template
-            
 	 */
 
 	/**

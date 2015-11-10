@@ -2,9 +2,7 @@ function MaxFlatShippingCostCBTExemptDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Max Flat Shipping Cost ... CBT Exempt. See Shipping docs.
-            
+	   Max Flat Shipping Cost ... CBT Exempt. See Shipping docs.
 	 */
 
 	/**

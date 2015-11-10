@@ -2,10 +2,8 @@ function PaginationType(EntriesPerPage, PageNumber) {
 
 	/**
 	  Documentation
-	   
-                Contains data for controlling pagination in API requests. Pagination of returned data is required for some calls and not needed in or not supported for some calls. See the documentation for individual calls to determine whether pagination is supported,
-                required, or desirable.
-            
+	   Contains data for controlling pagination in API requests. Pagination of returned data is required for some calls and not needed in or not supported for some calls. See the documentation for individual calls to determine whether pagination
+                    is supported, required, or desirable.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function BidApprovalArrayType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated.
-            
+	   This type is deprecated.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ExcludeShippingLocationDetailsType(Description, Location, Region, Detai
 
 	/**
 	  Documentation
-	   
-                Container for the list of site-specific locations supported by the Exclude Ship To Locations feature.
-            
+	   Container for the list of site-specific locations supported by the Exclude Ship To Locations feature.
 	 */
 
 	/**

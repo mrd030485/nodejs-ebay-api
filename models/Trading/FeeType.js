@@ -4,10 +4,8 @@ function FeeType(Name, Fee, PromotionalDiscount) {
 
 	/**
 	  Documentation
-	   
-                Identifies the name and cost of a listing feature that a member pays to eBay (or an eBay company). These listing feature names, fees, and possible discounts are intended only as an aid to help estimate the fees for a listing. Use GetAccount for an accurate
-                final fee breakdown. Returned in AddItemResponseType and related response types.
-            
+	   Identifies the name and cost of a listing feature that a member pays to eBay (or an eBay company). These listing feature names, fees, and possible discounts are intended only as an aid to help estimate the fees for a listing. Use GetAccount
+                    for an accurate final fee breakdown. Returned in AddItemResponseType and related response types.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ItemBestOffersArrayType(ItemBestOffers) {
 
 	/**
 	  Documentation
-	   
-                A collection of details about the best offers received for a specific item. Empty if there are no best offers. Includes the buyer and seller messages only if the ReturnAll detail level is used.
-            
+	   A collection of details about the best offers received for a specific item. Empty if there are no best offers. Includes the buyer and seller messages only if the ReturnAll detail level is used.
 	 */
 
 	/**

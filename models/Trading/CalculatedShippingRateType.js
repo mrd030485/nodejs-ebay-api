@@ -1,46 +1,27 @@
-var MeasurementSystemCodeType = require('./MeasurementSystemCodeType'),
-	MeasureType = require('./MeasureType'),
-	AmountType = require('./AmountType'),
-	ShippingPackageCodeType = require('./ShippingPackageCodeType');
+var MeasureType = require('./MeasureType'),
+	AmountType = require('./AmountType');
 
 function CalculatedShippingRateType(OriginatingPostalCode, MeasurementUnit, PackageDepth, PackageLength, PackageWidth, PackagingHandlingCosts, ShippingIrregular, ShippingPackage, WeightMajor, WeightMinor, InternationalPackagingHandlingCosts) {
 
 	/**
 	  Documentation
-	   
-                Details pertinent to one or more items for which calculated shipping (or flat rate shipping using shipping rate tables with weight surcharges) has been offered by the seller, such as package dimension and weight and packaging/handling costs. Also returned
-                with the data for an item's transaction. <br><br> <span class="tablenote"><strong>Note:</strong> The <strong>CalculatedShippingRate</strong> container should only be used to specify values for
-                the <strong>InternationalPackagingHandlingCosts</strong>, <strong>OriginatingPostalCode</strong>, and/or <strong>PackagingHandlingCosts</strong> fields. The rest of the fields in the <strong>CalculatedShippingRate</strong>
-                container are used to specify package dimensions and package weight, and these values should now be specified in the <strong>ShippingPackageDetails</strong> container instead. </span>
-            
+	   Details pertinent to one or more items for which calculated shipping (or flat rate shipping using shipping rate tables with weight surcharges) has been offered by the seller, such as package dimension and weight and packaging/handling
+                    costs. Also returned with the data for an item's transaction. <br><br> <span class="tablenote"><strong>Note:</strong> The <strong>CalculatedShippingRate</strong> container should only be used
+                    to specify values for the <strong>InternationalPackagingHandlingCosts</strong>, <strong>OriginatingPostalCode</strong>, and/or <strong>PackagingHandlingCosts</strong> fields. The rest of the fields
+                    in the <strong>CalculatedShippingRate</strong> container are used to specify package dimensions and package weight, and these values should now be specified in the <strong>ShippingPackageDetails</strong> container
+                    instead. </span>
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _MeasurementUnit;
 	var _PackageDepth;
 	var _PackageLength;
 	var _PackageWidth;
 	var _PackagingHandlingCosts;
-	var _ShippingPackage;
 	var _WeightMajor;
 	var _WeightMinor;
 	var _InternationalPackagingHandlingCosts;
-	Object.defineProperty(this, 'MeasurementUnit', {
-		 get: function(){
-			 return _MeasurementUnit;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasurementSystemCodeType){ 
-					_MeasurementUnit = value; 
-				}else{
-					console.log('MeasurementUnit expects type MeasurementSystemCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'PackageDepth', {
 		 get: function(){
 			 return _PackageDepth;
@@ -93,20 +74,6 @@ function CalculatedShippingRateType(OriginatingPostalCode, MeasurementUnit, Pack
 					_PackagingHandlingCosts = value; 
 				}else{
 					console.log('PackagingHandlingCosts expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ShippingPackage', {
-		 get: function(){
-			 return _ShippingPackage;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingPackageCodeType){ 
-					_ShippingPackage = value; 
-				}else{
-					console.log('ShippingPackage expects type ShippingPackageCodeType');
 				}
 			}
 		}
@@ -168,13 +135,13 @@ function CalculatedShippingRateType(OriginatingPostalCode, MeasurementUnit, Pack
 CalculatedShippingRateType.prototype.toJSON = function(with_null) {
 	var json = { 
 		OriginatingPostalCode: (this.OriginatingPostalCode === undefined)? null : this.OriginatingPostalCode,
-		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit.toJSON(),
+		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit,
 		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth.toJSON(),
 		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength.toJSON(),
 		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth.toJSON(),
 		PackagingHandlingCosts: (this.PackagingHandlingCosts === undefined)? null : this.PackagingHandlingCosts.toJSON(),
 		ShippingIrregular: (this.ShippingIrregular === undefined)? null : this.ShippingIrregular,
-		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage.toJSON(),
+		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
 		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
 		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON(),
 		InternationalPackagingHandlingCosts: (this.InternationalPackagingHandlingCosts === undefined)? null : this.InternationalPackagingHandlingCosts.toJSON()

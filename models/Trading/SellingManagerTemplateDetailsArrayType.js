@@ -2,9 +2,7 @@ function SellingManagerTemplateDetailsArrayType(SellingManagerTemplateDetails) {
 
 	/**
 	  Documentation
-	   
-                A list of Selling Manager templates.
-            
+	   A list of Selling Manager templates.
 	 */
 
 	/**

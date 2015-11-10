@@ -2,9 +2,7 @@ function NotificationEnableArrayType(NotificationEnable) {
 
 	/**
 	  Documentation
-	   
-                A list of NotificationEnable entries. Each entry specifies one notification and whether it is enabled.
-            
+	   A list of NotificationEnable entries. Each entry specifies one notification and whether it is enabled.
 	 */
 
 	/**

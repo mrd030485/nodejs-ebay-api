@@ -2,9 +2,7 @@ function ProductDetailsType(ProductIdentifierUnavailableText) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>ProductDetails</b> container that is returned in the <b>GeteBayDetails</b> response if product identifiers (EANs, ISBNs, UPCs, MPN/Brand) are not supported for a category.
-            
+	   This type defines the <b>ProductDetails</b> container that is returned in the <b>GeteBayDetails</b> response if product identifiers (EANs, ISBNs, UPCs, MPN/Brand) are not supported for a category.
 	 */
 
 	/**

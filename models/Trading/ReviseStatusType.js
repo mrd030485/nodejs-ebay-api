@@ -2,9 +2,7 @@ function ReviseStatusType(ItemRevised, BuyItNowAdded, BuyItNowLowered, ReserveLo
 
 	/**
 	  Documentation
-	   
-                Contains data indicating whether an item has been revised since the listing became active and, if so, which among a subset of properties have been changed by the revision. Output only.
-            
+	   Contains data indicating whether an item has been revised since the listing became active and, if so, which among a subset of properties have been changed by the revision. Output only.
 	 */
 
 	/**

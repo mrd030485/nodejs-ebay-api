@@ -2,9 +2,7 @@ function StoreLogoType(LogoID, Name, URL) {
 
 	/**
 	  Documentation
-	   
-                Store logo.
-            
+	   Store logo.
 	 */
 
 	/**

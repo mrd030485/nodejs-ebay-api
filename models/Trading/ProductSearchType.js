@@ -6,10 +6,7 @@ function ProductSearchType(ProductSearchID, AttributeSetID, ProductFinderID, Pro
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as <b>GetProduct*</b> calls were deprecated.
-                
-            
+	   This type is deprecated as <b>GetProduct*</b> calls were deprecated. 
 	 */
 
 	/**

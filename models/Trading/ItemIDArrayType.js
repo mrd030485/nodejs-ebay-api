@@ -2,9 +2,7 @@ function ItemIDArrayType(ItemID) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>PromotionalSaleItemIDArray</b> container, which consists of an array of listings to which a Promotional Sale applies.
-            
+	   Type defining the <b>PromotionalSaleItemIDArray</b> container, which consists of an array of listings to which a Promotional Sale applies.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function PicturesType(VariationSpecificName, VariationSpecificPictureSet) {
 
 	/**
 	  Documentation
-	   
-                Defines variation-specific pictures associated with one VariationSpecificName (e.g., Color) whose values differ across variations.
-            
+	   Defines variation-specific pictures associated with one VariationSpecificName (e.g., Color) whose values differ across variations.
 	 */
 
 	/**

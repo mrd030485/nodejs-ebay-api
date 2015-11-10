@@ -4,10 +4,8 @@ function BuyerType(ShippingAddress, BuyerTaxIdentifier) {
 
 	/**
 	  Documentation
-	   
-                This type is used by various 'Get' calls, including <b>GetItem</b> and <b>GetOrders</b>. Only the order management calls return the <b>BuyerTaxIdentifier</b> container, and each call that uses <b>BuyerType</b>
-                uses the <b>ShippingAddress</b> container a little differently.
-            
+	   This type is used by various 'Get' calls, including <b>GetItem</b> and <b>GetOrders</b>. Only the order management calls return the <b>BuyerTaxIdentifier</b> container, and each call that uses <b>BuyerType</b>
+                    uses the <b>ShippingAddress</b> container a little differently.
 	 */
 
 	/**

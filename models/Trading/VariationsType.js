@@ -5,10 +5,8 @@ function VariationsType(Variation, Pictures, VariationSpecificsSet, ModifyNameLi
 
 	/**
 	  Documentation
-	   
-                Variations are multiple similar (but not identical) items in a single fixed-price listing. For example, a single listing could contain multiple items of the same brand and model that vary by color and size (like "Blue, Large" and "Black, Medium"). Each
-                variation can have its own quantity and price. For example, a listing could include 10 "Blue, Large" variations and 20 "Black, Medium" variations.
-            
+	   Variations are multiple similar (but not identical) items in a single fixed-price listing. For example, a single listing could contain multiple items of the same brand and model that vary by color and size (like "Blue, Large" and "Black,
+                    Medium"). Each variation can have its own quantity and price. For example, a listing could include 10 "Blue, Large" variations and 20 "Black, Medium" variations.
 	 */
 
 	/**

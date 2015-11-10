@@ -2,10 +2,7 @@ function UPCIdentifierEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated and has been replaced by <b>UPCEnabledDefinitionType</b>.
-                
-            
+	   This type is deprecated and has been replaced by <b>UPCEnabledDefinitionType</b>. 
 	 */
 
 	/**

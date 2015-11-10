@@ -2,10 +2,7 @@ function EANIdentifierEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated and has been replaced by <b>EANEnabledDefinitionType</b>.
-                
-            
+	   This type is deprecated and has been replaced by <b>EANEnabledDefinitionType</b>. 
 	 */
 
 	/**

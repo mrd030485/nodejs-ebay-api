@@ -2,9 +2,7 @@ function ListingTipArrayType(ListingTip) {
 
 	/**
 	  Documentation
-	   
-                (out) Contains a list of tips on improving a listing's details, if any.
-            
+	   (out) Contains a list of tips on improving a listing's details, if any.
 	 */
 
 	/**

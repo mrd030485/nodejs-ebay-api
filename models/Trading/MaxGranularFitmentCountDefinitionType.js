@@ -2,9 +2,7 @@ function MaxGranularFitmentCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines the total number of fine grained item compatibilities that can be applied to a listing (a maximum of 1000).
-            
+	   Defines the total number of fine grained item compatibilities that can be applied to a listing (a maximum of 1000).
 	 */
 
 	/**

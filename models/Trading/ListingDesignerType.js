@@ -2,9 +2,7 @@ function ListingDesignerType(LayoutID, OptimalPictureSize, ThemeID) {
 
 	/**
 	  Documentation
-	   
-                Contains the IDs for the Listing Designer theme and template (if either are used) associated with an item, which can optionally be used to enhance the appearance of the item's description. Cannot be used with Photo Display.
-            
+	   Contains the IDs for the Listing Designer theme and template (if either are used) associated with an item, which can optionally be used to enhance the appearance of the item's description. Cannot be used with Photo Display.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function EndItemResponseContainerType(EndTime, CorrelationID, Errors) {
 
 	/**
 	  Documentation
-	   
-                Includes the acknowledgement of date and time the auction was ended due to the call to EndItem.
-            
+	   Includes the acknowledgement of date and time the auction was ended due to the call to EndItem.
 	 */
 
 	/**

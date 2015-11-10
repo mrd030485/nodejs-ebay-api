@@ -2,9 +2,7 @@ function MyMessagesExternalMessageIDArrayType(ExternalMessageID) {
 
 	/**
 	  Documentation
-	   
-                Contains a list of up to 10 external message IDs.
-            
+	   Contains a list of up to 10 external message IDs.
 	 */
 
 	/**

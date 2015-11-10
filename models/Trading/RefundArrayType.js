@@ -2,9 +2,7 @@ function RefundArrayType(Refund) {
 
 	/**
 	  Documentation
-	   
-                Type used by the <strong>RefundArray</strong> container, which consists of an array of Half.com refunds.
-            
+	   Type used by the <strong>RefundArray</strong> container, which consists of an array of Half.com refunds.
 	 */
 
 	/**

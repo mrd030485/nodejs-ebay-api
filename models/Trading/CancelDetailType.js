@@ -2,9 +2,7 @@ function CancelDetailType(CancelReason, CancelReasonDetails, CancelIntiator, Can
 
 	/**
 	  Documentation
-	   
-                Type used by the <b>CancelDetail</b> container, which consists of details related to an eBay order that has been cancelled or is in the process of possibly being cancelled.
-            
+	   Type used by the <b>CancelDetail</b> container, which consists of details related to an eBay order that has been cancelled or is in the process of possibly being cancelled.
 	 */
 
 	/**

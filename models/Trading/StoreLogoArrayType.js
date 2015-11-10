@@ -2,9 +2,7 @@ function StoreLogoArrayType(Logo) {
 
 	/**
 	  Documentation
-	   
-                Set of Store logos.
-            
+	   Set of Store logos.
 	 */
 
 	/**

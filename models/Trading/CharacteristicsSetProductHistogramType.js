@@ -2,9 +2,7 @@ function CharacteristicsSetProductHistogramType(HistogramEntry) {
 
 	/**
 	  Documentation
-	   
-                A generic type used for histograms.
-            
+	   A generic type used for histograms.
 	 */
 
 	/**

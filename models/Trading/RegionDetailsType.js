@@ -2,10 +2,7 @@ function RegionDetailsType(RegionID, Description, DetailVersion, UpdateTime) {
 
 	/**
 	  Documentation
-	   
-                This type is no longer used; replaced by <b>ShippingLocationDetails</b>.
-                
-            
+	   This type is no longer used; replaced by <b>ShippingLocationDetails</b>. 
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ModifyNameType(Name, NewName) {
 
 	/**
 	  Documentation
-	   
-                Defines the details about one specific trait name.
-            
+	   Defines the details about one specific trait name.
 	 */
 
 	/**

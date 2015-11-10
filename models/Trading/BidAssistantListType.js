@@ -2,9 +2,7 @@ function BidAssistantListType(BidGroupID, IncludeNotes) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated.
-            
+	   This type is deprecated.
 	 */
 
 	/**

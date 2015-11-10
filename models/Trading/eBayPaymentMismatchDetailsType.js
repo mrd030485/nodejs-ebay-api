@@ -1,34 +1,16 @@
-var MismatchTypeCodeType = require('./MismatchTypeCodeType'),
-	AmountType = require('./AmountType');
+var AmountType = require('./AmountType');
 
 function eBayPaymentMismatchDetailsType(MismatchType, ActionRequiredBy, MismatchAmount) {
 
 	/**
 	  Documentation
-	   
-                This type is no longer used.
-            
+	   This type is no longer used.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _MismatchType;
 	var _MismatchAmount;
-	Object.defineProperty(this, 'MismatchType', {
-		 get: function(){
-			 return _MismatchType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MismatchTypeCodeType){ 
-					_MismatchType = value; 
-				}else{
-					console.log('MismatchType expects type MismatchTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'MismatchAmount', {
 		 get: function(){
 			 return _MismatchAmount;
@@ -49,7 +31,7 @@ function eBayPaymentMismatchDetailsType(MismatchType, ActionRequiredBy, Mismatch
 }
 eBayPaymentMismatchDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		MismatchType: (this.MismatchType === undefined)? null : this.MismatchType.toJSON(),
+		MismatchType: (this.MismatchType === undefined)? null : this.MismatchType,
 		ActionRequiredBy: (this.ActionRequiredBy === undefined)? null : this.ActionRequiredBy,
 		MismatchAmount: (this.MismatchAmount === undefined)? null : this.MismatchAmount.toJSON()
 	};

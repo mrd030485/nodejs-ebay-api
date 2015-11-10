@@ -2,9 +2,7 @@ function SellerRoleMetricsType(PositiveFeedbackLeftCount, NegativeFeedbackLeftCo
 
 	/**
 	  Documentation
-	   
-                Specifies 1 year feedback metrics for a seller.
-            
+	   Specifies 1 year feedback metrics for a seller.
 	 */
 
 	/**

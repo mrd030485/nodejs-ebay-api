@@ -5,9 +5,7 @@ function SellingManagerProductDetailsType(ProductName, ProductID, CustomLabel, Q
 
 	/**
 	  Documentation
-	   
-                Returned if the user is a Selling Manager user. Defines product information for Selling Manager users.
-            
+	   Returned if the user is a Selling Manager user. Defines product information for Selling Manager users.
 	 */
 
 	/**

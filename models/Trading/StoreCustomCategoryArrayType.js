@@ -2,9 +2,7 @@ function StoreCustomCategoryArrayType(CustomCategory) {
 
 	/**
 	  Documentation
-	   
-                Set of custom categories for the Store.
-            
+	   Set of custom categories for the Store.
 	 */
 
 	/**

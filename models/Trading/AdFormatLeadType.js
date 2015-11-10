@@ -2,18 +2,15 @@ var AddressType = require('./AddressType'),
 	ItemIDType = require('./ItemIDType'),
 	UserIDType = require('./UserIDType'),
 	MemberMessageExchangeArrayType = require('./MemberMessageExchangeArrayType'),
-	AdFormatLeadStatusCodeType = require('./AdFormatLeadStatusCodeType'),
 	AmountType = require('./AmountType');
 
 function AdFormatLeadType(AdditionalInformation, Address, BestTimeToCall, Email, SubmittedTime, ItemID, ItemTitle, UserID, MemberMessage, Status, LeadFee, ExternalEmail, PurchaseTimeFrame, TradeInYear, TradeInMake, TradeInModel, FinancingAnswer, Answer1, Answer2) {
 
 	/**
 	  Documentation
-	   
-                This type is used by the <b>AdFormatLead</b> container that is returned in the <b>GetAdFormatLeads</b> call response. An <b>AdFormatLead</b> container will be returned for each user that has expressed interest in the
-                Classified Ad listing that was specified by the seller in the <b>GetAdFormatLeads</b> call request. Each <b>AdFormatLead</b> container consists of prospective buyer contact information and other details associated
-                with a lead for a Classified Ad listing.
-            
+	   This type is used by the <b>AdFormatLead</b> container that is returned in the <b>GetAdFormatLeads</b> call response. An <b>AdFormatLead</b> container will be returned for each user that has expressed
+                    interest in the Classified Ad listing that was specified by the seller in the <b>GetAdFormatLeads</b> call request. Each <b>AdFormatLead</b> container consists of prospective buyer contact information and other
+                    details associated with a lead for a Classified Ad listing.
 	 */
 
 	/**
@@ -23,7 +20,6 @@ function AdFormatLeadType(AdditionalInformation, Address, BestTimeToCall, Email,
 	var _ItemID;
 	var _UserID;
 	var _MemberMessage;
-	var _Status;
 	var _LeadFee;
 	Object.defineProperty(this, 'Address', {
 		 get: function(){
@@ -81,20 +77,6 @@ function AdFormatLeadType(AdditionalInformation, Address, BestTimeToCall, Email,
 			}
 		}
 	});
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AdFormatLeadStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type AdFormatLeadStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'LeadFee', {
 		 get: function(){
 			 return _LeadFee;
@@ -140,7 +122,7 @@ AdFormatLeadType.prototype.toJSON = function(with_null) {
 		ItemTitle: (this.ItemTitle === undefined)? null : this.ItemTitle,
 		UserID: (this.UserID === undefined)? null : this.UserID.toJSON(),
 		MemberMessage: (this.MemberMessage === undefined)? null : this.MemberMessage.toJSON(),
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		LeadFee: (this.LeadFee === undefined)? null : this.LeadFee.toJSON(),
 		ExternalEmail: (this.ExternalEmail === undefined)? null : this.ExternalEmail,
 		PurchaseTimeFrame: (this.PurchaseTimeFrame === undefined)? null : this.PurchaseTimeFrame,

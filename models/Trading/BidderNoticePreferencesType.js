@@ -2,9 +2,7 @@ function BidderNoticePreferencesType(UnsuccessfulBidderNoticeIncludeMyItems) {
 
 	/**
 	  Documentation
-	   
-                This type is used by the <b>BidderNoticePreferences</b> container, which consists of the seller's preference for receiving contact information for unsuccessful bidders in auction listings.
-            
+	   This type is used by the <b>BidderNoticePreferences</b> container, which consists of the seller's preference for receiving contact information for unsuccessful bidders in auction listings.
 	 */
 
 	/**

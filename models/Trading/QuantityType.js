@@ -2,9 +2,7 @@ function QuantityType(unit) {
 
 	/**
 	  Documentation
-	   
-                Basic type for specifying quantities.
-            
+	   Basic type for specifying quantities.
 	 */
 
 	/**

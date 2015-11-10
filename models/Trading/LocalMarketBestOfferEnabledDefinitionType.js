@@ -2,9 +2,7 @@ function LocalMarketBestOfferEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether Contact Seller is enabled for Classified Ads. Added for Local Market users.
-            
+	   Indicates whether Contact Seller is enabled for Classified Ads. Added for Local Market users.
 	 */
 
 	/**

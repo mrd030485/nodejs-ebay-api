@@ -2,9 +2,7 @@ function AttributeSetType(Attribute) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated.
-            
+	   This type is deprecated.
 	 */
 
 	/**

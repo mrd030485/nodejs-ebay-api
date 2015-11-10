@@ -5,9 +5,7 @@ function PaginatedOrderTransactionArrayType(OrderTransactionArray, PaginationRes
 
 	/**
 	  Documentation
-	   
-                Contains a paginated list of orders.
-            
+	   Contains a paginated list of orders.
 	 */
 
 	/**

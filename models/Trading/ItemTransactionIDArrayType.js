@@ -2,9 +2,7 @@ function ItemTransactionIDArrayType(ItemTransactionID) {
 
 	/**
 	  Documentation
-	   
-                Container of ItemTransactionIDs.
-            
+	   Container of ItemTransactionIDs.
 	 */
 
 	/**

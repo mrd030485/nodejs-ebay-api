@@ -1,50 +1,22 @@
-var StoreSubscriptionLevelCodeType = require('./StoreSubscriptionLevelCodeType'),
-	StoreLogoType = require('./StoreLogoType'),
+var StoreLogoType = require('./StoreLogoType'),
 	StoreThemeType = require('./StoreThemeType'),
-	StoreHeaderStyleCodeType = require('./StoreHeaderStyleCodeType'),
-	StoreItemListLayoutCodeType = require('./StoreItemListLayoutCodeType'),
-	StoreItemListSortOrderCodeType = require('./StoreItemListSortOrderCodeType'),
-	StoreCustomHeaderLayoutCodeType = require('./StoreCustomHeaderLayoutCodeType'),
 	StoreCustomCategoryArrayType = require('./StoreCustomCategoryArrayType'),
-	StoreCustomListingHeaderType = require('./StoreCustomListingHeaderType'),
-	MerchDisplayCodeType = require('./MerchDisplayCodeType');
+	StoreCustomListingHeaderType = require('./StoreCustomListingHeaderType');
 
 function StoreType(Name, URLPath, URL, SubscriptionLevel, Description, Logo, Theme, HeaderStyle, HomePage, ItemListLayout, ItemListSortOrder, CustomHeaderLayout, CustomHeader, ExportListings, CustomCategories, CustomListingHeader, MerchDisplay, LastOpenedTime, TitleWithCompatibility) {
 
 	/**
 	  Documentation
-	   
-                The configuration of an eBay Store.
-            
+	   The configuration of an eBay Store.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _SubscriptionLevel;
 	var _Logo;
 	var _Theme;
-	var _HeaderStyle;
-	var _ItemListLayout;
-	var _ItemListSortOrder;
-	var _CustomHeaderLayout;
 	var _CustomCategories;
 	var _CustomListingHeader;
-	var _MerchDisplay;
-	Object.defineProperty(this, 'SubscriptionLevel', {
-		 get: function(){
-			 return _SubscriptionLevel;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreSubscriptionLevelCodeType){ 
-					_SubscriptionLevel = value; 
-				}else{
-					console.log('SubscriptionLevel expects type StoreSubscriptionLevelCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Logo', {
 		 get: function(){
 			 return _Logo;
@@ -69,62 +41,6 @@ function StoreType(Name, URLPath, URL, SubscriptionLevel, Description, Logo, The
 					_Theme = value; 
 				}else{
 					console.log('Theme expects type StoreThemeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'HeaderStyle', {
-		 get: function(){
-			 return _HeaderStyle;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreHeaderStyleCodeType){ 
-					_HeaderStyle = value; 
-				}else{
-					console.log('HeaderStyle expects type StoreHeaderStyleCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ItemListLayout', {
-		 get: function(){
-			 return _ItemListLayout;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreItemListLayoutCodeType){ 
-					_ItemListLayout = value; 
-				}else{
-					console.log('ItemListLayout expects type StoreItemListLayoutCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ItemListSortOrder', {
-		 get: function(){
-			 return _ItemListSortOrder;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreItemListSortOrderCodeType){ 
-					_ItemListSortOrder = value; 
-				}else{
-					console.log('ItemListSortOrder expects type StoreItemListSortOrderCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'CustomHeaderLayout', {
-		 get: function(){
-			 return _CustomHeaderLayout;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreCustomHeaderLayoutCodeType){ 
-					_CustomHeaderLayout = value; 
-				}else{
-					console.log('CustomHeaderLayout expects type StoreCustomHeaderLayoutCodeType');
 				}
 			}
 		}
@@ -157,20 +73,6 @@ function StoreType(Name, URLPath, URL, SubscriptionLevel, Description, Logo, The
 			}
 		}
 	});
-	Object.defineProperty(this, 'MerchDisplay', {
-		 get: function(){
-			 return _MerchDisplay;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MerchDisplayCodeType){ 
-					_MerchDisplay = value; 
-				}else{
-					console.log('MerchDisplay expects type MerchDisplayCodeType');
-				}
-			}
-		}
-	});
 	this.Name = Name;
 	this.URLPath = URLPath;
 	this.URL = URL;
@@ -196,20 +98,20 @@ StoreType.prototype.toJSON = function(with_null) {
 		Name: (this.Name === undefined)? null : this.Name,
 		URLPath: (this.URLPath === undefined)? null : this.URLPath,
 		URL: (this.URL === undefined)? null : this.URL,
-		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel.toJSON(),
+		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel,
 		Description: (this.Description === undefined)? null : this.Description,
 		Logo: (this.Logo === undefined)? null : this.Logo.toJSON(),
 		Theme: (this.Theme === undefined)? null : this.Theme.toJSON(),
-		HeaderStyle: (this.HeaderStyle === undefined)? null : this.HeaderStyle.toJSON(),
+		HeaderStyle: (this.HeaderStyle === undefined)? null : this.HeaderStyle,
 		HomePage: (this.HomePage === undefined)? null : this.HomePage,
-		ItemListLayout: (this.ItemListLayout === undefined)? null : this.ItemListLayout.toJSON(),
-		ItemListSortOrder: (this.ItemListSortOrder === undefined)? null : this.ItemListSortOrder.toJSON(),
-		CustomHeaderLayout: (this.CustomHeaderLayout === undefined)? null : this.CustomHeaderLayout.toJSON(),
+		ItemListLayout: (this.ItemListLayout === undefined)? null : this.ItemListLayout,
+		ItemListSortOrder: (this.ItemListSortOrder === undefined)? null : this.ItemListSortOrder,
+		CustomHeaderLayout: (this.CustomHeaderLayout === undefined)? null : this.CustomHeaderLayout,
 		CustomHeader: (this.CustomHeader === undefined)? null : this.CustomHeader,
 		ExportListings: (this.ExportListings === undefined)? null : this.ExportListings,
 		CustomCategories: (this.CustomCategories === undefined)? null : this.CustomCategories.toJSON(),
 		CustomListingHeader: (this.CustomListingHeader === undefined)? null : this.CustomListingHeader.toJSON(),
-		MerchDisplay: (this.MerchDisplay === undefined)? null : this.MerchDisplay.toJSON(),
+		MerchDisplay: (this.MerchDisplay === undefined)? null : this.MerchDisplay,
 		LastOpenedTime: (this.LastOpenedTime === undefined)? null : this.LastOpenedTime,
 		TitleWithCompatibility: (this.TitleWithCompatibility === undefined)? null : this.TitleWithCompatibility
 	};

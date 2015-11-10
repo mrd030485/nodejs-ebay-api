@@ -4,9 +4,7 @@ function LineItemType(Quantity, CountryOfOrigin, Description, ItemID, Transactio
 
 	/**
 	  Documentation
-	   
-                This type provides information about one order line item in a Global Shipping package. The package can contain multiple units of a given order line item.
-            
+	   This type provides information about one order line item in a Global Shipping package. The package can contain multiple units of a given order line item.
 	 */
 
 	/**

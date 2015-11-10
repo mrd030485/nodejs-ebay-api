@@ -4,9 +4,7 @@ function ContextSearchAssetType(Keyword, Category, Ranking) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>ContextSearchAsset</b> container that is returned in the <b>GetContextualKeywords</b> response for each keyword that is found.
-            
+	   Type defining the <b>ContextSearchAsset</b> container that is returned in the <b>GetContextualKeywords</b> response for each keyword that is found.
 	 */
 
 	/**

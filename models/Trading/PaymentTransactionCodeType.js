@@ -1,5 +1,4 @@
-var PaymentTransactionStatusCodeType = require('./PaymentTransactionStatusCodeType'),
-	UserIdentityType = require('./UserIdentityType'),
+var UserIdentityType = require('./UserIdentityType'),
 	AmountType = require('./AmountType'),
 	TransactionReferenceType = require('./TransactionReferenceType');
 
@@ -7,35 +6,18 @@ function PaymentTransactionCodeType(PaymentStatus, Payer, Payee, PaymentTime, Pa
 
 	/**
 	  Documentation
-	   
-                Contains detaled payment transaction information.
-            
+	   Contains detaled payment transaction information.
 	 */
 
 	/**
 	 * Arrays
 	 *	PaymentReferenceID: TransactionReferenceType
 	 */
-	var _PaymentStatus;
 	var _Payer;
 	var _Payee;
 	var _PaymentAmount;
 	var _ReferenceID;
 	var _FeeOrCreditAmount;
-	Object.defineProperty(this, 'PaymentStatus', {
-		 get: function(){
-			 return _PaymentStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentTransactionStatusCodeType){ 
-					_PaymentStatus = value; 
-				}else{
-					console.log('PaymentStatus expects type PaymentTransactionStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Payer', {
 		 get: function(){
 			 return _Payer;
@@ -117,7 +99,7 @@ function PaymentTransactionCodeType(PaymentStatus, Payer, Payee, PaymentTime, Pa
 }
 PaymentTransactionCodeType.prototype.toJSON = function(with_null) {
 	var json = { 
-		PaymentStatus: (this.PaymentStatus === undefined)? null : this.PaymentStatus.toJSON(),
+		PaymentStatus: (this.PaymentStatus === undefined)? null : this.PaymentStatus,
 		Payer: (this.Payer === undefined)? null : this.Payer.toJSON(),
 		Payee: (this.Payee === undefined)? null : this.Payee.toJSON(),
 		PaymentTime: (this.PaymentTime === undefined)? null : this.PaymentTime,

@@ -2,9 +2,7 @@ function SellingManagerAutoListMinActiveItemsType(MinActiveItemCount, ListTimeFr
 
 	/**
 	  Documentation
-	   
-                Defines the options available for an automated listing rule that keeps a minimum number of items on the site.
-            
+	   Defines the options available for an automated listing rule that keeps a minimum number of items on the site.
 	 */
 
 	/**

@@ -2,18 +2,13 @@ var MyMessagesMessageIDType = require('./MyMessagesMessageIDType'),
 	ItemIDType = require('./ItemIDType'),
 	MyMessagesResponseDetailsType = require('./MyMessagesResponseDetailsType'),
 	MyMessagesForwardDetailsType = require('./MyMessagesForwardDetailsType'),
-	MyMessagesFolderType = require('./MyMessagesFolderType'),
-	MessageTypeCodeType = require('./MessageTypeCodeType'),
-	ListingStatusCodeType = require('./ListingStatusCodeType'),
-	QuestionTypeCodeType = require('./QuestionTypeCodeType');
+	MyMessagesFolderType = require('./MyMessagesFolderType');
 
 function MyMessagesMessageType(Sender, RecipientUserID, SendToName, Subject, MessageID, ExternalMessageID, ContentType, Text, Flagged, Read, CreationDate, ReceiveDate, ExpirationDate, ItemID, ResponseDetails, ForwardDetails, Folder, Content, MessageType, ListingStatus, QuestionType, Replied, HighPriority, ItemEndTime, ItemTitle, MessageMedia) {
 
 	/**
 	  Documentation
-	   
-                Container for the message information for each message specified in MessageIDs. The amount and type of information returned varies based on the requested detail level.
-            
+	   Container for the message information for each message specified in MessageIDs. The amount and type of information returned varies based on the requested detail level.
 	 */
 
 	/**
@@ -25,9 +20,6 @@ function MyMessagesMessageType(Sender, RecipientUserID, SendToName, Subject, Mes
 	var _ResponseDetails;
 	var _ForwardDetails;
 	var _Folder;
-	var _MessageType;
-	var _ListingStatus;
-	var _QuestionType;
 	Object.defineProperty(this, 'MessageID', {
 		 get: function(){
 			 return _MessageID;
@@ -98,48 +90,6 @@ function MyMessagesMessageType(Sender, RecipientUserID, SendToName, Subject, Mes
 			}
 		}
 	});
-	Object.defineProperty(this, 'MessageType', {
-		 get: function(){
-			 return _MessageType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MessageTypeCodeType){ 
-					_MessageType = value; 
-				}else{
-					console.log('MessageType expects type MessageTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ListingStatus', {
-		 get: function(){
-			 return _ListingStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingStatusCodeType){ 
-					_ListingStatus = value; 
-				}else{
-					console.log('ListingStatus expects type ListingStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'QuestionType', {
-		 get: function(){
-			 return _QuestionType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof QuestionTypeCodeType){ 
-					_QuestionType = value; 
-				}else{
-					console.log('QuestionType expects type QuestionTypeCodeType');
-				}
-			}
-		}
-	});
 	this.Sender = Sender;
 	this.RecipientUserID = RecipientUserID;
 	this.SendToName = SendToName;
@@ -187,9 +137,9 @@ MyMessagesMessageType.prototype.toJSON = function(with_null) {
 		ForwardDetails: (this.ForwardDetails === undefined)? null : this.ForwardDetails.toJSON(),
 		Folder: (this.Folder === undefined)? null : this.Folder.toJSON(),
 		Content: (this.Content === undefined)? null : this.Content,
-		MessageType: (this.MessageType === undefined)? null : this.MessageType.toJSON(),
-		ListingStatus: (this.ListingStatus === undefined)? null : this.ListingStatus.toJSON(),
-		QuestionType: (this.QuestionType === undefined)? null : this.QuestionType.toJSON(),
+		MessageType: (this.MessageType === undefined)? null : this.MessageType,
+		ListingStatus: (this.ListingStatus === undefined)? null : this.ListingStatus,
+		QuestionType: (this.QuestionType === undefined)? null : this.QuestionType,
 		Replied: (this.Replied === undefined)? null : this.Replied,
 		HighPriority: (this.HighPriority === undefined)? null : this.HighPriority,
 		ItemEndTime: (this.ItemEndTime === undefined)? null : this.ItemEndTime,

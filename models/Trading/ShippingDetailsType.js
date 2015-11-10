@@ -1,9 +1,6 @@
 var CalculatedShippingRateType = require('./CalculatedShippingRateType'),
 	AmountType = require('./AmountType'),
-	InsuranceOptionCodeType = require('./InsuranceOptionCodeType'),
 	SalesTaxType = require('./SalesTaxType'),
-	ShippingRateTypeCodeType = require('./ShippingRateTypeCodeType'),
-	ShippingTypeCodeType = require('./ShippingTypeCodeType'),
 	TaxTableType = require('./TaxTableType'),
 	InsuranceDetailsType = require('./InsuranceDetailsType'),
 	FlatShippingDiscountType = require('./FlatShippingDiscountType'),
@@ -15,11 +12,9 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 
 	/**
 	  Documentation
-	   
-                Type defining the ShippingDetails container, which contains the shipping-related details for an item (pre-checkout) or order (post-checkout). <br/><br/> <span class="tablenote"> <strong>IMPORTANT:</strong> To avoid loss of
-                shipping details when revising a listing, you must include all <strong>ShippingDetails</strong> fields that were originally provided. Do not omit any tag, even if its value does not change. Omitting a shipping field when revising
-                an item will remove that detail from the listing. </span>
-            
+	   Type defining the ShippingDetails container, which contains the shipping-related details for an item (pre-checkout) or order (post-checkout). <br/><br/> <span class="tablenote"> <strong>IMPORTANT:</strong>
+                    To avoid loss of shipping details when revising a listing, you must include all <strong>ShippingDetails</strong> fields that were originally provided. Do not omit any tag, even if its value does not change. Omitting a shipping
+                    field when revising an item will remove that detail from the listing. </span>
 	 */
 
 	/**
@@ -30,10 +25,7 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 	 */
 	var _CalculatedShippingRate;
 	var _InsuranceFee;
-	var _InsuranceOption;
 	var _SalesTax;
-	var _ShippingRateType;
-	var _ShippingType;
 	var _TaxTable;
 	var _DefaultShippingCost;
 	var _InsuranceDetails;
@@ -73,20 +65,6 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 			}
 		}
 	});
-	Object.defineProperty(this, 'InsuranceOption', {
-		 get: function(){
-			 return _InsuranceOption;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof InsuranceOptionCodeType){ 
-					_InsuranceOption = value; 
-				}else{
-					console.log('InsuranceOption expects type InsuranceOptionCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'SalesTax', {
 		 get: function(){
 			 return _SalesTax;
@@ -97,34 +75,6 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 					_SalesTax = value; 
 				}else{
 					console.log('SalesTax expects type SalesTaxType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ShippingRateType', {
-		 get: function(){
-			 return _ShippingRateType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingRateTypeCodeType){ 
-					_ShippingRateType = value; 
-				}else{
-					console.log('ShippingRateType expects type ShippingRateTypeCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ShippingType', {
-		 get: function(){
-			 return _ShippingType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingTypeCodeType){ 
-					_ShippingType = value; 
-				}else{
-					console.log('ShippingType expects type ShippingTypeCodeType');
 				}
 			}
 		}
@@ -330,16 +280,16 @@ ShippingDetailsType.prototype.toJSON = function(with_null) {
 		CalculatedShippingRate: (this.CalculatedShippingRate === undefined)? null : this.CalculatedShippingRate.toJSON(),
 		ChangePaymentInstructions: (this.ChangePaymentInstructions === undefined)? null : this.ChangePaymentInstructions,
 		InsuranceFee: (this.InsuranceFee === undefined)? null : this.InsuranceFee.toJSON(),
-		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption.toJSON(),
+		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption,
 		InsuranceWanted: (this.InsuranceWanted === undefined)? null : this.InsuranceWanted,
 		PaymentEdited: (this.PaymentEdited === undefined)? null : this.PaymentEdited,
 		PaymentInstructions: (this.PaymentInstructions === undefined)? null : this.PaymentInstructions,
 		SalesTax: (this.SalesTax === undefined)? null : this.SalesTax.toJSON(),
 		ShippingRateErrorMessage: (this.ShippingRateErrorMessage === undefined)? null : this.ShippingRateErrorMessage,
-		ShippingRateType: (this.ShippingRateType === undefined)? null : this.ShippingRateType.toJSON(),
+		ShippingRateType: (this.ShippingRateType === undefined)? null : this.ShippingRateType,
 		ShippingServiceOptions: (this.ShippingServiceOptions === undefined)? null : this.ShippingServiceOptions,
 		InternationalShippingServiceOption: (this.InternationalShippingServiceOption === undefined)? null : this.InternationalShippingServiceOption,
-		ShippingType: (this.ShippingType === undefined)? null : this.ShippingType.toJSON(),
+		ShippingType: (this.ShippingType === undefined)? null : this.ShippingType,
 		SellingManagerSalesRecordNumber: (this.SellingManagerSalesRecordNumber === undefined)? null : this.SellingManagerSalesRecordNumber,
 		ThirdPartyCheckout: (this.ThirdPartyCheckout === undefined)? null : this.ThirdPartyCheckout,
 		TaxTable: (this.TaxTable === undefined)? null : this.TaxTable.toJSON(),

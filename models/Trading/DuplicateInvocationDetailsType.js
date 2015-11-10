@@ -5,9 +5,7 @@ function DuplicateInvocationDetailsType(DuplicateInvocationID, Status, Invocatio
 
 	/**
 	  Documentation
-	   
-                Contains properties that provide information on duplicate uses of InvocationIDs.
-            
+	   Contains properties that provide information on duplicate uses of InvocationIDs.
 	 */
 
 	/**

@@ -3,7 +3,6 @@ function XMLRequesterCredentialsType(Username, Password, eBayAuthToken) {
 	/**
 	  Documentation
 	   
-            
 	 */
 
 	/**

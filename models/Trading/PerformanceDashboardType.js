@@ -1,36 +1,17 @@
-var PerformanceStatusCodeType = require('./PerformanceStatusCodeType'),
-	SellerDashboardAlertType = require('./SellerDashboardAlertType');
+var SellerDashboardAlertType = require('./SellerDashboardAlertType');
 
 function PerformanceDashboardType(Site, Status, Alert) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>Performance</b> container returned in the <b>GetSellerDashboard</b> response. The <b>Performance</b> container consists of the seller's overall selling performance rating on all eBay sites on which
-                the seller is sellling, as well as any alerts related to performance.
-            
+	   Type defining the <b>Performance</b> container returned in the <b>GetSellerDashboard</b> response. The <b>Performance</b> container consists of the seller's overall selling performance rating on all
+                    eBay sites on which the seller is sellling, as well as any alerts related to performance.
 	 */
 
 	/**
 	 * Arrays
-	 *	Site: SiteCodeType
 	 */
-	var _Status;
 	var _Alert;
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PerformanceStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type PerformanceStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Alert', {
 		 get: function(){
 			 return _Alert;
@@ -52,7 +33,7 @@ function PerformanceDashboardType(Site, Status, Alert) {
 PerformanceDashboardType.prototype.toJSON = function(with_null) {
 	var json = { 
 		Site: (this.Site === undefined)? null : this.Site,
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		Alert: (this.Alert === undefined)? null : this.Alert.toJSON()
 	};
 	if(!with_null) {

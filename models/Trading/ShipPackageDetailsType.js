@@ -1,44 +1,25 @@
-var MeasurementSystemCodeType = require('./MeasurementSystemCodeType'),
-	MeasureType = require('./MeasureType'),
-	ShippingPackageCodeType = require('./ShippingPackageCodeType');
+var MeasureType = require('./MeasureType');
 
 function ShipPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, PackageWidth, ShippingIrregular, ShippingPackage, WeightMajor, WeightMinor) {
 
 	/**
 	  Documentation
-	   
-                Details pertinent to one or more items for which calculated shipping (or flat rate shipping using shipping rate tables with weight surcharges) has been offered by the seller, such as package dimension and weight and packaging/handling costs. Also returned
-                with the data for an item's transaction. <br> <span class="tablenote"><strong>Note:</strong> The <strong>ShippingPackageDetails</strong> container should now be used instead of the <strong>CalculatedShippingRate</strong>
-                container to specify values for the <strong>MeasurementUnit</strong>, <strong>PackageDepth</strong>, <strong>PackageWidth</strong>, <strong>PackageLength</strong>, <strong>ShippingIrregular</strong>,
-                <strong>ShippingPackage</strong>, <strong>WeightMajor</strong>, and/or <strong>WeightMinor</strong> fields. The <strong>CalculatedShippingRate</strong> container should only be used to specify
-                values for the <strong>InternationalPackagingHandlingCosts</strong>, <strong>OriginatingPostalCode</strong>, and/or <strong>PackagingHandlingCosts</strong> fields. </span>
-            
+	   Details pertinent to one or more items for which calculated shipping (or flat rate shipping using shipping rate tables with weight surcharges) has been offered by the seller, such as package dimension and weight and packaging/handling
+                    costs. Also returned with the data for an item's transaction. <br> <span class="tablenote"><strong>Note:</strong> The <strong>ShippingPackageDetails</strong> container should now be used instead
+                    of the <strong>CalculatedShippingRate</strong> container to specify values for the <strong>MeasurementUnit</strong>, <strong>PackageDepth</strong>, <strong>PackageWidth</strong>, <strong>PackageLength</strong>,
+                    <strong>ShippingIrregular</strong>, <strong>ShippingPackage</strong>, <strong>WeightMajor</strong>, and/or <strong>WeightMinor</strong> fields. The <strong>CalculatedShippingRate</strong>
+                    container should only be used to specify values for the <strong>InternationalPackagingHandlingCosts</strong>, <strong>OriginatingPostalCode</strong>, and/or <strong>PackagingHandlingCosts</strong>
+                    fields. </span>
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _MeasurementUnit;
 	var _PackageDepth;
 	var _PackageLength;
 	var _PackageWidth;
-	var _ShippingPackage;
 	var _WeightMajor;
 	var _WeightMinor;
-	Object.defineProperty(this, 'MeasurementUnit', {
-		 get: function(){
-			 return _MeasurementUnit;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasurementSystemCodeType){ 
-					_MeasurementUnit = value; 
-				}else{
-					console.log('MeasurementUnit expects type MeasurementSystemCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'PackageDepth', {
 		 get: function(){
 			 return _PackageDepth;
@@ -77,20 +58,6 @@ function ShipPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, Pa
 					_PackageWidth = value; 
 				}else{
 					console.log('PackageWidth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ShippingPackage', {
-		 get: function(){
-			 return _ShippingPackage;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ShippingPackageCodeType){ 
-					_ShippingPackage = value; 
-				}else{
-					console.log('ShippingPackage expects type ShippingPackageCodeType');
 				}
 			}
 		}
@@ -134,12 +101,12 @@ function ShipPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, Pa
 }
 ShipPackageDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit.toJSON(),
+		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit,
 		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth.toJSON(),
 		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength.toJSON(),
 		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth.toJSON(),
 		ShippingIrregular: (this.ShippingIrregular === undefined)? null : this.ShippingIrregular,
-		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage.toJSON(),
+		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
 		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
 		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON()
 	};

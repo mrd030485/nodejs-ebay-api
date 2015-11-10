@@ -2,9 +2,7 @@ function MyMessagesFolderSummaryType(FolderID, FolderName, NewAlertCount, NewMes
 
 	/**
 	  Documentation
-	   
-                Summary details for a specified My Messages folder.
-            
+	   Summary details for a specified My Messages folder.
 	 */
 
 	/**

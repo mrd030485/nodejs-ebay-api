@@ -2,9 +2,7 @@ function LocalListingDistancesSpecialtyDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Defines the LocalListingDistancesSpecialty feature. This feature displays the supported local listing distances for items listed by sellers subscribed to Local Market for Specialty Vehicles.
-            
+	   Defines the LocalListingDistancesSpecialty feature. This feature displays the supported local listing distances for items listed by sellers subscribed to Local Market for Specialty Vehicles.
 	 */
 
 	/**

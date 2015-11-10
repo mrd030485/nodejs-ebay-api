@@ -2,9 +2,7 @@ function ShippingLocationDetailsType(ShippingLocation, Description, DetailVersio
 
 	/**
 	  Documentation
-	   
-                Details about a region or location to which the seller is willing to ship.
-            
+	   Details about a region or location to which the seller is willing to ship.
 	 */
 
 	/**

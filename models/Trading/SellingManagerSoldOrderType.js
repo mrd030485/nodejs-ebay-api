@@ -1,16 +1,13 @@
 var AddressType = require('./AddressType'),
 	ShippingDetailsType = require('./ShippingDetailsType'),
 	AmountType = require('./AmountType'),
-	SellingManagerOrderStatusType = require('./SellingManagerOrderStatusType'),
-	UnpaidItemStatusTypeCodeType = require('./UnpaidItemStatusTypeCodeType');
+	SellingManagerOrderStatusType = require('./SellingManagerOrderStatusType');
 
 function SellingManagerSoldOrderType(SellingManagerSoldTransaction, ShippingAddress, ShippingDetails, CashOnDeliveryCost, TotalAmount, TotalQuantity, ItemCost, VATRate, NetInsuranceFee, VATInsuranceFee, VATShippingFee, NetShippingFee, NetTotalAmount, VATTotalAmount, ActualShippingCost, AdjustmentAmount, NotesToBuyer, NotesFromBuyer, NotesToSeller, OrderStatus, UnpaidItemStatus, SalePrice, EmailsSent, DaysSinceSale, BuyerID, BuyerEmail, SaleRecordID, CreationTime, RefundAmount, RefundStatus) {
 
 	/**
 	  Documentation
-	   
-                Contains information about a sale record.
-            
+	   Contains information about a sale record.
 	 */
 
 	/**
@@ -32,7 +29,6 @@ function SellingManagerSoldOrderType(SellingManagerSoldTransaction, ShippingAddr
 	var _ActualShippingCost;
 	var _AdjustmentAmount;
 	var _OrderStatus;
-	var _UnpaidItemStatus;
 	var _SalePrice;
 	var _RefundAmount;
 	Object.defineProperty(this, 'ShippingAddress', {
@@ -231,20 +227,6 @@ function SellingManagerSoldOrderType(SellingManagerSoldTransaction, ShippingAddr
 			}
 		}
 	});
-	Object.defineProperty(this, 'UnpaidItemStatus', {
-		 get: function(){
-			 return _UnpaidItemStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof UnpaidItemStatusTypeCodeType){ 
-					_UnpaidItemStatus = value; 
-				}else{
-					console.log('UnpaidItemStatus expects type UnpaidItemStatusTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'SalePrice', {
 		 get: function(){
 			 return _SalePrice;
@@ -326,7 +308,7 @@ SellingManagerSoldOrderType.prototype.toJSON = function(with_null) {
 		NotesFromBuyer: (this.NotesFromBuyer === undefined)? null : this.NotesFromBuyer,
 		NotesToSeller: (this.NotesToSeller === undefined)? null : this.NotesToSeller,
 		OrderStatus: (this.OrderStatus === undefined)? null : this.OrderStatus.toJSON(),
-		UnpaidItemStatus: (this.UnpaidItemStatus === undefined)? null : this.UnpaidItemStatus.toJSON(),
+		UnpaidItemStatus: (this.UnpaidItemStatus === undefined)? null : this.UnpaidItemStatus,
 		SalePrice: (this.SalePrice === undefined)? null : this.SalePrice.toJSON(),
 		EmailsSent: (this.EmailsSent === undefined)? null : this.EmailsSent,
 		DaysSinceSale: (this.DaysSinceSale === undefined)? null : this.DaysSinceSale,

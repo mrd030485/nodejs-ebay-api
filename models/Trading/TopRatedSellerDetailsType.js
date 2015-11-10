@@ -2,14 +2,11 @@ function TopRatedSellerDetailsType(TopRatedProgram) {
 
 	/**
 	  Documentation
-	   
-                Container for top-rated seller program information.
-            
+	   Container for top-rated seller program information.
 	 */
 
 	/**
 	 * Arrays
-	 *	TopRatedProgram: TopRatedProgramCodeType
 	 */
 	this.TopRatedProgram = TopRatedProgram;
 }

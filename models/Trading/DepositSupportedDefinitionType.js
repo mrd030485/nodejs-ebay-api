@@ -2,9 +2,7 @@ function DepositSupportedDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                If present, the site defines category settings for whether the seller can specify a vehicle deposit for US eBay Motors listings.
-            
+	   If present, the site defines category settings for whether the seller can specify a vehicle deposit for US eBay Motors listings.
 	 */
 
 	/**

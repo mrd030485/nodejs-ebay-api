@@ -2,9 +2,7 @@ function LocalSearchType(MaxDistance, PostalCode) {
 
 	/**
 	  Documentation
-	   
-                Contains data for filtering a search by proximity.
-            
+	   Contains data for filtering a search by proximity.
 	 */
 
 	/**

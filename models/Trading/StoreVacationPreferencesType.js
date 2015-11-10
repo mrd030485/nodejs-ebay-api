@@ -2,9 +2,7 @@ function StoreVacationPreferencesType(OnVacation, ReturnDate, HideFixedPriceStor
 
 	/**
 	  Documentation
-	   
-                Specifies a set of Store vacation preferences.
-            
+	   Specifies a set of Store vacation preferences.
 	 */
 
 	/**

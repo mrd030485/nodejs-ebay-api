@@ -2,9 +2,7 @@ function MyeBayFavoriteSellerType(UserID, StoreName) {
 
 	/**
 	  Documentation
-	   
-                Characteristics of the My eBay Favorite Seller.
-            
+	   Characteristics of the My eBay Favorite Seller.
 	 */
 
 	/**

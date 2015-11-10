@@ -4,10 +4,8 @@ function SellerProfilePreferencesType(SellerProfileOptedIn, SupportedSellerProfi
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>SellerProfilePreferences</b> container. This container consists of a flag that indicates whether or not the seller has opted into Business Policies, as well as a list of Business Policies profiles that have been set up
-                for the seller's account.
-            
+	   Type defining the <b>SellerProfilePreferences</b> container. This container consists of a flag that indicates whether or not the seller has opted into Business Policies, as well as a list of Business Policies profiles that
+                    have been set up for the seller's account.
 	 */
 
 	/**

@@ -4,9 +4,7 @@ function ExtendedContactDetailsType(ContactHoursDetails, ClassifiedAdContactByEm
 
 	/**
 	  Documentation
-	   
-                Contains extended contact information for an eBay user.
-            
+	   Contains extended contact information for an eBay user.
 	 */
 
 	/**

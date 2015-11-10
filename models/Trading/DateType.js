@@ -2,9 +2,7 @@ function DateType(Year, Month, Day) {
 
 	/**
 	  Documentation
-	   
-                Defines year, month, and day as individual components of a date. Only applicable to use cases that support incomplete dates. Otherwise, we use dateTime (or date, as appropriate).
-            
+	   Defines year, month, and day as individual components of a date. Only applicable to use cases that support incomplete dates. Otherwise, we use dateTime (or date, as appropriate).
 	 */
 
 	/**

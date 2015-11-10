@@ -2,9 +2,7 @@ function ModifyNameArrayType(ModifyName) {
 
 	/**
 	  Documentation
-	   
-                A list of one or more ModifyName containers. Each ModifyName container has Name and NewName elements.
-            
+	   A list of one or more ModifyName containers. Each ModifyName container has Name and NewName elements.
 	 */
 
 	/**

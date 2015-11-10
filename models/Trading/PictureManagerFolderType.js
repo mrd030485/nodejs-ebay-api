@@ -2,10 +2,7 @@ function PictureManagerFolderType(FolderID, Name, Picture) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Pictures Manager was retired.
-                
-            
+	   This type is deprecated as Pictures Manager was retired. 
 	 */
 
 	/**

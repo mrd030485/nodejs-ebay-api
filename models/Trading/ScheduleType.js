@@ -2,9 +2,7 @@ function ScheduleType(ScheduleID, ScheduleTime) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Live Auctions are no longer a valid listing type.
-            
+	   This type is deprecated as Live Auctions are no longer a valid listing type.
 	 */
 
 	/**

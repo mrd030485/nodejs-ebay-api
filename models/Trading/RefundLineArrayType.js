@@ -2,9 +2,7 @@ function RefundLineArrayType(RefundLine) {
 
 	/**
 	  Documentation
-	   
-                This type is no longer used.
-            
+	   This type is no longer used.
 	 */
 
 	/**

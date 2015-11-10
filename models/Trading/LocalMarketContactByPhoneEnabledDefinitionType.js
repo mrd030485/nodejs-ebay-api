@@ -2,9 +2,7 @@ function LocalMarketContactByPhoneEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports using the telephone as a contact method. Added for Local Market users.
-            
+	   Indicates whether the category supports using the telephone as a contact method. Added for Local Market users.
 	 */
 
 	/**

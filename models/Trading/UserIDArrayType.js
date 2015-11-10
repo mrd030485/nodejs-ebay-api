@@ -2,9 +2,7 @@ function UserIDArrayType(UserID) {
 
 	/**
 	  Documentation
-	   
-                Contains an array of eBay UserID entries.
-            
+	   Contains an array of eBay UserID entries.
 	 */
 
 	/**

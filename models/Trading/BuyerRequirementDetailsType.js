@@ -7,10 +7,8 @@ function BuyerRequirementDetailsType(ShipToRegistrationCountry, ZeroFeedbackScor
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BuyerRequirementDetails</b> container, which allows the seller to set buyer requirements at the listing level. For the corresponding listing, all buyer requirement values/settings will overwrite values/settings in Buyer
-                Requirements preferences in My eBay.
-            
+	   Type defining the <b>BuyerRequirementDetails</b> container, which allows the seller to set buyer requirements at the listing level. For the corresponding listing, all buyer requirement values/settings will overwrite values/settings
+                    in Buyer Requirements preferences in My eBay.
 	 */
 
 	/**

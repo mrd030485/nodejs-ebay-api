@@ -2,11 +2,9 @@ function StorefrontType(StoreCategoryID, StoreCategory2ID, StoreCategoryName, St
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>Storefront</b> container, which can be used by eBay Stores sellers to list an item under two primary custom categories either by category ID or category name. A custom category is a category that was created by a seller
-                in their eBay store. This container is used by Add/Revise/Relist calls. <br/><br/> The <b>Storefront</b> container is also returned in <b>GetItem</b> and other Trading calls that retrieve Item data.
-                <br/><br/> <span class="tablenote"><b>Note: </b> This type is applicable only for eBay Store sellers. </span> <br/><br/>
-            
+	   This type defines the <b>Storefront</b> container, which can be used by eBay Stores sellers to list an item under two primary custom categories either by category ID or category name. A custom category is a category that was
+                    created by a seller in their eBay store. This container is used by Add/Revise/Relist calls. <br/><br/> The <b>Storefront</b> container is also returned in <b>GetItem</b> and other Trading calls that
+                    retrieve Item data. <br/><br/> <span class="tablenote"><b>Note: </b> This type is applicable only for eBay Store sellers. </span> <br/><br/>
 	 */
 
 	/**

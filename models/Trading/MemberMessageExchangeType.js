@@ -1,14 +1,11 @@
 var ItemType = require('./ItemType'),
-	MemberMessageType = require('./MemberMessageType'),
-	MessageStatusTypeCodeType = require('./MessageStatusTypeCodeType');
+	MemberMessageType = require('./MemberMessageType');
 
 function MemberMessageExchangeType(Item, Question, Response, MessageStatus, CreationDate, LastModifiedDate, MessageMedia) {
 
 	/**
 	  Documentation
-	   
-                Container for message metadata.
-            
+	   Container for message metadata.
 	 */
 
 	/**
@@ -17,7 +14,6 @@ function MemberMessageExchangeType(Item, Question, Response, MessageStatus, Crea
 	 */
 	var _Item;
 	var _Question;
-	var _MessageStatus;
 	Object.defineProperty(this, 'Item', {
 		 get: function(){
 			 return _Item;
@@ -46,20 +42,6 @@ function MemberMessageExchangeType(Item, Question, Response, MessageStatus, Crea
 			}
 		}
 	});
-	Object.defineProperty(this, 'MessageStatus', {
-		 get: function(){
-			 return _MessageStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MessageStatusTypeCodeType){ 
-					_MessageStatus = value; 
-				}else{
-					console.log('MessageStatus expects type MessageStatusTypeCodeType');
-				}
-			}
-		}
-	});
 	this.Item = Item;
 	this.Question = Question;
 	this.Response = Response;
@@ -73,7 +55,7 @@ MemberMessageExchangeType.prototype.toJSON = function(with_null) {
 		Item: (this.Item === undefined)? null : this.Item.toJSON(),
 		Question: (this.Question === undefined)? null : this.Question.toJSON(),
 		Response: (this.Response === undefined)? null : this.Response,
-		MessageStatus: (this.MessageStatus === undefined)? null : this.MessageStatus.toJSON(),
+		MessageStatus: (this.MessageStatus === undefined)? null : this.MessageStatus,
 		CreationDate: (this.CreationDate === undefined)? null : this.CreationDate,
 		LastModifiedDate: (this.LastModifiedDate === undefined)? null : this.LastModifiedDate,
 		MessageMedia: (this.MessageMedia === undefined)? null : this.MessageMedia

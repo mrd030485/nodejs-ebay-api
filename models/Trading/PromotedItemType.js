@@ -1,14 +1,10 @@
-var ItemIDType = require('./ItemIDType'),
-	PromotionItemSelectionCodeType = require('./PromotionItemSelectionCodeType'),
-	ListingTypeCodeType = require('./ListingTypeCodeType');
+var ItemIDType = require('./ItemIDType');
 
 function PromotedItemType(ItemID, PictureURL, Position, SelectionType, Title, ListingType, PromotionDetails, TimeLeft) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as Cross Promotions are no longer supported in the APIs.
-            
+	   This type is deprecated as Cross Promotions are no longer supported in the APIs.
 	 */
 
 	/**
@@ -16,8 +12,6 @@ function PromotedItemType(ItemID, PictureURL, Position, SelectionType, Title, Li
 	 *	PromotionDetails: PromotionDetailsType
 	 */
 	var _ItemID;
-	var _SelectionType;
-	var _ListingType;
 	Object.defineProperty(this, 'ItemID', {
 		 get: function(){
 			 return _ItemID;
@@ -28,34 +22,6 @@ function PromotedItemType(ItemID, PictureURL, Position, SelectionType, Title, Li
 					_ItemID = value; 
 				}else{
 					console.log('ItemID expects type ItemIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'SelectionType', {
-		 get: function(){
-			 return _SelectionType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionItemSelectionCodeType){ 
-					_SelectionType = value; 
-				}else{
-					console.log('SelectionType expects type PromotionItemSelectionCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ListingType', {
-		 get: function(){
-			 return _ListingType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ListingTypeCodeType){ 
-					_ListingType = value; 
-				}else{
-					console.log('ListingType expects type ListingTypeCodeType');
 				}
 			}
 		}
@@ -74,9 +40,9 @@ PromotedItemType.prototype.toJSON = function(with_null) {
 		ItemID: (this.ItemID === undefined)? null : this.ItemID.toJSON(),
 		PictureURL: (this.PictureURL === undefined)? null : this.PictureURL,
 		Position: (this.Position === undefined)? null : this.Position,
-		SelectionType: (this.SelectionType === undefined)? null : this.SelectionType.toJSON(),
+		SelectionType: (this.SelectionType === undefined)? null : this.SelectionType,
 		Title: (this.Title === undefined)? null : this.Title,
-		ListingType: (this.ListingType === undefined)? null : this.ListingType.toJSON(),
+		ListingType: (this.ListingType === undefined)? null : this.ListingType,
 		PromotionDetails: (this.PromotionDetails === undefined)? null : this.PromotionDetails,
 		TimeLeft: (this.TimeLeft === undefined)? null : this.TimeLeft
 	};

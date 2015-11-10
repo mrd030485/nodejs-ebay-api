@@ -2,9 +2,7 @@ function FeedbackCommentArrayType(StoredCommentText) {
 
 	/**
 	  Documentation
-	   
-                Contains one or more stored comments for use as feedback to buyers.
-            
+	   Contains one or more stored comments for use as feedback to buyers.
 	 */
 
 	/**

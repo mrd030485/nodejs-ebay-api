@@ -2,9 +2,7 @@ function ListingTipFieldType(ListingTipFieldID, FieldTip, CurrentFieldText, Curr
 
 	/**
 	  Documentation
-	   
-                (out) Identifies the item field that the tip relates to.
-            
+	   (out) Identifies the item field that the tip relates to.
 	 */
 
 	/**

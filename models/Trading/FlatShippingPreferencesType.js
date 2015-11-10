@@ -1,16 +1,11 @@
 var AmountType = require('./AmountType'),
-	FlatRateInsuranceRangeCostType = require('./FlatRateInsuranceRangeCostType'),
-	FlatShippingRateOptionCodeType = require('./FlatShippingRateOptionCodeType'),
-	InsuranceOptionCodeType = require('./InsuranceOptionCodeType');
+	FlatRateInsuranceRangeCostType = require('./FlatRateInsuranceRangeCostType');
 
 function FlatShippingPreferencesType(AmountPerAdditionalItem, DeductionAmountPerAdditionalItem, FlatRateInsuranceRangeCost, FlatShippingRateOption, InsuranceOption) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated; use <b>SetShippingDiscountProfiles</b> to set Flat Shipping preferences.
-                
-            
+	   This type is deprecated; use <b>SetShippingDiscountProfiles</b> to set Flat Shipping preferences. 
 	 */
 
 	/**
@@ -19,8 +14,6 @@ function FlatShippingPreferencesType(AmountPerAdditionalItem, DeductionAmountPer
 	var _AmountPerAdditionalItem;
 	var _DeductionAmountPerAdditionalItem;
 	var _FlatRateInsuranceRangeCost;
-	var _FlatShippingRateOption;
-	var _InsuranceOption;
 	Object.defineProperty(this, 'AmountPerAdditionalItem', {
 		 get: function(){
 			 return _AmountPerAdditionalItem;
@@ -63,34 +56,6 @@ function FlatShippingPreferencesType(AmountPerAdditionalItem, DeductionAmountPer
 			}
 		}
 	});
-	Object.defineProperty(this, 'FlatShippingRateOption', {
-		 get: function(){
-			 return _FlatShippingRateOption;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof FlatShippingRateOptionCodeType){ 
-					_FlatShippingRateOption = value; 
-				}else{
-					console.log('FlatShippingRateOption expects type FlatShippingRateOptionCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'InsuranceOption', {
-		 get: function(){
-			 return _InsuranceOption;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof InsuranceOptionCodeType){ 
-					_InsuranceOption = value; 
-				}else{
-					console.log('InsuranceOption expects type InsuranceOptionCodeType');
-				}
-			}
-		}
-	});
 	this.AmountPerAdditionalItem = AmountPerAdditionalItem;
 	this.DeductionAmountPerAdditionalItem = DeductionAmountPerAdditionalItem;
 	this.FlatRateInsuranceRangeCost = FlatRateInsuranceRangeCost;
@@ -102,8 +67,8 @@ FlatShippingPreferencesType.prototype.toJSON = function(with_null) {
 		AmountPerAdditionalItem: (this.AmountPerAdditionalItem === undefined)? null : this.AmountPerAdditionalItem.toJSON(),
 		DeductionAmountPerAdditionalItem: (this.DeductionAmountPerAdditionalItem === undefined)? null : this.DeductionAmountPerAdditionalItem.toJSON(),
 		FlatRateInsuranceRangeCost: (this.FlatRateInsuranceRangeCost === undefined)? null : this.FlatRateInsuranceRangeCost.toJSON(),
-		FlatShippingRateOption: (this.FlatShippingRateOption === undefined)? null : this.FlatShippingRateOption.toJSON(),
-		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption.toJSON()
+		FlatShippingRateOption: (this.FlatShippingRateOption === undefined)? null : this.FlatShippingRateOption,
+		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption
 	};
 	if(!with_null) {
 		for(var k in json) {

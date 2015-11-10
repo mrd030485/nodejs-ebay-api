@@ -2,10 +2,8 @@ function VariationProductListingDetailsType(ISBN, UPC, EAN) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>VariationProductListingDetails</b> container that is used to specify an EAN, an ISBN, or a UPC value to identify a specific product variation in a multi-variation listing. For multi-variation listings, the same product
-                identifier type must be used for all product variations within the listing. For instance, if one product variation uses ISBNs, all product variations must use ISBN values.
-            
+	   This type defines the <b>VariationProductListingDetails</b> container that is used to specify an EAN, an ISBN, or a UPC value to identify a specific product variation in a multi-variation listing. For multi-variation listings,
+                    the same product identifier type must be used for all product variations within the listing. For instance, if one product variation uses ISBNs, all product variations must use ISBN values.
 	 */
 
 	/**

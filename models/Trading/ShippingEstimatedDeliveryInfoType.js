@@ -2,10 +2,7 @@ function ShippingEstimatedDeliveryInfoType(OriginalDeliveryEstimatedTimeMin, Ori
 
 	/**
 	  Documentation
-	   
-                This type is not currently in use.
-                
-            
+	   This type is not currently in use. 
 	 */
 
 	/**

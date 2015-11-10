@@ -2,10 +2,8 @@ function DigitalGoodInfoType(DigitalDelivery) {
 
 	/**
 	  Documentation
-	   
-                <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DigitalGoodInfo</b> container will not be available for use. </span> <br>
-                This type is used by the <b>DigitalGoodInfo</b> container, which is used in add/relist/revise/verify listing calls to designate the listing as a digital gift card listing.
-            
+	   <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DigitalGoodInfo</b> container will not be available for use. </span>
+                    <br> This type is used by the <b>DigitalGoodInfo</b> container, which is used in add/relist/revise/verify listing calls to designate the listing as a digital gift card listing.
 	 */
 
 	/**

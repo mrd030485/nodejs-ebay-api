@@ -4,9 +4,7 @@ function InventoryFeesType(ItemID, Fee) {
 
 	/**
 	  Documentation
-	   
-                This is used in ReviseInventoryStatus response to provide the set of fees associated with each unique ItemID..
-            
+	   This is used in ReviseInventoryStatus response to provide the set of fees associated with each unique ItemID..
 	 */
 
 	/**

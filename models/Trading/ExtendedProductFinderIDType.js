@@ -2,9 +2,7 @@ function ExtendedProductFinderIDType(ProductFinderID, ProductFinderBuySide) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as the call is no longer available.
-            
+	   This type is deprecated as the call is no longer available.
 	 */
 
 	/**

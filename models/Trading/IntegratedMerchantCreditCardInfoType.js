@@ -2,14 +2,11 @@ function IntegratedMerchantCreditCardInfoType(SupportedSite) {
 
 	/**
 	  Documentation
-	   
-                Indicates the sites on which a seller is eligible to offer IMCC as a payment method.
-            
+	   Indicates the sites on which a seller is eligible to offer IMCC as a payment method.
 	 */
 
 	/**
 	 * Arrays
-	 *	SupportedSite: SiteCodeType
 	 */
 	this.SupportedSite = SupportedSite;
 }

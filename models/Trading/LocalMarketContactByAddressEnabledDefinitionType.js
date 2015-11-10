@@ -2,9 +2,7 @@ function LocalMarketContactByAddressEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports using an address when contacting the seller for Classified Ad format listings. Added for Local Market users.
-            
+	   Indicates whether the category supports using an address when contacting the seller for Classified Ad format listings. Added for Local Market users.
 	 */
 
 	/**

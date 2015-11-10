@@ -4,9 +4,7 @@ function PromotionalSaleDetailsType(OriginalPrice, StartTime, EndTime) {
 
 	/**
 	  Documentation
-	   
-                If a seller has reduced the price of a listed item with the Promotional Price Display feature, this type contains the original price of the discounted item and other information.
-            
+	   If a seller has reduced the price of a listed item with the Promotional Price Display feature, this type contains the original price of the discounted item and other information.
 	 */
 
 	/**

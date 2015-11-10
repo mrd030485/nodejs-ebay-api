@@ -2,9 +2,7 @@ function TimeZoneDetailsType(TimeZoneID, StandardLabel, StandardOffset, Daylight
 
 	/**
 	  Documentation
-	   
-                Time zone details about a region or location to which the seller is willing to ship.
-            
+	   Time zone details about a region or location to which the seller is willing to ship.
 	 */
 
 	/**

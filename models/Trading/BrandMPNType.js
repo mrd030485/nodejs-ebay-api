@@ -2,9 +2,7 @@ function BrandMPNType(Brand, MPN) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BrandMPN</b> container which is used to identify a product (through unique product brand and Manufacturer Part Number combination), and match that product to a product in the eBay Product Catalog.
-            
+	   Type defining the <b>BrandMPN</b> container which is used to identify a product (through unique product brand and Manufacturer Part Number combination), and match that product to a product in the eBay Product Catalog.
 	 */
 
 	/**

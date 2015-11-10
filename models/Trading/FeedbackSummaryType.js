@@ -7,10 +7,8 @@ function FeedbackSummaryType(BidRetractionFeedbackPeriodArray, NegativeFeedbackP
 
 	/**
 	  Documentation
-	   
-                Specifies all feedback summary information (except Score). Contains FeedbackPeriodArrayType objects that each convey feedback counts for positive, negative, neutral, and total feedback counts - for various time periods each. Also conveys counts of bid
-                retractions for the predefined time periods.
-            
+	   Specifies all feedback summary information (except Score). Contains FeedbackPeriodArrayType objects that each convey feedback counts for positive, negative, neutral, and total feedback counts - for various time periods each. Also conveys
+                    counts of bid retractions for the predefined time periods.
 	 */
 
 	/**

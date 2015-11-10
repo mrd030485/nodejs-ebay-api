@@ -4,9 +4,7 @@ function SalesTaxType(SalesTaxPercent, SalesTaxState, ShippingIncludedInTax, Sal
 
 	/**
 	  Documentation
-	   
-                Type for expressing sales tax data.
-            
+	   Type for expressing sales tax data.
 	 */
 
 	/**

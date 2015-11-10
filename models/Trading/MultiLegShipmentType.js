@@ -5,9 +5,7 @@ function MultiLegShipmentType(ShippingServiceDetails, ShipToAddress, ShippingTim
 
 	/**
 	  Documentation
-	   
-                This type provides information about the shipping service, cost, address, and delivery estimates for the domestic leg of a Global Shipping Program shipment.
-            
+	   This type provides information about the shipping service, cost, address, and delivery estimates for the domestic leg of a Global Shipping Program shipment.
 	 */
 
 	/**

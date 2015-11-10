@@ -4,9 +4,7 @@ function CheckoutOrderDetailType(TotalCartMerchandiseCost, TotalCartShippingCost
 
 	/**
 	  Documentation
-	   
-                Details of the order for a checked out cart.
-            
+	   Details of the order for a checked out cart.
 	 */
 
 	/**

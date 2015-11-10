@@ -5,9 +5,7 @@ function ListingTipType(ListingTipID, Priority, Message, Field) {
 
 	/**
 	  Documentation
-	   
-                A tip on improving a listing's details. Tips are returned from the Listing Analyzer engine.
-            
+	   A tip on improving a listing's details. Tips are returned from the Listing Analyzer engine.
 	 */
 
 	/**

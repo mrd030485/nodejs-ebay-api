@@ -4,9 +4,7 @@ function NotificationUserDataType(SMSSubscription, SummarySchedule, ExternalUser
 
 	/**
 	  Documentation
-	   
-                User data related to notifications.
-            
+	   User data related to notifications.
 	 */
 
 	/**

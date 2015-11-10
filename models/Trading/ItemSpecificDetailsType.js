@@ -2,9 +2,7 @@ function ItemSpecificDetailsType(MaxItemSpecificsPerItem, MaxValuesPerName, MaxC
 
 	/**
 	  Documentation
-	   
-                Details about custom Item Specifics validation rules.
-            
+	   Details about custom Item Specifics validation rules.
 	 */
 
 	/**

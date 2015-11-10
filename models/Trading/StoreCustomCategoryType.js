@@ -2,9 +2,7 @@ function StoreCustomCategoryType(CategoryID, Name, Order, ChildCategory) {
 
 	/**
 	  Documentation
-	   
-                Configuration of a store custom category.
-            
+	   Configuration of a store custom category.
 	 */
 
 	/**

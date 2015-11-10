@@ -2,9 +2,7 @@ function ClassifiedAdShippingMethodEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether shipping options are available for the category.
-            
+	   Indicates whether shipping options are available for the category.
 	 */
 
 	/**

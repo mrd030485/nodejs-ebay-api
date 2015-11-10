@@ -2,9 +2,7 @@ function TaxIdentifierAttributeType(name) {
 
 	/**
 	  Documentation
-	   
-                This type is used to display the value of the <b>name</b> attribute of the <b>BuyerTaxIdentifier.Attribute</b> field.
-            
+	   This type is used to display the value of the <b>name</b> attribute of the <b>BuyerTaxIdentifier.Attribute</b> field.
 	 */
 
 	/**

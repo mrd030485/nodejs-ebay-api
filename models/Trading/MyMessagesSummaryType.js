@@ -2,9 +2,7 @@ function MyMessagesSummaryType(FolderSummary, NewAlertCount, NewMessageCount, Un
 
 	/**
 	  Documentation
-	   
-                Summary data for a given user's alerts and messages. This includes the numbers of new alerts and messages, unresolved alerts, flagged messages, and total alerts and messages.
-            
+	   Summary data for a given user's alerts and messages. This includes the numbers of new alerts and messages, unresolved alerts, flagged messages, and total alerts and messages.
 	 */
 
 	/**

@@ -1,25 +1,19 @@
 var UserIDType = require('./UserIDType'),
-	CommentTypeCodeType = require('./CommentTypeCodeType'),
 	ItemIDType = require('./ItemIDType'),
-	TradingRoleCodeType = require('./TradingRoleCodeType'),
 	AmountType = require('./AmountType');
 
 function FeedbackDetailType(CommentingUser, CommentingUserScore, CommentText, CommentTime, CommentType, FeedbackResponse, Followup, ItemID, Role, ItemTitle, ItemPrice, FeedbackID, TransactionID, CommentReplaced, ResponseReplaced, FollowUpReplaced, Countable, FeedbackRevised, OrderLineItemID) {
 
 	/**
 	  Documentation
-	   
-                Container consisting of detailed information on a Feedback entry for a specific order line item.
-            
+	   Container consisting of detailed information on a Feedback entry for a specific order line item.
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _CommentingUser;
-	var _CommentType;
 	var _ItemID;
-	var _Role;
 	var _ItemPrice;
 	Object.defineProperty(this, 'CommentingUser', {
 		 get: function(){
@@ -35,20 +29,6 @@ function FeedbackDetailType(CommentingUser, CommentingUserScore, CommentText, Co
 			}
 		}
 	});
-	Object.defineProperty(this, 'CommentType', {
-		 get: function(){
-			 return _CommentType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CommentTypeCodeType){ 
-					_CommentType = value; 
-				}else{
-					console.log('CommentType expects type CommentTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ItemID', {
 		 get: function(){
 			 return _ItemID;
@@ -59,20 +39,6 @@ function FeedbackDetailType(CommentingUser, CommentingUserScore, CommentText, Co
 					_ItemID = value; 
 				}else{
 					console.log('ItemID expects type ItemIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Role', {
-		 get: function(){
-			 return _Role;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof TradingRoleCodeType){ 
-					_Role = value; 
-				}else{
-					console.log('Role expects type TradingRoleCodeType');
 				}
 			}
 		}
@@ -117,11 +83,11 @@ FeedbackDetailType.prototype.toJSON = function(with_null) {
 		CommentingUserScore: (this.CommentingUserScore === undefined)? null : this.CommentingUserScore,
 		CommentText: (this.CommentText === undefined)? null : this.CommentText,
 		CommentTime: (this.CommentTime === undefined)? null : this.CommentTime,
-		CommentType: (this.CommentType === undefined)? null : this.CommentType.toJSON(),
+		CommentType: (this.CommentType === undefined)? null : this.CommentType,
 		FeedbackResponse: (this.FeedbackResponse === undefined)? null : this.FeedbackResponse,
 		Followup: (this.Followup === undefined)? null : this.Followup,
 		ItemID: (this.ItemID === undefined)? null : this.ItemID.toJSON(),
-		Role: (this.Role === undefined)? null : this.Role.toJSON(),
+		Role: (this.Role === undefined)? null : this.Role,
 		ItemTitle: (this.ItemTitle === undefined)? null : this.ItemTitle,
 		ItemPrice: (this.ItemPrice === undefined)? null : this.ItemPrice.toJSON(),
 		FeedbackID: (this.FeedbackID === undefined)? null : this.FeedbackID,

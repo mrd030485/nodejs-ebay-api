@@ -1,33 +1,14 @@
-var StoreCustomListingHeaderDisplayCodeType = require('./StoreCustomListingHeaderDisplayCodeType');
-
 function StoreCustomListingHeaderType(DisplayType, Logo, SearchBox, LinkToInclude, AddToFavoriteStores, SignUpForStoreNewsletter) {
 
 	/**
 	  Documentation
-	   
-                Configuration of a Store custom listing header.
-            
+	   Configuration of a Store custom listing header.
 	 */
 
 	/**
 	 * Arrays
 	 *	LinkToInclude: StoreCustomListingHeaderLinkType
 	 */
-	var _DisplayType;
-	Object.defineProperty(this, 'DisplayType', {
-		 get: function(){
-			 return _DisplayType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof StoreCustomListingHeaderDisplayCodeType){ 
-					_DisplayType = value; 
-				}else{
-					console.log('DisplayType expects type StoreCustomListingHeaderDisplayCodeType');
-				}
-			}
-		}
-	});
 	this.DisplayType = DisplayType;
 	this.Logo = Logo;
 	this.SearchBox = SearchBox;
@@ -37,7 +18,7 @@ function StoreCustomListingHeaderType(DisplayType, Logo, SearchBox, LinkToInclud
 }
 StoreCustomListingHeaderType.prototype.toJSON = function(with_null) {
 	var json = { 
-		DisplayType: (this.DisplayType === undefined)? null : this.DisplayType.toJSON(),
+		DisplayType: (this.DisplayType === undefined)? null : this.DisplayType,
 		Logo: (this.Logo === undefined)? null : this.Logo,
 		SearchBox: (this.SearchBox === undefined)? null : this.SearchBox,
 		LinkToInclude: (this.LinkToInclude === undefined)? null : this.LinkToInclude,

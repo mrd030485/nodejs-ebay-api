@@ -2,9 +2,7 @@ function ClassifiedAdContactByEmailEnabledDefintionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates if Email can be a contact method for the category
-            
+	   Indicates if Email can be a contact method for the category
 	 */
 
 	/**

@@ -2,10 +2,8 @@ function VeROReportItemsType(ReportItem) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>ReportItems</b> container in the <b>VeROReportItems</b> request. The <b>ReportItems</b> container consists of an array of items which, according to the seller, are infringing upon the seller's copyright,
-                trademark, or intellectual property rights (according to the seller).
-            
+	   Type defining the <b>ReportItems</b> container in the <b>VeROReportItems</b> request. The <b>ReportItems</b> container consists of an array of items which, according to the seller, are infringing upon
+                    the seller's copyright, trademark, or intellectual property rights (according to the seller).
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function DisputeArrayType(Dispute) {
 
 	/**
 	  Documentation
-	   
-                Represents a list of disputes. Can hold zero or more Dispute types, each of which describes a dispute.
-            
+	   Represents a list of disputes. Can hold zero or more Dispute types, each of which describes a dispute.
 	 */
 
 	/**

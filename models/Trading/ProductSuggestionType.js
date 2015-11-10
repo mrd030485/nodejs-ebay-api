@@ -2,9 +2,7 @@ function ProductSuggestionType(Title, EPID, StockPhoto, Recommended) {
 
 	/**
 	  Documentation
-	   
-                Identifies an individual product suggestion. The product details include the EPID, Title, Stock photo url and if it is an exact match.
-            
+	   Identifies an individual product suggestion. The product details include the EPID, Title, Stock photo url and if it is an exact match.
 	 */
 
 	/**

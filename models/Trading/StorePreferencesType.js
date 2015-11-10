@@ -4,9 +4,7 @@ function StorePreferencesType(VacationPreferences) {
 
 	/**
 	  Documentation
-	   
-                Store Preferences type.
-            
+	   Store Preferences type.
 	 */
 
 	/**

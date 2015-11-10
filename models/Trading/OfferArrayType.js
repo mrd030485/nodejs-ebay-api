@@ -2,9 +2,7 @@ function OfferArrayType(Offer) {
 
 	/**
 	  Documentation
-	   
-                Container for a list of offers. May contain zero, one, or multiple OfferType objects, each of which represents one offer extended by a user on a listing.
-            
+	   Container for a list of offers. May contain zero, one, or multiple OfferType objects, each of which represents one offer extended by a user on a listing.
 	 */
 
 	/**

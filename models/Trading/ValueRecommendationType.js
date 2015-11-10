@@ -4,9 +4,7 @@ function ValueRecommendationType(Value, ValidationRules) {
 
 	/**
 	  Documentation
-	   
-                Defines details about recommended values for custom Item Specifics.
-            
+	   Defines details about recommended values for custom Item Specifics.
 	 */
 
 	/**

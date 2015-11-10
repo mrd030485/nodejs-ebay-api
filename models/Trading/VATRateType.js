@@ -4,10 +4,8 @@ function VATRateType(ItemID, TransactionID, VATPercent, OrderLineItemID) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>VATRateType</b> container, which is used by <b>ReviseSellingManagerSaleRecord</b> to modify the VAT percentage for an order line item. This container is also retrieved by <b>GetSellingManagerSaleRecord</b>
-                if Value-Added Tax has been applied to the order line item.
-            
+	   Type defining the <b>VATRateType</b> container, which is used by <b>ReviseSellingManagerSaleRecord</b> to modify the VAT percentage for an order line item. This container is also retrieved by <b>GetSellingManagerSaleRecord</b>
+                    if Value-Added Tax has been applied to the order line item.
 	 */
 
 	/**

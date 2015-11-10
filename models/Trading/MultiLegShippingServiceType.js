@@ -4,9 +4,7 @@ function MultiLegShippingServiceType(ShippingService, TotalShippingCost) {
 
 	/**
 	  Documentation
-	   
-                This type specifies the shipping service and cost of the domestic leg of a Global Shipping Program shipment.
-            
+	   This type specifies the shipping service and cost of the domestic leg of a Global Shipping Program shipment.
 	 */
 
 	/**

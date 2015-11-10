@@ -8,11 +8,9 @@ function SiteBuyerRequirementDetailsType(LinkedPayPalAccount, MaximumBuyerPolicy
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BuyerRequirementDetails</b> container, which is returned in GeteBayDetails, and provides the seller with the buyer requirement features (and applicable values) that are supported by the listing site. <br/><br/>
-                <span class="tablenote"><b>Note: </b> This container is only returned if <b>BuyerRequirementDetails</b> is included as a <b>DetailName</b> filter in the request, or if no <b>DetailName</b>
-                filters are used in the request. </span> <br/><br/>
-            
+	   Type defining the <b>BuyerRequirementDetails</b> container, which is returned in GeteBayDetails, and provides the seller with the buyer requirement features (and applicable values) that are supported by the listing site. <br/><br/>
+                    <span class="tablenote"><b>Note: </b> This container is only returned if <b>BuyerRequirementDetails</b> is included as a <b>DetailName</b> filter in the request, or if no <b>DetailName</b>
+                    filters are used in the request. </span> <br/><br/>
 	 */
 
 	/**

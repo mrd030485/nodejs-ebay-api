@@ -2,9 +2,7 @@ function PurchaseReminderEmailPreferencesType(PurchaseReminderEmailPreferences) 
 
 	/**
 	  Documentation
-	   
-                Contains a seller's preference for sending a "Payment Reminder Email" to buyers.
-            
+	   Contains a seller's preference for sending a "Payment Reminder Email" to buyers.
 	 */
 
 	/**

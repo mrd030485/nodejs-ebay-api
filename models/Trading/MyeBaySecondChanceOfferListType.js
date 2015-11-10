@@ -2,9 +2,7 @@ function MyeBaySecondChanceOfferListType(TotalAvailable, SecondChanceOffer) {
 
 	/**
 	  Documentation
-	   
-                A list of possible My eBay Second Chance Offers.
-            
+	   A list of possible My eBay Second Chance Offers.
 	 */
 
 	/**

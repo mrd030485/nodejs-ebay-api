@@ -4,10 +4,8 @@ function MultiLegShippingDetailsType(SellerShipmentToLogisticsProvider, Logistic
 
 	/**
 	  Documentation
-	   
-                This type provides information about the domestic leg of a Global Shipping Program shipment. <br/><br/> <span class="tablenote"> <strong>Note:</strong> The <strong>LogisticsProviderShipmentToBuyer</strong> field
-                is reserved for the exclusive use of the international shipping provider. </span>
-            
+	   This type provides information about the domestic leg of a Global Shipping Program shipment. <br/><br/> <span class="tablenote"> <strong>Note:</strong> The <strong>LogisticsProviderShipmentToBuyer</strong>
+                    field is reserved for the exclusive use of the international shipping provider. </span>
 	 */
 
 	/**

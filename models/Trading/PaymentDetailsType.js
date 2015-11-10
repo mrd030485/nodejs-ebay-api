@@ -1,20 +1,16 @@
-var AmountType = require('./AmountType'),
-	DepositTypeCodeType = require('./DepositTypeCodeType');
+var AmountType = require('./AmountType');
 
 function PaymentDetailsType(HoursToDeposit, DaysToFullPayment, DepositAmount, DepositType) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>PaymentDetails</b> container, which is used by the seller to specify amounts and due dates for deposits and full payment on motor vehicle listings.
-            
+	   Type defining the <b>PaymentDetails</b> container, which is used by the seller to specify amounts and due dates for deposits and full payment on motor vehicle listings.
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _DepositAmount;
-	var _DepositType;
 	Object.defineProperty(this, 'DepositAmount', {
 		 get: function(){
 			 return _DepositAmount;
@@ -29,20 +25,6 @@ function PaymentDetailsType(HoursToDeposit, DaysToFullPayment, DepositAmount, De
 			}
 		}
 	});
-	Object.defineProperty(this, 'DepositType', {
-		 get: function(){
-			 return _DepositType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof DepositTypeCodeType){ 
-					_DepositType = value; 
-				}else{
-					console.log('DepositType expects type DepositTypeCodeType');
-				}
-			}
-		}
-	});
 	this.HoursToDeposit = HoursToDeposit;
 	this.DaysToFullPayment = DaysToFullPayment;
 	this.DepositAmount = DepositAmount;
@@ -53,7 +35,7 @@ PaymentDetailsType.prototype.toJSON = function(with_null) {
 		HoursToDeposit: (this.HoursToDeposit === undefined)? null : this.HoursToDeposit,
 		DaysToFullPayment: (this.DaysToFullPayment === undefined)? null : this.DaysToFullPayment,
 		DepositAmount: (this.DepositAmount === undefined)? null : this.DepositAmount.toJSON(),
-		DepositType: (this.DepositType === undefined)? null : this.DepositType.toJSON()
+		DepositType: (this.DepositType === undefined)? null : this.DepositType
 	};
 	if(!with_null) {
 		for(var k in json) {

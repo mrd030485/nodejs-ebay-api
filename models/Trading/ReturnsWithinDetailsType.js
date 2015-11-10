@@ -2,10 +2,8 @@ function ReturnsWithinDetailsType(ReturnsWithinOption, Description) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>ReturnPolicyDetails.ReturnsWithin</b> container that is returned in <b>GeteBayDetails</b>. This container contains the values that may be used in the <b>ReturnPolicy.ReturnsWithinOption</b> field
-                of Add/Revise/Relist API calls.
-            
+	   Type defining the <b>ReturnPolicyDetails.ReturnsWithin</b> container that is returned in <b>GeteBayDetails</b>. This container contains the values that may be used in the <b>ReturnPolicy.ReturnsWithinOption</b>
+                    field of Add/Revise/Relist API calls.
 	 */
 
 	/**

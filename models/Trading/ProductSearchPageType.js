@@ -1,14 +1,10 @@
-var CharacteristicsSetType = require('./CharacteristicsSetType'),
-	CharacteristicsSearchCodeType = require('./CharacteristicsSearchCodeType');
+var CharacteristicsSetType = require('./CharacteristicsSetType');
 
 function ProductSearchPageType(SearchCharacteristicsSet, SearchType, SortCharacteristics, DataElementSet) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as <b>GetProduct*</b> calls were deprecated.
-                
-            
+	   This type is deprecated as <b>GetProduct*</b> calls were deprecated. 
 	 */
 
 	/**
@@ -17,7 +13,6 @@ function ProductSearchPageType(SearchCharacteristicsSet, SearchType, SortCharact
 	 *	DataElementSet: DataElementSetType
 	 */
 	var _SearchCharacteristicsSet;
-	var _SearchType;
 	Object.defineProperty(this, 'SearchCharacteristicsSet', {
 		 get: function(){
 			 return _SearchCharacteristicsSet;
@@ -32,20 +27,6 @@ function ProductSearchPageType(SearchCharacteristicsSet, SearchType, SortCharact
 			}
 		}
 	});
-	Object.defineProperty(this, 'SearchType', {
-		 get: function(){
-			 return _SearchType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CharacteristicsSearchCodeType){ 
-					_SearchType = value; 
-				}else{
-					console.log('SearchType expects type CharacteristicsSearchCodeType');
-				}
-			}
-		}
-	});
 	this.SearchCharacteristicsSet = SearchCharacteristicsSet;
 	this.SearchType = SearchType;
 	this.SortCharacteristics = SortCharacteristics;
@@ -54,7 +35,7 @@ function ProductSearchPageType(SearchCharacteristicsSet, SearchType, SortCharact
 ProductSearchPageType.prototype.toJSON = function(with_null) {
 	var json = { 
 		SearchCharacteristicsSet: (this.SearchCharacteristicsSet === undefined)? null : this.SearchCharacteristicsSet.toJSON(),
-		SearchType: (this.SearchType === undefined)? null : this.SearchType.toJSON(),
+		SearchType: (this.SearchType === undefined)? null : this.SearchType,
 		SortCharacteristics: (this.SortCharacteristics === undefined)? null : this.SortCharacteristics,
 		DataElementSet: (this.DataElementSet === undefined)? null : this.DataElementSet
 	};

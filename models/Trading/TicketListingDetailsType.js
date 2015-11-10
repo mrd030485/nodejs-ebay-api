@@ -2,9 +2,7 @@ function TicketListingDetailsType(EventTitle, Venue, PrintedDate, PrintedTime) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>TicketListingDetails</b> container, which is used in an Add/Revise/Relist call to provide more details about event tickets.
-            
+	   Type defining the <b>TicketListingDetails</b> container, which is used in an Add/Revise/Relist call to provide more details about event tickets.
 	 */
 
 	/**

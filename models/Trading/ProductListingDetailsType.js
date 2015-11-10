@@ -5,9 +5,7 @@ function ProductListingDetailsType(ProductID, IncludeStockPhotoURL, UseStockPhot
 
 	/**
 	  Documentation
-	   
-                Contains product information that can be included in a listing. Applicable for listings that use eBay's Pre-filled Item Information feature. See the Developer's Guide for details on working with Pre-filled Item Information.
-            
+	   Contains product information that can be included in a listing. Applicable for listings that use eBay's Pre-filled Item Information feature. See the Developer's Guide for details on working with Pre-filled Item Information.
 	 */
 
 	/**

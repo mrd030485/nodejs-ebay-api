@@ -2,9 +2,7 @@ function LocalMarketAutoDeclineEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether automatic decline of best offers is allowed for this category. Returned only if this category overrides the site default. Added for Local market users.
-            
+	   Indicates whether automatic decline of best offers is allowed for this category. Returned only if this category overrides the site default. Added for Local market users.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function SellingManagerFolderDetailsType(FolderID, ParentFolderID, FolderLevel, 
 
 	/**
 	  Documentation
-	   
-                Contains information about a Selling Manager folder.
-            
+	   Contains information about a Selling Manager folder.
 	 */
 
 	/**

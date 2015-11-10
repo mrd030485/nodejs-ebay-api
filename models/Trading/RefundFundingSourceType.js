@@ -1,34 +1,16 @@
-var RefundingSourceTypeCodeType = require('./RefundingSourceTypeCodeType'),
-	AmountType = require('./AmountType');
+var AmountType = require('./AmountType');
 
 function RefundFundingSourceType(RefundingSourceType, AccountNumber, RefundAmount, SellerExternalTransactionID, BuyerExternalTransactionID) {
 
 	/**
 	  Documentation
-	   
-                This type is no longer used.
-            
+	   This type is no longer used.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _RefundingSourceType;
 	var _RefundAmount;
-	Object.defineProperty(this, 'RefundingSourceType', {
-		 get: function(){
-			 return _RefundingSourceType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof RefundingSourceTypeCodeType){ 
-					_RefundingSourceType = value; 
-				}else{
-					console.log('RefundingSourceType expects type RefundingSourceTypeCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'RefundAmount', {
 		 get: function(){
 			 return _RefundAmount;
@@ -51,7 +33,7 @@ function RefundFundingSourceType(RefundingSourceType, AccountNumber, RefundAmoun
 }
 RefundFundingSourceType.prototype.toJSON = function(with_null) {
 	var json = { 
-		RefundingSourceType: (this.RefundingSourceType === undefined)? null : this.RefundingSourceType.toJSON(),
+		RefundingSourceType: (this.RefundingSourceType === undefined)? null : this.RefundingSourceType,
 		AccountNumber: (this.AccountNumber === undefined)? null : this.AccountNumber,
 		RefundAmount: (this.RefundAmount === undefined)? null : this.RefundAmount.toJSON(),
 		SellerExternalTransactionID: (this.SellerExternalTransactionID === undefined)? null : this.SellerExternalTransactionID,

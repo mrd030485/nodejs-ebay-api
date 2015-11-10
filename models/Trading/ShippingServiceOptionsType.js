@@ -4,13 +4,11 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 
 	/**
 	  Documentation
-	   
-                Container consisting of shipping costs and other details related to a domestic shipping service. An exception to the domestic shipping service rule is seen in the ShippingServiceSelected container returned under the Order and Transaction containers in
-                order and order line item retrieval calls such as GetOrders or GetItemTransactions. In this scenario, the SelectedShippingService container consists of either domestic or international shipping service data, based on the selected service
-                according to the buyer's shipping address. <br/><br/> If one or more international shipping services are provided, the seller must specify at least one domestic shipping service as well. <br/><br/> <span class="tablenote">
-                <strong>Note:</strong> For GetItemTransactions and GetSellerTransactions, this container does not return accurate shipping service and cost information for multiple line item orders. Use GetOrders instead, and provide the order's
-                combined <strong>OrderID</strong> to retrieve this information. </span>
-            
+	   Container consisting of shipping costs and other details related to a domestic shipping service. An exception to the domestic shipping service rule is seen in the ShippingServiceSelected container returned under the Order and Transaction
+                    containers in order and order line item retrieval calls such as GetOrders or GetItemTransactions. In this scenario, the SelectedShippingService container consists of either domestic or international shipping service data, based on
+                    the selected service according to the buyer's shipping address. <br/><br/> If one or more international shipping services are provided, the seller must specify at least one domestic shipping service as well. <br/><br/>
+                    <span class="tablenote"> <strong>Note:</strong> For GetItemTransactions and GetSellerTransactions, this container does not return accurate shipping service and cost information for multiple line item orders. Use GetOrders
+                    instead, and provide the order's combined <strong>OrderID</strong> to retrieve this information. </span>
 	 */
 
 	/**

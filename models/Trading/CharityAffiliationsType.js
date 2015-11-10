@@ -2,9 +2,7 @@ function CharityAffiliationsType(CharityID) {
 
 	/**
 	  Documentation
-	   
-                Lists the nonprofit charity organization affiliations for a specified user.
-            
+	   Lists the nonprofit charity organization affiliations for a specified user.
 	 */
 
 	/**

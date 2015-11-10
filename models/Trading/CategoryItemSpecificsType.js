@@ -4,9 +4,7 @@ function CategoryItemSpecificsType(CategoryID, ItemSpecifics) {
 
 	/**
 	  Documentation
-	   
-                Defines details about recommended names and values for custom Item Specifics.
-            
+	   Defines details about recommended names and values for custom Item Specifics.
 	 */
 
 	/**

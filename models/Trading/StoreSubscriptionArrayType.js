@@ -2,9 +2,7 @@ function StoreSubscriptionArrayType(Subscription) {
 
 	/**
 	  Documentation
-	   
-                Set of eBay Store subscription levels.
-            
+	   Set of eBay Store subscription levels.
 	 */
 
 	/**

@@ -5,9 +5,7 @@ function DiscountProfileType(DiscountProfileID, DiscountProfileName, EachAdditio
 
 	/**
 	  Documentation
-	   
-                Details of a flat or calculated shipping discount profile.
-            
+	   Details of a flat or calculated shipping discount profile.
 	 */
 
 	/**

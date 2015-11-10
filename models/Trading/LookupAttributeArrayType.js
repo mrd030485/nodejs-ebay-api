@@ -2,10 +2,7 @@ function LookupAttributeArrayType(LookupAttribute) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated because attributes are deprecated.
-                
-            
+	   This type is deprecated because attributes are deprecated. 
 	 */
 
 	/**

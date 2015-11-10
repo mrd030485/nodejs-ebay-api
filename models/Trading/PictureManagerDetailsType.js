@@ -1,25 +1,8 @@
-var PictureManagerSubscriptionLevelCodeType = require('./PictureManagerSubscriptionLevelCodeType');
-
 function PictureManagerDetailsType(SubscriptionLevel, StorageUsed, TotalStorageAvailable, KeepOriginal, WatermarkEPS, WatermarkUserID, Folder) {
 	/**
 	 * Arrays
 	 *	Folder: PictureManagerFolderType
 	 */
-	var _SubscriptionLevel;
-	Object.defineProperty(this, 'SubscriptionLevel', {
-		 get: function(){
-			 return _SubscriptionLevel;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PictureManagerSubscriptionLevelCodeType){ 
-					_SubscriptionLevel = value; 
-				}else{
-					console.log('SubscriptionLevel expects type PictureManagerSubscriptionLevelCodeType');
-				}
-			}
-		}
-	});
 	this.SubscriptionLevel = SubscriptionLevel;
 	this.StorageUsed = StorageUsed;
 	this.TotalStorageAvailable = TotalStorageAvailable;
@@ -30,7 +13,7 @@ function PictureManagerDetailsType(SubscriptionLevel, StorageUsed, TotalStorageA
 }
 PictureManagerDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel.toJSON(),
+		SubscriptionLevel: (this.SubscriptionLevel === undefined)? null : this.SubscriptionLevel,
 		StorageUsed: (this.StorageUsed === undefined)? null : this.StorageUsed,
 		TotalStorageAvailable: (this.TotalStorageAvailable === undefined)? null : this.TotalStorageAvailable,
 		KeepOriginal: (this.KeepOriginal === undefined)? null : this.KeepOriginal,

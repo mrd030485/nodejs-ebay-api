@@ -1,55 +1,45 @@
 var OrderIDType = require('./OrderIDType'),
-	OrderStatusCodeType = require('./OrderStatusCodeType'),
 	AmountType = require('./AmountType'),
 	CheckoutStatusType = require('./CheckoutStatusType'),
 	ShippingDetailsType = require('./ShippingDetailsType'),
-	TradingRoleCodeType = require('./TradingRoleCodeType'),
 	AddressType = require('./AddressType'),
 	ShippingServiceOptionsType = require('./ShippingServiceOptionsType'),
 	TransactionArrayType = require('./TransactionArrayType'),
 	UserIDType = require('./UserIDType'),
-	PaymentHoldStatusCodeType = require('./PaymentHoldStatusCodeType'),
 	PaymentHoldDetailType = require('./PaymentHoldDetailType'),
 	RefundArrayType = require('./RefundArrayType'),
 	MultiLegShippingDetailsType = require('./MultiLegShippingDetailsType'),
 	PaymentsInformationType = require('./PaymentsInformationType'),
 	PickupDetailsType = require('./PickupDetailsType'),
 	PickupMethodSelectedType = require('./PickupMethodSelectedType'),
-	CancelStatusCodeType = require('./CancelStatusCodeType'),
 	BuyerPackageEnclosuresType = require('./BuyerPackageEnclosuresType');
 
 function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSaved, CheckoutStatus, ShippingDetails, CreatingUserRole, CreatedTime, PaymentMethods, SellerEmail, ShippingAddress, ShippingServiceSelected, Subtotal, Total, ExternalTransaction, TransactionArray, BuyerUserID, PaidTime, ShippedTime, IntegratedMerchantCreditCardEnabled, BundlePurchase, BuyerCheckoutMessage, EIASToken, PaymentHoldStatus, PaymentHoldDetails, RefundAmount, RefundStatus, RefundArray, IsMultiLegShipping, MultiLegShippingDetails, MonetaryDetails, PickupDetails, PickupMethodSelected, SellerUserID, SellerEIASToken, CancelReason, CancelStatus, CancelReasonDetails, ShippingConvenienceCharge, CancelDetail, LogisticsPlanType, BuyerTaxIdentifier, BuyerPackageEnclosures, ExtendedOrderID, ContainseBayPlusTransaction) {
 
 	/**
 	  Documentation
-	   
-                There are single line item and multiple line item orders. A single payment is made for both order types. <br> <br> We strongly recommend that you avoid mixing digital and non-digital listings in the same <a href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Listing-AnItem.html#CombinedInvoice">Combined
-                Invoice</a> order.
-            
+	   There are single line item and multiple line item orders. A single payment is made for both order types. <br> <br> We strongly recommend that you avoid mixing digital and non-digital listings in the same <a href="http://developer.ebay.com/DevZone/guides/ebayfeatures/Development/Listing-AnItem.html#CombinedInvoice">Combined
+                    Invoice</a> order.
 	 */
 
 	/**
 	 * Arrays
-	 *	PaymentMethods: BuyerPaymentMethodCodeType
 	 *	ExternalTransaction: ExternalTransactionType
 	 *	CancelDetail: CancelDetailType
 	 *	BuyerTaxIdentifier: TaxIdentifierType
 	 */
 	var _OrderID;
-	var _OrderStatus;
 	var _AdjustmentAmount;
 	var _AmountPaid;
 	var _AmountSaved;
 	var _CheckoutStatus;
 	var _ShippingDetails;
-	var _CreatingUserRole;
 	var _ShippingAddress;
 	var _ShippingServiceSelected;
 	var _Subtotal;
 	var _Total;
 	var _TransactionArray;
 	var _BuyerUserID;
-	var _PaymentHoldStatus;
 	var _PaymentHoldDetails;
 	var _RefundAmount;
 	var _RefundArray;
@@ -58,7 +48,6 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 	var _PickupDetails;
 	var _PickupMethodSelected;
 	var _SellerUserID;
-	var _CancelStatus;
 	var _ShippingConvenienceCharge;
 	var _BuyerPackageEnclosures;
 	Object.defineProperty(this, 'OrderID', {
@@ -71,20 +60,6 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 					_OrderID = value; 
 				}else{
 					console.log('OrderID expects type OrderIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'OrderStatus', {
-		 get: function(){
-			 return _OrderStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof OrderStatusCodeType){ 
-					_OrderStatus = value; 
-				}else{
-					console.log('OrderStatus expects type OrderStatusCodeType');
 				}
 			}
 		}
@@ -155,20 +130,6 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 					_ShippingDetails = value; 
 				}else{
 					console.log('ShippingDetails expects type ShippingDetailsType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'CreatingUserRole', {
-		 get: function(){
-			 return _CreatingUserRole;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof TradingRoleCodeType){ 
-					_CreatingUserRole = value; 
-				}else{
-					console.log('CreatingUserRole expects type TradingRoleCodeType');
 				}
 			}
 		}
@@ -253,20 +214,6 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 					_BuyerUserID = value; 
 				}else{
 					console.log('BuyerUserID expects type UserIDType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PaymentHoldStatus', {
-		 get: function(){
-			 return _PaymentHoldStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PaymentHoldStatusCodeType){ 
-					_PaymentHoldStatus = value; 
-				}else{
-					console.log('PaymentHoldStatus expects type PaymentHoldStatusCodeType');
 				}
 			}
 		}
@@ -383,20 +330,6 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 			}
 		}
 	});
-	Object.defineProperty(this, 'CancelStatus', {
-		 get: function(){
-			 return _CancelStatus;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof CancelStatusCodeType){ 
-					_CancelStatus = value; 
-				}else{
-					console.log('CancelStatus expects type CancelStatusCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ShippingConvenienceCharge', {
 		 get: function(){
 			 return _ShippingConvenienceCharge;
@@ -475,13 +408,13 @@ function OrderType(OrderID, OrderStatus, AdjustmentAmount, AmountPaid, AmountSav
 OrderType.prototype.toJSON = function(with_null) {
 	var json = { 
 		OrderID: (this.OrderID === undefined)? null : this.OrderID.toJSON(),
-		OrderStatus: (this.OrderStatus === undefined)? null : this.OrderStatus.toJSON(),
+		OrderStatus: (this.OrderStatus === undefined)? null : this.OrderStatus,
 		AdjustmentAmount: (this.AdjustmentAmount === undefined)? null : this.AdjustmentAmount.toJSON(),
 		AmountPaid: (this.AmountPaid === undefined)? null : this.AmountPaid.toJSON(),
 		AmountSaved: (this.AmountSaved === undefined)? null : this.AmountSaved.toJSON(),
 		CheckoutStatus: (this.CheckoutStatus === undefined)? null : this.CheckoutStatus.toJSON(),
 		ShippingDetails: (this.ShippingDetails === undefined)? null : this.ShippingDetails.toJSON(),
-		CreatingUserRole: (this.CreatingUserRole === undefined)? null : this.CreatingUserRole.toJSON(),
+		CreatingUserRole: (this.CreatingUserRole === undefined)? null : this.CreatingUserRole,
 		CreatedTime: (this.CreatedTime === undefined)? null : this.CreatedTime,
 		PaymentMethods: (this.PaymentMethods === undefined)? null : this.PaymentMethods,
 		SellerEmail: (this.SellerEmail === undefined)? null : this.SellerEmail,
@@ -498,7 +431,7 @@ OrderType.prototype.toJSON = function(with_null) {
 		BundlePurchase: (this.BundlePurchase === undefined)? null : this.BundlePurchase,
 		BuyerCheckoutMessage: (this.BuyerCheckoutMessage === undefined)? null : this.BuyerCheckoutMessage,
 		EIASToken: (this.EIASToken === undefined)? null : this.EIASToken,
-		PaymentHoldStatus: (this.PaymentHoldStatus === undefined)? null : this.PaymentHoldStatus.toJSON(),
+		PaymentHoldStatus: (this.PaymentHoldStatus === undefined)? null : this.PaymentHoldStatus,
 		PaymentHoldDetails: (this.PaymentHoldDetails === undefined)? null : this.PaymentHoldDetails.toJSON(),
 		RefundAmount: (this.RefundAmount === undefined)? null : this.RefundAmount.toJSON(),
 		RefundStatus: (this.RefundStatus === undefined)? null : this.RefundStatus,
@@ -511,7 +444,7 @@ OrderType.prototype.toJSON = function(with_null) {
 		SellerUserID: (this.SellerUserID === undefined)? null : this.SellerUserID.toJSON(),
 		SellerEIASToken: (this.SellerEIASToken === undefined)? null : this.SellerEIASToken,
 		CancelReason: (this.CancelReason === undefined)? null : this.CancelReason,
-		CancelStatus: (this.CancelStatus === undefined)? null : this.CancelStatus.toJSON(),
+		CancelStatus: (this.CancelStatus === undefined)? null : this.CancelStatus,
 		CancelReasonDetails: (this.CancelReasonDetails === undefined)? null : this.CancelReasonDetails,
 		ShippingConvenienceCharge: (this.ShippingConvenienceCharge === undefined)? null : this.ShippingConvenienceCharge.toJSON(),
 		CancelDetail: (this.CancelDetail === undefined)? null : this.CancelDetail,

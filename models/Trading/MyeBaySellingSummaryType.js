@@ -4,9 +4,7 @@ function MyeBaySellingSummaryType(ActiveAuctionCount, AuctionSellingCount, Aucti
 
 	/**
 	  Documentation
-	   
-                Contains summary information about the items the seller is selling.
-            
+	   Contains summary information about the items the seller is selling.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function ItemPolicyViolationType(PolicyID, PolicyText) {
 
 	/**
 	  Documentation
-	   
-                Specifies the details of policy violations if the item was administratively canceled. The details are the policy ID and the policy text.
-            
+	   Specifies the details of policy violations if the item was administratively canceled. The details are the policy ID and the policy text.
 	 */
 
 	/**

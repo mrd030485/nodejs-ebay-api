@@ -2,14 +2,11 @@ function RequiredSellerActionArrayType(RequiredSellerAction) {
 
 	/**
 	  Documentation
-	   
-                This type defines the <b>RequiredSellerActionArray</b> container, which may contain one or more <b>RequiredSellerAction</b> fields.
-            
+	   This type defines the <b>RequiredSellerActionArray</b> container, which may contain one or more <b>RequiredSellerAction</b> fields.
 	 */
 
 	/**
 	 * Arrays
-	 *	RequiredSellerAction: RequiredSellerActionCodeType
 	 */
 	this.RequiredSellerAction = RequiredSellerAction;
 }

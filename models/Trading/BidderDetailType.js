@@ -4,9 +4,7 @@ function BidderDetailType(UserID, Email, FeedbackScore, UniqueNegativeFeedbackCo
 
 	/**
 	  Documentation
-	   
-                This type is deprecated
-            
+	   This type is deprecated
 	 */
 
 	/**

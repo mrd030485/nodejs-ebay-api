@@ -2,9 +2,7 @@ function StoreColorType(Primary, Secondary, Accent) {
 
 	/**
 	  Documentation
-	   
-                Store color set.
-            
+	   Store color set.
 	 */
 
 	/**

@@ -3,7 +3,6 @@ function UserIdPasswordType(AppId, DevId, AuthCert, Username, Password) {
 	/**
 	  Documentation
 	   
-            
 	 */
 
 	/**

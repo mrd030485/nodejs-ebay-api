@@ -4,11 +4,9 @@ function DeliveryDetailsType(Recipient, Sender) {
 
 	/**
 	  Documentation
-	   
-                <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DeliveryDetails</b> container will not be returned. </span> <br> This
-                type is used by the <b>DeliveryDetails</b> container that is returned by <b>GetOrders</b> and other order management calls. The <b>DeliveryDetails</b> container is only applicable and returned if the
-                buyer purchased a digital gift card, and is either keeping the gift card or giving that gift card to another person.
-            
+	   <span class="tablenote"><strong>Note:</strong> This type will be enabled with version 935. For those using versions older than 935, the <b>DeliveryDetails</b> container will not be returned. </span>
+                    <br> This type is used by the <b>DeliveryDetails</b> container that is returned by <b>GetOrders</b> and other order management calls. The <b>DeliveryDetails</b> container is only applicable
+                    and returned if the buyer purchased a digital gift card, and is either keeping the gift card or giving that gift card to another person.
 	 */
 
 	/**

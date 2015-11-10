@@ -2,9 +2,7 @@ function StoreCustomPageArrayType(CustomPage) {
 
 	/**
 	  Documentation
-	   
-                Set of Store custom pages.
-            
+	   Set of Store custom pages.
 	 */
 
 	/**

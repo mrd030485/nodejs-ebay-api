@@ -2,10 +2,8 @@ function PictureSetMemberType(MemberURL, PictureHeight, PictureWidth) {
 
 	/**
 	  Documentation
-	   
-                URL and size information for each generated and stored size. This data is provided for use in application previews of pictures. This data is used for display control for specific pictures in the generated imageset. This container is supplied for all generated
-                pictures.
-            
+	   URL and size information for each generated and stored size. This data is provided for use in application previews of pictures. This data is used for display control for specific pictures in the generated imageset. This container is supplied
+                    for all generated pictures.
 	 */
 
 	/**

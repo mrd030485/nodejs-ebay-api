@@ -2,9 +2,7 @@ function ClassifiedAdStreetCountDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates which address option the category supports for Classified Ad format listings. Added for the For Sale By Owner format.
-            
+	   Indicates which address option the category supports for Classified Ad format listings. Added for the For Sale By Owner format.
 	 */
 
 	/**

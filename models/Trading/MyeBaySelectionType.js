@@ -1,32 +1,13 @@
-var SortOrderCodeType = require('./SortOrderCodeType');
-
 function MyeBaySelectionType(Include, IncludeItemCount, IncludeFavoriteSearcheCount, IncludeFavoriteSellerCount, Sort, MaxResults, UserDefinedListName, IncludeListContents) {
 
 	/**
 	  Documentation
-	   
-                Specifies how to return the result list for My eBay features such as saved searches, favorite sellers, and second chance offers.
-            
+	   Specifies how to return the result list for My eBay features such as saved searches, favorite sellers, and second chance offers.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _Sort;
-	Object.defineProperty(this, 'Sort', {
-		 get: function(){
-			 return _Sort;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SortOrderCodeType){ 
-					_Sort = value; 
-				}else{
-					console.log('Sort expects type SortOrderCodeType');
-				}
-			}
-		}
-	});
 	this.Include = Include;
 	this.IncludeItemCount = IncludeItemCount;
 	this.IncludeFavoriteSearcheCount = IncludeFavoriteSearcheCount;
@@ -42,7 +23,7 @@ MyeBaySelectionType.prototype.toJSON = function(with_null) {
 		IncludeItemCount: (this.IncludeItemCount === undefined)? null : this.IncludeItemCount,
 		IncludeFavoriteSearcheCount: (this.IncludeFavoriteSearcheCount === undefined)? null : this.IncludeFavoriteSearcheCount,
 		IncludeFavoriteSellerCount: (this.IncludeFavoriteSellerCount === undefined)? null : this.IncludeFavoriteSellerCount,
-		Sort: (this.Sort === undefined)? null : this.Sort.toJSON(),
+		Sort: (this.Sort === undefined)? null : this.Sort,
 		MaxResults: (this.MaxResults === undefined)? null : this.MaxResults,
 		UserDefinedListName: (this.UserDefinedListName === undefined)? null : this.UserDefinedListName,
 		IncludeListContents: (this.IncludeListContents === undefined)? null : this.IncludeListContents

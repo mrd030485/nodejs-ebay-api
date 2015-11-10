@@ -2,9 +2,7 @@ function eBayMotorsProContactByPhoneEnabledDefinitionType() {
 
 	/**
 	  Documentation
-	   
-                Indicates whether the category supports using the telephone as a contact method. Added for EbayMotors Pro users.
-            
+	   Indicates whether the category supports using the telephone as a contact method. Added for EbayMotors Pro users.
 	 */
 
 	/**

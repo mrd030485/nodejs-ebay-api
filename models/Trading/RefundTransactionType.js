@@ -4,9 +4,7 @@ function RefundTransactionType(OrderID, ItemID, TransactionID, RefundLineArray) 
 
 	/**
 	  Documentation
-	   
-                This type is no longer used.
-            
+	   This type is no longer used.
 	 */
 
 	/**

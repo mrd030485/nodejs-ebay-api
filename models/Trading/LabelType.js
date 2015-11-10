@@ -2,10 +2,7 @@ function LabelType(Name) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as the <b>GetProduct*</b> calls are no longer available.
-                
-            
+	   This type is deprecated as the <b>GetProduct*</b> calls are no longer available. 
 	 */
 
 	/**

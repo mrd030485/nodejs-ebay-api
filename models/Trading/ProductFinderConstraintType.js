@@ -2,10 +2,7 @@ function ProductFinderConstraintType(DisplayName, DisplayValue) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated as <b>GetProduct*</b> calls were deprecated.
-                
-            
+	   This type is deprecated as <b>GetProduct*</b> calls were deprecated. 
 	 */
 
 	/**

@@ -5,9 +5,7 @@ function ItemBidDetailsType(ItemID, CategoryID, BidCount, SellerID, LastBidTime)
 
 	/**
 	  Documentation
-	   
-                Contains bidding details information of a user on an item.
-            
+	   Contains bidding details information of a user on an item.
 	 */
 
 	/**

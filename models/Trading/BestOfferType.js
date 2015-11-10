@@ -1,17 +1,13 @@
 var BestOfferIDType = require('./BestOfferIDType'),
 	UserType = require('./UserType'),
-	AmountType = require('./AmountType'),
-	BestOfferStatusCodeType = require('./BestOfferStatusCodeType'),
-	BestOfferTypeCodeType = require('./BestOfferTypeCodeType');
+	AmountType = require('./AmountType');
 
 function BestOfferType(BestOfferID, ExpirationTime, Buyer, Price, Status, Quantity, BuyerMessage, SellerMessage, BestOfferCodeType, CallStatus, NewBestOffer, ImmediatePayEligible) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>BestOffer</b> container, which consists of information on one Best Offer or counter offer. This information includes the price of the offer, the expiration of the offer, and any messaging provided by the prospective buyer
-                or seller.
-            
+	   Type defining the <b>BestOffer</b> container, which consists of information on one Best Offer or counter offer. This information includes the price of the offer, the expiration of the offer, and any messaging provided by the
+                    prospective buyer or seller.
 	 */
 
 	/**
@@ -20,8 +16,6 @@ function BestOfferType(BestOfferID, ExpirationTime, Buyer, Price, Status, Quanti
 	var _BestOfferID;
 	var _Buyer;
 	var _Price;
-	var _Status;
-	var _BestOfferCodeType;
 	Object.defineProperty(this, 'BestOfferID', {
 		 get: function(){
 			 return _BestOfferID;
@@ -64,34 +58,6 @@ function BestOfferType(BestOfferID, ExpirationTime, Buyer, Price, Status, Quanti
 			}
 		}
 	});
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof BestOfferStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type BestOfferStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'BestOfferCodeType', {
-		 get: function(){
-			 return _BestOfferCodeType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof BestOfferTypeCodeType){ 
-					_BestOfferCodeType = value; 
-				}else{
-					console.log('BestOfferCodeType expects type BestOfferTypeCodeType');
-				}
-			}
-		}
-	});
 	this.BestOfferID = BestOfferID;
 	this.ExpirationTime = ExpirationTime;
 	this.Buyer = Buyer;
@@ -111,11 +77,11 @@ BestOfferType.prototype.toJSON = function(with_null) {
 		ExpirationTime: (this.ExpirationTime === undefined)? null : this.ExpirationTime,
 		Buyer: (this.Buyer === undefined)? null : this.Buyer.toJSON(),
 		Price: (this.Price === undefined)? null : this.Price.toJSON(),
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
 		Quantity: (this.Quantity === undefined)? null : this.Quantity,
 		BuyerMessage: (this.BuyerMessage === undefined)? null : this.BuyerMessage,
 		SellerMessage: (this.SellerMessage === undefined)? null : this.SellerMessage,
-		BestOfferCodeType: (this.BestOfferCodeType === undefined)? null : this.BestOfferCodeType.toJSON(),
+		BestOfferCodeType: (this.BestOfferCodeType === undefined)? null : this.BestOfferCodeType,
 		CallStatus: (this.CallStatus === undefined)? null : this.CallStatus,
 		NewBestOffer: (this.NewBestOffer === undefined)? null : this.NewBestOffer,
 		ImmediatePayEligible: (this.ImmediatePayEligible === undefined)? null : this.ImmediatePayEligible

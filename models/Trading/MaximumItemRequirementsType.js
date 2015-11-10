@@ -2,9 +2,7 @@ function MaximumItemRequirementsType(MaximumItemCount, MinimumFeedbackScore) {
 
 	/**
 	  Documentation
-	   
-                Container for items bid.
-            
+	   Container for items bid.
 	 */
 
 	/**

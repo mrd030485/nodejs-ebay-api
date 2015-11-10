@@ -2,9 +2,7 @@ function MyMessagesFolderType(FolderID, FolderName) {
 
 	/**
 	  Documentation
-	   
-                Details relating to a My Messages folder.
-            
+	   Details relating to a My Messages folder.
 	 */
 
 	/**

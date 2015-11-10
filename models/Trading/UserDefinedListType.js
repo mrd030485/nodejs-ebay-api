@@ -6,9 +6,7 @@ function UserDefinedListType(Name, ItemCount, FavoriteSearcheCount, FavoriteSell
 
 	/**
 	  Documentation
-	   
-                Contains the items, searches and sellers that the user has saved to this list using the "Add to list" feature. The name of the list is given by the "Name" element.
-            
+	   Contains the items, searches and sellers that the user has saved to this list using the "Add to list" feature. The name of the list is given by the "Name" element.
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function MyMessagesResponseDetailsType(ResponseEnabled, ResponseURL, UserRespons
 
 	/**
 	  Documentation
-	   
-                Details relating to the response to a message.
-            
+	   Details relating to the response to a message.
 	 */
 
 	/**

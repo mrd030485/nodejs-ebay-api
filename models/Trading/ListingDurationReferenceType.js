@@ -2,9 +2,7 @@ function ListingDurationReferenceType(type) {
 
 	/**
 	  Documentation
-	   
-                Identifies the type of listing as an attribute on the ListingDuration node.
-            
+	   Identifies the type of listing as an attribute on the ListingDuration node.
 	 */
 
 	/**

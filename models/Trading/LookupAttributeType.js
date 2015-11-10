@@ -2,10 +2,7 @@ function LookupAttributeType(Name, Value) {
 
 	/**
 	  Documentation
-	   
-                This type is deprecated because attributes are deprecated.
-                
-            
+	   This type is deprecated because attributes are deprecated. 
 	 */
 
 	/**

@@ -2,9 +2,7 @@ function CharityIDType(type) {
 
 	/**
 	  Documentation
-	   
-                Defines the affiliation status for a nonprofit charity organization registered with the eBay Giving Works provider.
-            
+	   Defines the affiliation status for a nonprofit charity organization registered with the eBay Giving Works provider.
 	 */
 
 	/**

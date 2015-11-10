@@ -1,42 +1,22 @@
-var AccountDetailEntryCodeType = require('./AccountDetailEntryCodeType'),
-	AmountType = require('./AmountType'),
-	ItemIDType = require('./ItemIDType'),
-	decimal = require('./decimal');
+var AmountType = require('./AmountType'),
+	ItemIDType = require('./ItemIDType');
 
 function AccountEntryType(AccountDetailsEntryType, Description, Balance, Date, GrossDetailAmount, ItemID, Memo, ConversionRate, NetDetailAmount, RefNumber, VATPercent, Title, OrderLineItemID, TransactionID, ReceivedTopRatedDiscount) {
 
 	/**
 	  Documentation
-	   
-                Type defining the <b>AccountEntry</b> container returned in the <b>GetAccount</b> response. Each <b>AccountEntry</b> container consists of detailed information for a single credit or debit transaction, or an administrative
-                action which occurred on the eBay user's account.
-            
+	   Type defining the <b>AccountEntry</b> container returned in the <b>GetAccount</b> response. Each <b>AccountEntry</b> container consists of detailed information for a single credit or debit transaction,
+                    or an administrative action which occurred on the eBay user's account.
 	 */
 
 	/**
 	 * Arrays
 	 */
-	var _AccountDetailsEntryType;
 	var _Balance;
 	var _GrossDetailAmount;
 	var _ItemID;
 	var _ConversionRate;
 	var _NetDetailAmount;
-	var _VATPercent;
-	Object.defineProperty(this, 'AccountDetailsEntryType', {
-		 get: function(){
-			 return _AccountDetailsEntryType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AccountDetailEntryCodeType){ 
-					_AccountDetailsEntryType = value; 
-				}else{
-					console.log('AccountDetailsEntryType expects type AccountDetailEntryCodeType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'Balance', {
 		 get: function(){
 			 return _Balance;
@@ -107,20 +87,6 @@ function AccountEntryType(AccountDetailsEntryType, Description, Balance, Date, G
 			}
 		}
 	});
-	Object.defineProperty(this, 'VATPercent', {
-		 get: function(){
-			 return _VATPercent;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof decimal){ 
-					_VATPercent = value; 
-				}else{
-					console.log('VATPercent expects type decimal');
-				}
-			}
-		}
-	});
 	this.AccountDetailsEntryType = AccountDetailsEntryType;
 	this.Description = Description;
 	this.Balance = Balance;
@@ -139,7 +105,7 @@ function AccountEntryType(AccountDetailsEntryType, Description, Balance, Date, G
 }
 AccountEntryType.prototype.toJSON = function(with_null) {
 	var json = { 
-		AccountDetailsEntryType: (this.AccountDetailsEntryType === undefined)? null : this.AccountDetailsEntryType.toJSON(),
+		AccountDetailsEntryType: (this.AccountDetailsEntryType === undefined)? null : this.AccountDetailsEntryType,
 		Description: (this.Description === undefined)? null : this.Description,
 		Balance: (this.Balance === undefined)? null : this.Balance.toJSON(),
 		Date: (this.Date === undefined)? null : this.Date,
@@ -149,7 +115,7 @@ AccountEntryType.prototype.toJSON = function(with_null) {
 		ConversionRate: (this.ConversionRate === undefined)? null : this.ConversionRate.toJSON(),
 		NetDetailAmount: (this.NetDetailAmount === undefined)? null : this.NetDetailAmount.toJSON(),
 		RefNumber: (this.RefNumber === undefined)? null : this.RefNumber,
-		VATPercent: (this.VATPercent === undefined)? null : this.VATPercent.toJSON(),
+		VATPercent: (this.VATPercent === undefined)? null : this.VATPercent,
 		Title: (this.Title === undefined)? null : this.Title,
 		OrderLineItemID: (this.OrderLineItemID === undefined)? null : this.OrderLineItemID,
 		TransactionID: (this.TransactionID === undefined)? null : this.TransactionID,

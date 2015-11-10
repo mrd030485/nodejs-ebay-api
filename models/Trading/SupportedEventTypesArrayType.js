@@ -3,12 +3,10 @@ function SupportedEventTypesArrayType(EventType) {
 	/**
 	  Documentation
 	   
-            
 	 */
 
 	/**
 	 * Arrays
-	 *	EventType: NotificationEventTypeCodeType
 	 */
 	this.EventType = EventType;
 }

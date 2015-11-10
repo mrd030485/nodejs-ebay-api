@@ -1,24 +1,16 @@
-var ItemIDArrayType = require('./ItemIDArrayType'),
-	PromotionalSaleStatusCodeType = require('./PromotionalSaleStatusCodeType'),
-	DiscountCodeType = require('./DiscountCodeType'),
-	PromotionalSaleTypeCodeType = require('./PromotionalSaleTypeCodeType');
+var ItemIDArrayType = require('./ItemIDArrayType');
 
 function PromotionalSaleType(PromotionalSaleID, PromotionalSaleName, PromotionalSaleItemIDArray, Status, DiscountType, DiscountValue, PromotionalSaleStartTime, PromotionalSaleEndTime, PromotionalSaleType) {
 
 	/**
 	  Documentation
-	   
-                Details for a single promotional sale.
-            
+	   Details for a single promotional sale.
 	 */
 
 	/**
 	 * Arrays
 	 */
 	var _PromotionalSaleItemIDArray;
-	var _Status;
-	var _DiscountType;
-	var _PromotionalSaleType;
 	Object.defineProperty(this, 'PromotionalSaleItemIDArray', {
 		 get: function(){
 			 return _PromotionalSaleItemIDArray;
@@ -29,48 +21,6 @@ function PromotionalSaleType(PromotionalSaleID, PromotionalSaleName, Promotional
 					_PromotionalSaleItemIDArray = value; 
 				}else{
 					console.log('PromotionalSaleItemIDArray expects type ItemIDArrayType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'Status', {
-		 get: function(){
-			 return _Status;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionalSaleStatusCodeType){ 
-					_Status = value; 
-				}else{
-					console.log('Status expects type PromotionalSaleStatusCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'DiscountType', {
-		 get: function(){
-			 return _DiscountType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof DiscountCodeType){ 
-					_DiscountType = value; 
-				}else{
-					console.log('DiscountType expects type DiscountCodeType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PromotionalSaleType', {
-		 get: function(){
-			 return _PromotionalSaleType;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PromotionalSaleTypeCodeType){ 
-					_PromotionalSaleType = value; 
-				}else{
-					console.log('PromotionalSaleType expects type PromotionalSaleTypeCodeType');
 				}
 			}
 		}
@@ -90,12 +40,12 @@ PromotionalSaleType.prototype.toJSON = function(with_null) {
 		PromotionalSaleID: (this.PromotionalSaleID === undefined)? null : this.PromotionalSaleID,
 		PromotionalSaleName: (this.PromotionalSaleName === undefined)? null : this.PromotionalSaleName,
 		PromotionalSaleItemIDArray: (this.PromotionalSaleItemIDArray === undefined)? null : this.PromotionalSaleItemIDArray.toJSON(),
-		Status: (this.Status === undefined)? null : this.Status.toJSON(),
-		DiscountType: (this.DiscountType === undefined)? null : this.DiscountType.toJSON(),
+		Status: (this.Status === undefined)? null : this.Status,
+		DiscountType: (this.DiscountType === undefined)? null : this.DiscountType,
 		DiscountValue: (this.DiscountValue === undefined)? null : this.DiscountValue,
 		PromotionalSaleStartTime: (this.PromotionalSaleStartTime === undefined)? null : this.PromotionalSaleStartTime,
 		PromotionalSaleEndTime: (this.PromotionalSaleEndTime === undefined)? null : this.PromotionalSaleEndTime,
-		PromotionalSaleType: (this.PromotionalSaleType === undefined)? null : this.PromotionalSaleType.toJSON()
+		PromotionalSaleType: (this.PromotionalSaleType === undefined)? null : this.PromotionalSaleType
 	};
 	if(!with_null) {
 		for(var k in json) {
