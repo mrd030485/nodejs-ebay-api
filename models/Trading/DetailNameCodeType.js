@@ -1,0 +1,30 @@
+var DetailNameCodeType =
+{
+	BUYER_REQUIREMENT_DETAILS: 'BuyerRequirementDetails',
+	COUNTRY_DETAILS: 'CountryDetails',
+	CURRENCY_DETAILS: 'CurrencyDetails',
+	CUSTOM_CODE: 'CustomCode',
+	DISPATCH_TIME_MAX_DETAILS: 'DispatchTimeMaxDetails',
+	EXCLUDE_SHIPPING_LOCATION_DETAILS: 'ExcludeShippingLocationDetails',
+	ITEM_SPECIFIC_DETAILS: 'ItemSpecificDetails',
+	LISTING_FEATURE_DETAILS: 'ListingFeatureDetails',
+	LISTING_START_PRICE_DETAILS: 'ListingStartPriceDetails',
+	PAYMENT_OPTION_DETAILS: 'PaymentOptionDetails',
+	PRODUCT_DETAILS: 'ProductDetails',
+	RECOUPMENT_POLICY_DETAILS: 'RecoupmentPolicyDetails',
+	REGION_DETAILS: 'RegionDetails',
+	REGION_OF_ORIGIN_DETAILS: 'RegionOfOriginDetails',
+	RETURN_POLICY_DETAILS: 'ReturnPolicyDetails',
+	SHIPPING_CARRIER_DETAILS: 'ShippingCarrierDetails',
+	SHIPPING_CATEGORY_DETAILS: 'ShippingCategoryDetails',
+	SHIPPING_LOCATION_DETAILS: 'ShippingLocationDetails',
+	SHIPPING_PACKAGE_DETAILS: 'ShippingPackageDetails',
+	SHIPPING_SERVICE_DETAILS: 'ShippingServiceDetails',
+	SITE_DETAILS: 'SiteDetails',
+	TAX_JURISDICTION: 'TaxJurisdiction',
+	TIME_ZONE_DETAILS: 'TimeZoneDetails',
+	UNIT_OF_MEASUREMENT_DETAILS: 'UnitOfMeasurementDetails',
+	URLDETAILS: 'URLDetails',
+	VARIATION_DETAILS: 'VariationDetails'
+};
+module.exports = DetailNameCodeType;

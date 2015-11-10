@@ -1,0 +1,33 @@
+var DisputeStateCodeType =
+{
+	BUYER_FIRST_RESPONSE_NO_PAY_OPTION: 'BuyerFirstResponseNoPayOption',
+	BUYER_FIRST_RESPONSE_NO_PAY_OPTION_LATE_RESPONSE: 'BuyerFirstResponseNoPayOptionLateResponse',
+	BUYER_FIRST_RESPONSE_PAY_OPTION: 'BuyerFirstResponsePayOption',
+	BUYER_FIRST_RESPONSE_PAY_OPTION_LATE_RESPONSE: 'BuyerFirstResponsePayOptionLateResponse',
+	CLAIM_CLOSED: 'ClaimClosed',
+	CLAIM_DENIED: 'ClaimDenied',
+	CLAIM_OPENED: 'ClaimOpened',
+	CLAIM_PAID: 'ClaimPaid',
+	CLAIM_PAYMENT_PENDING: 'ClaimPaymentPending',
+	CLAIM_PENDING: 'ClaimPending',
+	CLAIM_RESOLVED: 'ClaimResolved',
+	CLAIM_SUBMITTED: 'ClaimSubmitted',
+	CLOSED: 'Closed',
+	CUSTOM_CODE: 'CustomCode',
+	LOCKED: 'Locked',
+	MUTUAL_AGREEMENT_OR_BUYER_RETURNING_ITEM: 'MutualAgreementOrBuyerReturningItem',
+	MUTUAL_COMMUNICATION_NO_PAY_OPTION: 'MutualCommunicationNoPayOption',
+	MUTUAL_COMMUNICATION_PAY_OPTION: 'MutualCommunicationPayOption',
+	MUTUAL_WITHDRAWAL_AGREEMENT: 'MutualWithdrawalAgreement',
+	MUTUAL_WITHDRAWAL_AGREEMENT_LATE: 'MutualWithdrawalAgreementLate',
+	NOT_AS_DESCRIBED_MUTUAL_COMMUNICATION: 'NotAsDescribedMutualCommunication',
+	NOT_AS_DESCRIBED_NO_SELLER_RESPONSE: 'NotAsDescribedNoSellerResponse',
+	NOT_RECEIVED_MUTUAL_COMMUNICATION: 'NotReceivedMutualCommunication',
+	NOT_RECEIVED_NO_SELLER_RESPONSE: 'NotReceivedNoSellerResponse',
+	NO_DOCUMENTATION: 'NoDocumentation',
+	PENDING_RESOLVE: 'PendingResolve',
+	UNPAID_ITEM_OPEN: 'UnpaidItemOpen',
+	UPIASSISTANCE_DISABLED_BYE_BAY: 'UPIAssistanceDisabledByeBay',
+	UPIASSISTANCE_DISABLED_BY_SELLER: 'UPIAssistanceDisabledBySeller'
+};
+module.exports = DisputeStateCodeType;
