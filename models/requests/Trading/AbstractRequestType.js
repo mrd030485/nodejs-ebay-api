@@ -1,6 +1,6 @@
 var XMLRequesterCredentialsType = require('../../Trading/XMLRequesterCredentialsType'),
 	UUIDType = require('../../Trading/UUIDType'),
-	BotBlockRequestType = require('../../Trading/BotBlockRequestType');
+	BotBlockRequestType = require('./BotBlockRequestType');
 
 function AbstractRequestType(DetailLevel, ErrorLanguage, MessageID, Version, EndUserIP, RequesterCredentials, ErrorHandling, InvocationID, OutputSelector, WarningLevel, BotBlock) {
 
