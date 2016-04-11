@@ -187,11 +187,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_BuyItNowPrice = value; 
-				}else{
-					console.log('BuyItNowPrice expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -313,11 +311,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_ReservePrice = value; 
-				}else{
-					console.log('ReservePrice expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -411,11 +407,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_StartPrice = value; 
-				}else{
-					console.log('StartPrice expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -593,11 +587,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_ClassifiedAdPayPerLeadFee = value; 
-				}else{
-					console.log('ClassifiedAdPayPerLeadFee expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -648,12 +640,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			 return _BuyerGuaranteePrice;
 		},
 		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_BuyerGuaranteePrice = value; 
-				}else{
-					console.log('BuyerGuaranteePrice expects type AmountType');
-				}
+			 if(value !== undefined && value !== null){	
+				_BuyerGuaranteePrice = value; 
+				
 			}
 		}
 	});
@@ -803,11 +792,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_FloorPrice = value; 
-				}else{
-					console.log('FloorPrice expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -817,11 +804,9 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
+				
 					_CeilingPrice = value; 
-				}else{
-					console.log('CeilingPrice expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -1034,7 +1019,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		BiddingDetails: (this.BiddingDetails === undefined)? null : this.BiddingDetails.toJSON(),
 		MotorsGermanySearchable: (this.MotorsGermanySearchable === undefined)? null : this.MotorsGermanySearchable,
 		BuyerProtection: (this.BuyerProtection === undefined)? null : this.BuyerProtection,
-		BuyItNowPrice: (this.BuyItNowPrice === undefined)? null : this.BuyItNowPrice.toJSON(),
+		BuyItNowPrice: (this.BuyItNowPrice === undefined)? null : this.BuyItNowPrice,
 		CategoryMappingAllowed: (this.CategoryMappingAllowed === undefined)? null : this.CategoryMappingAllowed,
 		Charity: (this.Charity === undefined)? null : this.Charity.toJSON(),
 		Country: (this.Country === undefined)? null : this.Country,
@@ -1065,7 +1050,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		PrivateNotes: (this.PrivateNotes === undefined)? null : this.PrivateNotes,
 		RegionID: (this.RegionID === undefined)? null : this.RegionID,
 		RelistLink: (this.RelistLink === undefined)? null : this.RelistLink,
-		ReservePrice: (this.ReservePrice === undefined)? null : this.ReservePrice.toJSON(),
+		ReservePrice: (this.ReservePrice === undefined)? null : this.ReservePrice,
 		ReviseStatus: (this.ReviseStatus === undefined)? null : this.ReviseStatus.toJSON(),
 		ScheduleTime: (this.ScheduleTime === undefined)? null : this.ScheduleTime,
 		SecondaryCategory: (this.SecondaryCategory === undefined)? null : this.SecondaryCategory.toJSON(),
@@ -1075,7 +1060,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		ShippingDetails: (this.ShippingDetails === undefined)? null : this.ShippingDetails.toJSON(),
 		ShipToLocations: (this.ShipToLocations === undefined)? null : this.ShipToLocations,
 		Site: (this.Site === undefined)? null : this.Site,
-		StartPrice: (this.StartPrice === undefined)? null : this.StartPrice.toJSON(),
+		StartPrice: (this.StartPrice === undefined)? null : this.StartPrice,
 		Storefront: (this.Storefront === undefined)? null : this.Storefront.toJSON(),
 		SubTitle: (this.SubTitle === undefined)? null : this.SubTitle,
 		TimeLeft: (this.TimeLeft === undefined)? null : this.TimeLeft,
@@ -1121,7 +1106,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		NewLeadCount: (this.NewLeadCount === undefined)? null : this.NewLeadCount,
 		ItemSpecifics: (this.ItemSpecifics === undefined)? null : this.ItemSpecifics.toJSON(),
 		GroupCategoryID: (this.GroupCategoryID === undefined)? null : this.GroupCategoryID,
-		ClassifiedAdPayPerLeadFee: (this.ClassifiedAdPayPerLeadFee === undefined)? null : this.ClassifiedAdPayPerLeadFee.toJSON(),
+		ClassifiedAdPayPerLeadFee: (this.ClassifiedAdPayPerLeadFee === undefined)? null : this.ClassifiedAdPayPerLeadFee,
 		BidGroupItem: (this.BidGroupItem === undefined)? null : this.BidGroupItem,
 		ApplyBuyerProtection: (this.ApplyBuyerProtection === undefined)? null : this.ApplyBuyerProtection.toJSON(),
 		ListingSubtype2: (this.ListingSubtype2 === undefined)? null : this.ListingSubtype2,
@@ -1131,7 +1116,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		ItemPolicyViolation: (this.ItemPolicyViolation === undefined)? null : this.ItemPolicyViolation.toJSON(),
 		CrossBorderTrade: (this.CrossBorderTrade === undefined)? null : this.CrossBorderTrade,
 		BusinessSellerDetails: (this.BusinessSellerDetails === undefined)? null : this.BusinessSellerDetails.toJSON(),
-		BuyerGuaranteePrice: (this.BuyerGuaranteePrice === undefined)? null : this.BuyerGuaranteePrice.toJSON(),
+		BuyerGuaranteePrice: (this.BuyerGuaranteePrice === undefined)? null : this.BuyerGuaranteePrice,
 		BuyerRequirementDetails: (this.BuyerRequirementDetails === undefined)? null : this.BuyerRequirementDetails.toJSON(),
 		ReturnPolicy: (this.ReturnPolicy === undefined)? null : this.ReturnPolicy.toJSON(),
 		PaymentAllowedSite: (this.PaymentAllowedSite === undefined)? null : this.PaymentAllowedSite,
@@ -1160,8 +1145,8 @@ ItemType.prototype.toJSON = function(with_null) {
 		ShippingPackageDetails: (this.ShippingPackageDetails === undefined)? null : this.ShippingPackageDetails.toJSON(),
 		TopRatedListing: (this.TopRatedListing === undefined)? null : this.TopRatedListing,
 		QuantityRestrictionPerBuyer: (this.QuantityRestrictionPerBuyer === undefined)? null : this.QuantityRestrictionPerBuyer.toJSON(),
-		FloorPrice: (this.FloorPrice === undefined)? null : this.FloorPrice.toJSON(),
-		CeilingPrice: (this.CeilingPrice === undefined)? null : this.CeilingPrice.toJSON(),
+		FloorPrice: (this.FloorPrice === undefined)? null : this.FloorPrice,
+		CeilingPrice: (this.CeilingPrice === undefined)? null : this.CeilingPrice,
 		IsIntermediatedShippingEligible: (this.IsIntermediatedShippingEligible === undefined)? null : this.IsIntermediatedShippingEligible,
 		UnitInfo: (this.UnitInfo === undefined)? null : this.UnitInfo.toJSON(),
 		RelistParentID: (this.RelistParentID === undefined)? null : this.RelistParentID,
