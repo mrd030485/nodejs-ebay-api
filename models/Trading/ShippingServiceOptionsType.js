@@ -26,11 +26,8 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
 					_ShippingInsuranceCost = value; 
-				}else{
-					console.log('ShippingInsuranceCost expects type AmountType');
-				}
+				
 			}
 		}
 	});
@@ -40,11 +37,7 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
 					_ShippingServiceCost = value; 
-				}else{
-					console.log('ShippingServiceCost expects type AmountType');
-				}
 			}
 		}
 	});
@@ -54,11 +47,7 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
 					_ShippingServiceAdditionalCost = value; 
-				}else{
-					console.log('ShippingServiceAdditionalCost expects type AmountType');
-				}
 			}
 		}
 	});
@@ -68,11 +57,7 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
 					_ShippingSurcharge = value; 
-				}else{
-					console.log('ShippingSurcharge expects type AmountType');
-				}
 			}
 		}
 	});
@@ -82,11 +67,7 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 		},
 		 set: function(value){
 			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
 					_ImportCharge = value; 
-				}else{
-					console.log('ImportCharge expects type AmountType');
-				}
 			}
 		}
 	});
@@ -108,18 +89,18 @@ function ShippingServiceOptionsType(ShippingInsuranceCost, ShippingService, Ship
 }
 ShippingServiceOptionsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		ShippingInsuranceCost: (this.ShippingInsuranceCost === undefined)? null : this.ShippingInsuranceCost.toJSON(),
+		ShippingInsuranceCost: (this.ShippingInsuranceCost === undefined)? null : this.ShippingInsuranceCost,
 		ShippingService: (this.ShippingService === undefined)? null : this.ShippingService,
-		ShippingServiceCost: (this.ShippingServiceCost === undefined)? null : this.ShippingServiceCost.toJSON(),
-		ShippingServiceAdditionalCost: (this.ShippingServiceAdditionalCost === undefined)? null : this.ShippingServiceAdditionalCost.toJSON(),
+		ShippingServiceCost: (this.ShippingServiceCost === undefined)? null : this.ShippingServiceCost,
+		ShippingServiceAdditionalCost: (this.ShippingServiceAdditionalCost === undefined)? null : this.ShippingServiceAdditionalCost,
 		ShippingServicePriority: (this.ShippingServicePriority === undefined)? null : this.ShippingServicePriority,
 		ExpeditedService: (this.ExpeditedService === undefined)? null : this.ExpeditedService,
 		ShippingTimeMin: (this.ShippingTimeMin === undefined)? null : this.ShippingTimeMin,
 		ShippingTimeMax: (this.ShippingTimeMax === undefined)? null : this.ShippingTimeMax,
-		ShippingSurcharge: (this.ShippingSurcharge === undefined)? null : this.ShippingSurcharge.toJSON(),
+		ShippingSurcharge: (this.ShippingSurcharge === undefined)? null : this.ShippingSurcharge,
 		FreeShipping: (this.FreeShipping === undefined)? null : this.FreeShipping,
 		LocalPickup: (this.LocalPickup === undefined)? null : this.LocalPickup,
-		ImportCharge: (this.ImportCharge === undefined)? null : this.ImportCharge.toJSON(),
+		ImportCharge: (this.ImportCharge === undefined)? null : this.ImportCharge,
 		ShippingPackageInfo: (this.ShippingPackageInfo === undefined)? null : this.ShippingPackageInfo,
 		ShippingServiceCutOffTime: (this.ShippingServiceCutOffTime === undefined)? null : this.ShippingServiceCutOffTime,
 		LogisticPlanType: (this.LogisticPlanType === undefined)? null : this.LogisticPlanType
