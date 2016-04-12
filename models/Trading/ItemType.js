@@ -1025,7 +1025,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		Country: (this.Country === undefined)? null : this.Country,
 		CrossPromotion: (this.CrossPromotion === undefined)? null : this.CrossPromotion.toJSON(),
 		Currency: (this.Currency === undefined)? null : this.Currency,
-		Description: (this.Description === undefined)? null : this.Description,
+		Description: (this.Description === undefined)? null : {_cdata: this.Description},
 		DescriptionReviseMode: (this.DescriptionReviseMode === undefined)? null : this.DescriptionReviseMode,
 		Distance: (this.Distance === undefined)? null : this.Distance.toJSON(),
 		GiftIcon: (this.GiftIcon === undefined)? null : this.GiftIcon,
