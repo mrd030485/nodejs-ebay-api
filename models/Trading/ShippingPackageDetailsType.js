@@ -1,4 +1,4 @@
-function ShippingPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, PackageWidth, WeightMajor, WeightMinor, ShippingIrregular) {
+function ShippingPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, PackageWidth, WeightMajor, WeightMinor, ShippingIrregular, ShippingPackage) {
 
 	/**
 	  Documentation
