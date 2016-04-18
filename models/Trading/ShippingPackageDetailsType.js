@@ -1,4 +1,4 @@
-function ShippingPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, PackageWidth, WeightMajor, WeightMinor, ShippingIrregular, ShippingPackage) {
+function ShippingPackageDetailsType(PackageID, Description, ShippingPackage, DefaultValue, DimensionsSupported, DetailVersion, UpdateTime) {
 
 	/**
 	  Documentation
@@ -8,25 +8,23 @@ function ShippingPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength
 	/**
 	 * Arrays
 	 */
-	this.MeasurementUnit = MeasurementUnit;
-	this.PackageDepth = PackageDepth;
-	this.PackageLength = PackageLength;
-	this.PackageWidth = PackageWidth;
-	this.WeightMajor = WeightMajor;
-	this.WeightMinor = WeightMinor;
-	this.ShippingIrregular = ShippingIrregular;
+	this.PackageID = PackageID;
+	this.Description = Description;
 	this.ShippingPackage = ShippingPackage;
+	this.DefaultValue = DefaultValue;
+	this.DimensionsSupported = DimensionsSupported;
+	this.DetailVersion = DetailVersion;
+	this.UpdateTime = UpdateTime;
 }
 ShippingPackageDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
-		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit,
-		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth,
-		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength,
-		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth,
-		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor,
-		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor,
-		ShippingIrregular: (this.ShippingIrregular === undefined)? null : this.ShippingIrregular,
-    ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage
+		PackageID: (this.PackageID === undefined)? null : this.PackageID,
+		Description: (this.Description === undefined)? null : this.Description,
+		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
+		DefaultValue: (this.DefaultValue === undefined)? null : this.DefaultValue,
+		DimensionsSupported: (this.DimensionsSupported === undefined)? null : this.DimensionsSupported,
+		DetailVersion: (this.DetailVersion === undefined)? null : this.DetailVersion,
+		UpdateTime: (this.UpdateTime === undefined)? null : this.UpdateTime
 	};
 	if(!with_null) {
 		for(var k in json) {
