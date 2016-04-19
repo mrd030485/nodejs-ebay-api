@@ -1,6 +1,3 @@
-var MeasureType = require('./MeasureType'),
-	AmountType = require('./AmountType');
-
 function CalculatedShippingRateType(OriginatingPostalCode, MeasurementUnit, PackageDepth, PackageLength, PackageWidth, PackagingHandlingCosts, ShippingIrregular, ShippingPackage, WeightMajor, WeightMinor, InternationalPackagingHandlingCosts) {
 
 	/**
@@ -22,104 +19,6 @@ function CalculatedShippingRateType(OriginatingPostalCode, MeasurementUnit, Pack
 	var _WeightMajor;
 	var _WeightMinor;
 	var _InternationalPackagingHandlingCosts;
-	Object.defineProperty(this, 'PackageDepth', {
-		 get: function(){
-			 return _PackageDepth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageDepth = value; 
-				}else{
-					console.log('PackageDepth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageLength', {
-		 get: function(){
-			 return _PackageLength;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageLength = value; 
-				}else{
-					console.log('PackageLength expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageWidth', {
-		 get: function(){
-			 return _PackageWidth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageWidth = value; 
-				}else{
-					console.log('PackageWidth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackagingHandlingCosts', {
-		 get: function(){
-			 return _PackagingHandlingCosts;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_PackagingHandlingCosts = value; 
-				}else{
-					console.log('PackagingHandlingCosts expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMajor', {
-		 get: function(){
-			 return _WeightMajor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMajor = value; 
-				}else{
-					console.log('WeightMajor expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMinor', {
-		 get: function(){
-			 return _WeightMinor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMinor = value; 
-				}else{
-					console.log('WeightMinor expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'InternationalPackagingHandlingCosts', {
-		 get: function(){
-			 return _InternationalPackagingHandlingCosts;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_InternationalPackagingHandlingCosts = value; 
-				}else{
-					console.log('InternationalPackagingHandlingCosts expects type AmountType');
-				}
-			}
-		}
-	});
 	this.OriginatingPostalCode = OriginatingPostalCode;
 	this.MeasurementUnit = MeasurementUnit;
 	this.PackageDepth = PackageDepth;
@@ -136,15 +35,15 @@ CalculatedShippingRateType.prototype.toJSON = function(with_null) {
 	var json = { 
 		OriginatingPostalCode: (this.OriginatingPostalCode === undefined)? null : this.OriginatingPostalCode,
 		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit,
-		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth.toJSON(),
-		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength.toJSON(),
-		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth.toJSON(),
-		PackagingHandlingCosts: (this.PackagingHandlingCosts === undefined)? null : this.PackagingHandlingCosts.toJSON(),
+		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth,
+		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength,
+		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth,
+		PackagingHandlingCosts: (this.PackagingHandlingCosts === undefined)? null : this.PackagingHandlingCosts,
 		ShippingIrregular: (this.ShippingIrregular === undefined)? null : this.ShippingIrregular,
 		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
-		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
-		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON(),
-		InternationalPackagingHandlingCosts: (this.InternationalPackagingHandlingCosts === undefined)? null : this.InternationalPackagingHandlingCosts.toJSON()
+		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor,
+		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor,
+		InternationalPackagingHandlingCosts: (this.InternationalPackagingHandlingCosts === undefined)? null : this.InternationalPackagingHandlingCosts
 	};
 	if(!with_null) {
 		for(var k in json) {
