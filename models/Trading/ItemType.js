@@ -1044,7 +1044,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		SearchDetails: (this.SearchDetails === undefined)? null : this.SearchDetails.toJSON(with_null),
 		PostalCode: (this.PostalCode === undefined)? null : this.PostalCode,
 		ShippingTermsInDescription: (this.ShippingTermsInDescription === undefined)? null : this.ShippingTermsInDescription,
-		ExternalProductID: (this.ExternalProductID === undefined)? null : this.ExternalProductID.toJSON(with_null),
+		ExternalProductID: (this.ExternalProductID === undefined)? null : this.ExternalProductID,
 		SellerInventoryID: (this.SellerInventoryID === undefined)? null : this.SellerInventoryID,
 		PictureDetails: (this.PictureDetails === undefined)? null : this.PictureDetails.toJSON(with_null),
 		DispatchTimeMax: (this.DispatchTimeMax === undefined)? null : this.DispatchTimeMax,
