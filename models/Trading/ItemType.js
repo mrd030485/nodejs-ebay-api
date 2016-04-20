@@ -17,10 +17,8 @@ var AttributeSetArrayType = require('./AttributeSetArrayType'),
 	SellingStatusType = require('./SellingStatusType'),
 	ShippingDetailsType = require('./ShippingDetailsType'),
 	StorefrontType = require('./StorefrontType'),
-	UUIDType = require('./UUIDType'),
 	VATDetailsType = require('./VATDetailsType'),
 	BestOfferDetailsType = require('./BestOfferDetailsType'),
-	SKUType = require('./SKUType'),
 	SearchDetailsType = require('./SearchDetailsType'),
 	ExternalProductIDType = require('./ExternalProductIDType'),
 	PictureDetailsType = require('./PictureDetailsType'),
@@ -427,20 +425,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'UUID', {
-		 get: function(){
-			 return _UUID;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof UUIDType){ 
-					_UUID = value; 
-				}else{
-					console.log('UUID expects type UUIDType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'VATDetails', {
 		 get: function(){
 			 return _VATDetails;
@@ -469,20 +453,7 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			}
 		}
 	});
-	Object.defineProperty(this, 'SKU', {
-		 get: function(){
-			 return _SKU;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof SKUType){ 
-					_SKU = value; 
-				}else{
-					console.log('SKU expects type SKUType');
-				}
-			}
-		}
-	});
+	
 	Object.defineProperty(this, 'SearchDetails', {
 		 get: function(){
 			 return _SearchDetails;
@@ -493,20 +464,6 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 					_SearchDetails = value; 
 				}else{
 					console.log('SearchDetails expects type SearchDetailsType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'ExternalProductID', {
-		 get: function(){
-			 return _ExternalProductID;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof ExternalProductIDType){ 
-					_ExternalProductID = value; 
-				}else{
-					console.log('ExternalProductID expects type ExternalProductIDType');
 				}
 			}
 		}
@@ -1065,7 +1022,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		SubTitle: (this.SubTitle === undefined)? null : this.SubTitle,
 		TimeLeft: (this.TimeLeft === undefined)? null : this.TimeLeft,
 		Title: (this.Title === undefined)? null : this.Title,
-		UUID: (this.UUID === undefined)? null : this.UUID.toJSON(with_null),
+		UUID: (this.UUID === undefined)? null : this.UUID,
 		VATDetails: (this.VATDetails === undefined)? null : this.VATDetails.toJSON(with_null),
 		SellerVacationNote: (this.SellerVacationNote === undefined)? null : this.SellerVacationNote,
 		WatchCount: (this.WatchCount === undefined)? null : this.WatchCount,
@@ -1082,7 +1039,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		QuestionCount: (this.QuestionCount === undefined)? null : this.QuestionCount,
 		Relisted: (this.Relisted === undefined)? null : this.Relisted,
 		QuantityAvailable: (this.QuantityAvailable === undefined)? null : this.QuantityAvailable,
-		SKU: (this.SKU === undefined)? null : this.SKU.toJSON(with_null),
+		SKU: (this.SKU === undefined)? null : this.SKU,
 		CategoryBasedAttributesPrefill: (this.CategoryBasedAttributesPrefill === undefined)? null : this.CategoryBasedAttributesPrefill,
 		SearchDetails: (this.SearchDetails === undefined)? null : this.SearchDetails.toJSON(with_null),
 		PostalCode: (this.PostalCode === undefined)? null : this.PostalCode,
