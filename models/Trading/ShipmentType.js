@@ -27,76 +27,6 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 	var _WeightMajor;
 	var _WeightMinor;
 	var _ShipmentLineItem;
-	Object.defineProperty(this, 'InsuredValue', {
-		 get: function(){
-			 return _InsuredValue;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_InsuredValue = value; 
-				}else{
-					console.log('InsuredValue expects type AmountType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageDepth', {
-		 get: function(){
-			 return _PackageDepth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageDepth = value; 
-				}else{
-					console.log('PackageDepth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageLength', {
-		 get: function(){
-			 return _PackageLength;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageLength = value; 
-				}else{
-					console.log('PackageLength expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageWidth', {
-		 get: function(){
-			 return _PackageWidth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageWidth = value; 
-				}else{
-					console.log('PackageWidth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PostageTotal', {
-		 get: function(){
-			 return _PostageTotal;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_PostageTotal = value; 
-				}else{
-					console.log('PostageTotal expects type AmountType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'ShipFromAddress', {
 		 get: function(){
 			 return _ShipFromAddress;
@@ -121,34 +51,6 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 					_ShippingAddress = value; 
 				}else{
 					console.log('ShippingAddress expects type AddressType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMajor', {
-		 get: function(){
-			 return _WeightMajor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMajor = value; 
-				}else{
-					console.log('WeightMajor expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMinor', {
-		 get: function(){
-			 return _WeightMinor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMinor = value; 
-				}else{
-					console.log('WeightMinor expects type MeasureType');
 				}
 			}
 		}
@@ -199,13 +101,13 @@ function ShipmentType(EstimatedDeliveryDate, InsuredValue, PackageDepth, Package
 ShipmentType.prototype.toJSON = function(with_null) {
 	var json = { 
 		EstimatedDeliveryDate: (this.EstimatedDeliveryDate === undefined)? null : this.EstimatedDeliveryDate,
-		InsuredValue: (this.InsuredValue === undefined)? null : this.InsuredValue.toJSON(),
-		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth.toJSON(),
-		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength.toJSON(),
-		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth.toJSON(),
+		InsuredValue: (this.InsuredValue === undefined)? null : this.InsuredValue,
+		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth,
+		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength,
+		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth,
 		PayPalShipmentID: (this.PayPalShipmentID === undefined)? null : this.PayPalShipmentID,
 		ShipmentID: (this.ShipmentID === undefined)? null : this.ShipmentID,
-		PostageTotal: (this.PostageTotal === undefined)? null : this.PostageTotal.toJSON(),
+		PostageTotal: (this.PostageTotal === undefined)? null : this.PostageTotal,
 		PrintedTime: (this.PrintedTime === undefined)? null : this.PrintedTime,
 		ShipFromAddress: (this.ShipFromAddress === undefined)? null : this.ShipFromAddress.toJSON(),
 		ShippingAddress: (this.ShippingAddress === undefined)? null : this.ShippingAddress.toJSON(),
@@ -214,8 +116,8 @@ ShipmentType.prototype.toJSON = function(with_null) {
 		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
 		ShippingServiceUsed: (this.ShippingServiceUsed === undefined)? null : this.ShippingServiceUsed,
 		ShipmentTrackingNumber: (this.ShipmentTrackingNumber === undefined)? null : this.ShipmentTrackingNumber,
-		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
-		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON(),
+		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor,
+		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor,
 		ItemTransactionID: (this.ItemTransactionID === undefined)? null : this.ItemTransactionID,
 		DeliveryDate: (this.DeliveryDate === undefined)? null : this.DeliveryDate,
 		DeliveryStatus: (this.DeliveryStatus === undefined)? null : this.DeliveryStatus,
