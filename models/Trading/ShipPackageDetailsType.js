@@ -15,81 +15,6 @@ function ShipPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, Pa
 	/**
 	 * Arrays
 	 */
-	var _PackageDepth;
-	var _PackageLength;
-	var _PackageWidth;
-	var _WeightMajor;
-	var _WeightMinor;
-	Object.defineProperty(this, 'PackageDepth', {
-		 get: function(){
-			 return _PackageDepth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageDepth = value; 
-				}else{
-					console.log('PackageDepth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageLength', {
-		 get: function(){
-			 return _PackageLength;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageLength = value; 
-				}else{
-					console.log('PackageLength expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'PackageWidth', {
-		 get: function(){
-			 return _PackageWidth;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_PackageWidth = value; 
-				}else{
-					console.log('PackageWidth expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMajor', {
-		 get: function(){
-			 return _WeightMajor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMajor = value; 
-				}else{
-					console.log('WeightMajor expects type MeasureType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'WeightMinor', {
-		 get: function(){
-			 return _WeightMinor;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof MeasureType){ 
-					_WeightMinor = value; 
-				}else{
-					console.log('WeightMinor expects type MeasureType');
-				}
-			}
-		}
-	});
 	this.MeasurementUnit = MeasurementUnit;
 	this.PackageDepth = PackageDepth;
 	this.PackageLength = PackageLength;
@@ -102,13 +27,13 @@ function ShipPackageDetailsType(MeasurementUnit, PackageDepth, PackageLength, Pa
 ShipPackageDetailsType.prototype.toJSON = function(with_null) {
 	var json = { 
 		MeasurementUnit: (this.MeasurementUnit === undefined)? null : this.MeasurementUnit,
-		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth.toJSON(),
-		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength.toJSON(),
-		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth.toJSON(),
+		PackageDepth: (this.PackageDepth === undefined)? null : this.PackageDepth,
+		PackageLength: (this.PackageLength === undefined)? null : this.PackageLength,
+		PackageWidth: (this.PackageWidth === undefined)? null : this.PackageWidth,
 		ShippingIrregular: (this.ShippingIrregular === undefined)? null : this.ShippingIrregular,
 		ShippingPackage: (this.ShippingPackage === undefined)? null : this.ShippingPackage,
-		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor.toJSON(),
-		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor.toJSON()
+		WeightMajor: (this.WeightMajor === undefined)? null : this.WeightMajor,
+		WeightMinor: (this.WeightMinor === undefined)? null : this.WeightMinor
 	};
 	if(!with_null) {
 		for(var k in json) {
