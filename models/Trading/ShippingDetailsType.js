@@ -51,20 +51,6 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 			}
 		}
 	});
-	Object.defineProperty(this, 'InsuranceFee', {
-		 get: function(){
-			 return _InsuranceFee;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_InsuranceFee = value; 
-				}else{
-					console.log('InsuranceFee expects type AmountType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'SalesTax', {
 		 get: function(){
 			 return _SalesTax;
@@ -89,20 +75,6 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 					_TaxTable = value; 
 				}else{
 					console.log('TaxTable expects type TaxTableType');
-				}
-			}
-		}
-	});
-	Object.defineProperty(this, 'DefaultShippingCost', {
-		 get: function(){
-			 return _DefaultShippingCost;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_DefaultShippingCost = value; 
-				}else{
-					console.log('DefaultShippingCost expects type AmountType');
 				}
 			}
 		}
@@ -205,20 +177,6 @@ function ShippingDetailsType(AllowPaymentEdit, ApplyShippingDiscount, GlobalShip
 			}
 		}
 	});
-	Object.defineProperty(this, 'CODCost', {
-		 get: function(){
-			 return _CODCost;
-		},
-		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof AmountType){ 
-					_CODCost = value; 
-				}else{
-					console.log('CODCost expects type AmountType');
-				}
-			}
-		}
-	});
 	Object.defineProperty(this, 'RateTableDetails', {
 		 get: function(){
 			 return _RateTableDetails;
@@ -279,7 +237,7 @@ ShippingDetailsType.prototype.toJSON = function(with_null) {
 		GlobalShipping: (this.GlobalShipping === undefined)? null : this.GlobalShipping,
 		CalculatedShippingRate: (this.CalculatedShippingRate === undefined)? null : this.CalculatedShippingRate.toJSON(),
 		ChangePaymentInstructions: (this.ChangePaymentInstructions === undefined)? null : this.ChangePaymentInstructions,
-		InsuranceFee: (this.InsuranceFee === undefined)? null : this.InsuranceFee.toJSON(),
+		InsuranceFee: (this.InsuranceFee === undefined)? null : this.InsuranceFee,
 		InsuranceOption: (this.InsuranceOption === undefined)? null : this.InsuranceOption,
 		InsuranceWanted: (this.InsuranceWanted === undefined)? null : this.InsuranceWanted,
 		PaymentEdited: (this.PaymentEdited === undefined)? null : this.PaymentEdited,
@@ -307,7 +265,7 @@ ShippingDetailsType.prototype.toJSON = function(with_null) {
 		InternationalCalculatedShippingDiscount: (this.InternationalCalculatedShippingDiscount === undefined)? null : this.InternationalCalculatedShippingDiscount.toJSON(),
 		InternationalPromotionalShippingDiscount: (this.InternationalPromotionalShippingDiscount === undefined)? null : this.InternationalPromotionalShippingDiscount,
 		PromotionalShippingDiscountDetails: (this.PromotionalShippingDiscountDetails === undefined)? null : this.PromotionalShippingDiscountDetails.toJSON(),
-		CODCost: (this.CODCost === undefined)? null : this.CODCost.toJSON(),
+		CODCost: (this.CODCost === undefined)? null : this.CODCost,
 		ExcludeShipToLocation: (this.ExcludeShipToLocation === undefined)? null : this.ExcludeShipToLocation,
 		SellerExcludeShipToLocationsPreference: (this.SellerExcludeShipToLocationsPreference === undefined)? null : this.SellerExcludeShipToLocationsPreference,
 		ShipmentTrackingDetails: (this.ShipmentTrackingDetails === undefined)? null : this.ShipmentTrackingDetails,
