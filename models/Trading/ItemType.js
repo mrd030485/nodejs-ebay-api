@@ -473,12 +473,8 @@ function ItemType(ApplicationData, AttributeSetArray, AttributeArray, LookupAttr
 			 return _PictureDetails;
 		},
 		 set: function(value){
-			 if(value !== undefined && value !== null){
-				if(value instanceof PictureDetailsType){ 
-					_PictureDetails = value; 
-				}else{
-					console.log('PictureDetails expects type PictureDetailsType');
-				}
+			if(value !== undefined && value !== null){
+			  _PictureDetails = value; 
 			}
 		}
 	});
@@ -1046,7 +1042,7 @@ ItemType.prototype.toJSON = function(with_null) {
 		ShippingTermsInDescription: (this.ShippingTermsInDescription === undefined)? null : this.ShippingTermsInDescription,
 		ExternalProductID: (this.ExternalProductID === undefined)? null : this.ExternalProductID,
 		SellerInventoryID: (this.SellerInventoryID === undefined)? null : this.SellerInventoryID,
-		PictureDetails: (this.PictureDetails === undefined)? null : this.PictureDetails.toJSON(with_null),
+		PictureDetails: (this.PictureDetails === undefined)? null : this.PictureDetails,
 		DispatchTimeMax: (this.DispatchTimeMax === undefined)? null : this.DispatchTimeMax,
 		SkypeEnabled: (this.SkypeEnabled === undefined)? null : this.SkypeEnabled,
 		SkypeID: (this.SkypeID === undefined)? null : this.SkypeID,
